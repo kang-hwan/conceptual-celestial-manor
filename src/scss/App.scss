@@ -1,0 +1,19 @@
+// Pages & Components Style Sheets
+@use "./components/Header";
+@use "./components/Accordion";
+@use "./pages/Home";
+
+// Abstracts
+@use "./abstracts/colors";
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: colors.$bg-color;
+  font-family: "Poppins", sans-serif;
+}

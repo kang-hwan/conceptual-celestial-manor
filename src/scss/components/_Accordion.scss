@@ -1,0 +1,49 @@
+@use "../abstracts/colors" as c;
+
+.accordion-wrapper {
+  width: 612px;
+}
+
+.accordion-item {
+  padding: 24px 0 12px 36px;
+  border-bottom: 1px solid c.$black-theme;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-item.show {
+  padding: 24px 0 12px 36px;
+  border-bottom: 1px solid c.$black-theme;
+  // background-color: c.$black-theme;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 24px;
+  cursor: pointer;
+  h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+.accordion-content {
+  font-size: 12px;
+  width: 60%;
+  max-height: 0;
+  color: c.$black-theme;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.accordion-content.show {
+  font-size: 12px;
+  width: 60%;
+  height: auto;
+  max-height: 9999px;
+  // background-color: c.$black-theme;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}

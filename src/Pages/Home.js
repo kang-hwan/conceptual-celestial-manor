@@ -178,9 +178,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-6">
-        <DropdownSection />
-      </section>
+      <section className="section-6"></section>
     </div>
   );
 }

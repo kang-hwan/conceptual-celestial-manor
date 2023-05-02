@@ -12,7 +12,6 @@ import image5c from "../Images/image-5c.png";
 import "../scss/App.css";
 import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
-import DropdownSection from "../Components/DropdownSection";
 
 export default function Home() {
   return (
@@ -178,7 +177,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-6"></section>
+      <section className="section-6">Blank for now</section>
     </div>
   );
 }

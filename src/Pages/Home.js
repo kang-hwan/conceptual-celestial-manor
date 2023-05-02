@@ -12,6 +12,7 @@ import image5c from "../Images/image-5c.png";
 import "../scss/App.css";
 import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
+import DropdownSection from "../Components/DropdownSection";
 
 export default function Home() {
   return (
@@ -33,7 +34,9 @@ export default function Home() {
                 is where you can touch feel, and imagine.
               </h2>
               <p>Discover our collection of your stay.</p>
-              <a href="/">BOOK YOUR STAY</a>
+              <a href="/" className="cta-btn">
+                BOOK YOUR STAY
+              </a>
             </div>
             <div>
               <img src={smallLogo} alt="Small Logo" />
@@ -88,7 +91,9 @@ export default function Home() {
           <p>
             We look forward to welcoming you to Sofitel Melbourne On Collins.
           </p>
-          <a href="/">YOUR WAY TO CELESTIAL MANOR*</a>
+          <a href="/" className="cta-btn">
+            YOUR WAY TO CELESTIAL MANOR*
+          </a>
         </div>
       </section>
       <section className="section-4">
@@ -172,6 +177,9 @@ export default function Home() {
             </a>
           </div>
         </div>
+      </section>
+      <section className="section-6">
+        <DropdownSection />
       </section>
     </div>
   );

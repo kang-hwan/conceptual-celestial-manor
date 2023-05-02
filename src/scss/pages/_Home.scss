@@ -70,21 +70,6 @@
           margin: 32px 0 48px 0;
           font-size: 16px;
         }
-        a {
-          text-decoration: none;
-          color: c.$black-theme;
-          font-size: 16px;
-          font-weight: bold;
-          border: 2px solid c.$black-theme;
-          padding: 16px 32px;
-          border-radius: 8px;
-          transition: 0.5s;
-          &:hover {
-            background-color: olive;
-            color: white;
-            transition: 0.5s;
-          }
-        }
       }
     }
   }
@@ -109,7 +94,7 @@
         width: 800px;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         h2 {
           margin: 0;
           font-size: 52px;
@@ -165,15 +150,8 @@
       margin: 32px 0;
     }
     a {
-      color: c.$black-theme;
-      text-decoration: none;
-      padding: 16px 32px;
-      border: 2px solid c.$black-theme;
-      border-radius: 8px;
-      font-weight: bold;
       margin-top: 74px;
       margin-bottom: 400px;
-      display: inline-block;
     }
   }
 }
@@ -375,4 +353,9 @@
       }
     }
   }
+}
+
+// ! Section 6
+.section-6-wrapper {
+  margin: 164px 0 240px;
 }

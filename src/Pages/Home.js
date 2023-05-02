@@ -71,7 +71,19 @@ export default function Home() {
         </div>
       </section>
       <section className="section-3">
-        <div className="section-3a">Carousel Slider</div>
+        <div className="section-3a">
+          <div>Image 1</div>
+          <div>
+            <div>
+              <div>Image 2</div>
+              <div>Image 3</div>
+            </div>
+            <div>
+              <div>Image 4</div>
+              <div>Image 5</div>
+            </div>
+          </div>
+        </div>
         <div className="section-3b">
           <h2>Welcome to Celestial Manor*</h2>
           <p>

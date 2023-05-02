@@ -387,17 +387,19 @@ header {
 
 .accordion-wrapper {
   width: 612px;
+  padding-left: 24px;
 }
 
 .accordion-item {
-  padding: 24px 0 12px 36px;
+  padding: 24px 0 24px 36px;
   border-bottom: 1px solid #211f1a;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
 .accordion-item.show {
-  padding: 24px 0 12px 36px;
+  padding: 24px 0 24px 36px;
   border-bottom: 1px solid #211f1a;
+  color: #211f1a;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
@@ -415,8 +417,9 @@ header {
 }
 
 .accordion-content {
-  font-size: 12px;
-  width: 60%;
+  font-size: 16px;
+  line-height: 28px;
+  width: 90%;
   max-height: 0;
   color: #211f1a;
   overflow: hidden;
@@ -424,8 +427,10 @@ header {
 }
 
 .accordion-content.show {
-  font-size: 12px;
-  width: 60%;
+  font-size: 16px;
+  line-height: 28px;
+  color: #211f1a;
+  width: 90%;
   height: auto;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);

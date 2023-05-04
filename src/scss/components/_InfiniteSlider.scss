@@ -1,0 +1,28 @@
+@use "../abstracts/colors" as c;
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.section-4-slider-container {
+  overflow: hidden;
+}
+
+.section-4-slider {
+  height: 48px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  white-space: nowrap;
+  animation: 15s slide infinite linear;
+  .slider-item {
+    padding: 4px 16px;
+    border-right: 1px solid c.$black-theme;
+    // display: inline-block;
+  }
+}

@@ -2,7 +2,8 @@
 @use "./pages/Home";
 @use "./components/Header";
 @use "./components/Accordion";
-@use "./components/DropdownSection";
+@use "./components/CardSlider";
+@use "./components/InfiniteSlider";
 
 // Abstracts
 @use "./abstracts/colors";

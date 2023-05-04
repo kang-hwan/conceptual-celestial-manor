@@ -7,11 +7,16 @@ import homeMap from "../Images/home-map.svg";
 import image5a from "../Images/image-5a.png";
 import image5b from "../Images/image-5b.png";
 import image5c from "../Images/image-5c.png";
+import image3a from "../Images/s3a-img1.png";
+import image3b from "../Images/s3a-img2.png";
+import image3d from "../Images/s3a-img4.png";
+import image3e from "../Images/s3a-img5.png";
 
 // Components & Files
 import "../scss/App.css";
 import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
+import CardSlider from "../Components/CardSlider";
 
 export default function Home() {
   return (
@@ -72,15 +77,25 @@ export default function Home() {
       </section>
       <section className="section-3">
         <div className="section-3a">
-          <div>Image 1</div>
-          <div>
-            <div>
-              <div>Image 2</div>
-              <div>Image 3</div>
+          <div className="section-3a-left">
+            <img src={image3a} />
+          </div>
+          <div className="section-3a-right">
+            <div className="section-3a-34">
+              <div>
+                <img src={image3b} />
+              </div>
+              <div>
+                <img src={image3b} />
+              </div>
             </div>
-            <div>
-              <div>Image 4</div>
-              <div>Image 5</div>
+            <div className="section-3a-45">
+              <div>
+                <img src={image3d} />
+              </div>
+              <div>
+                <img src={image3e} />
+              </div>
             </div>
           </div>
         </div>
@@ -189,7 +204,56 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-6">Blank for now</section>
+      <section className="section-6">
+        <h2>Featured Properties</h2>
+        <p>Coco is not your average in Copenhaads blah blah blah</p>
+        <div className="card-slider-container">
+          <CardSlider />
+        </div>
+      </section>
+      <section className="section-7">
+        <div className="section-7a">
+          <h1>Location*</h1>
+          <p>
+            Located in the cœur of the city, Sofitel Melbourne On Collins is
+            40-minute drive from Tullamarine Airport. Rental vehicles,
+            limousines, taxis and shuttles to airport from hotel can be
+            organized with the Concierge Desk.
+          </p>
+          <h3>Airport Access</h3>
+          <p>
+            Sofitel Melbourne On Collins is a comfortable 30-minute drive via
+            CityLink Tollway from Melbourne’s Tullamarine Airport.
+          </p>
+          <h3>Arriving by car</h3>
+          <p>
+            Your Concierge can arrange private chauffeured transfers to and from
+            Melbourne Airport, along with public transport information and car
+            rental options.
+          </p>
+          <h3>Parking</h3>
+          <p>
+            $65 Valet Parking, per night, per car for in-house guests
+            <br />
+            $45 Casual parking for up to 3 hours maximum
+            <br />
+            $70 Casual parking for 3 hours or more, within the day
+          </p>
+          <h3>Guest Services</h3>
+          <p>Check in time is 3.00pm | Check out time is 11.00am</p>
+        </div>
+        <div className="google-map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9517874941125!2d144.97250049492837!3d-37.81459825383113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c7ccd20203%3A0xde65ca890aaa8f2e!2sSofitel%20Melbourne%20on%20Collins!5e0!3m2!1sen!2sau!4v1683166659543!5m2!1sen!2sau"
+            width="1310"
+            height="480"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="GoogleMapsLocation"
+          ></iframe>
+        </div>
+      </section>
     </div>
   );
 }

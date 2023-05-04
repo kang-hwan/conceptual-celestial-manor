@@ -78,23 +78,23 @@ export default function Home() {
       <section className="section-3">
         <div className="section-3a">
           <div className="section-3a-left">
-            <img src={image3a} />
+            <img src={image3a} alt="3a" />
           </div>
           <div className="section-3a-right">
             <div className="section-3a-34">
               <div>
-                <img src={image3b} />
+                <img src={image3b} alt="3b" />
               </div>
               <div>
-                <img src={image3b} />
+                <img src={image3b} alt="3c" />
               </div>
             </div>
             <div className="section-3a-45">
               <div>
-                <img src={image3d} />
+                <img src={image3d} alt="3d" />
               </div>
               <div>
-                <img src={image3e} />
+                <img src={image3e} alt="3e" />
               </div>
             </div>
           </div>

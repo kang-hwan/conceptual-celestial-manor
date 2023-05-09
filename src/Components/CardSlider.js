@@ -3,7 +3,7 @@ import React from "react";
 import cardTestImg from "../Images/card-room-image.png";
 
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -30,7 +30,7 @@ export default function CardSlider() {
           <SwiperSlide>
             <div className="card">
               <h3 className="card__title">{item.title}</h3>
-              <img src={item.image} className="card__img" />
+              <img src={item.image} className="card__img" alt={item.id} />
               <p className="card__body">{item.body}</p>
               <a className="card__cta-btn" href="/">
                 TAKE ME THERE

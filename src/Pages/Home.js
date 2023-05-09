@@ -204,14 +204,25 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="section-6">
-        <h2>Featured Properties</h2>
-        <p>Coco is not your average in Copenhaads blah blah blah</p>
-        <div className="card-slider-container">
+      <section className="cardSliderSection">
+        <h1 className="cardSliderSection__heading">Featured Properties</h1>
+        <p className="cardSliderSection__body">
+          Coco is not your average in Copenhaads blah blah blah
+        </p>
+        <div className="cardSliderSection__module">
           <CardSlider />
         </div>
       </section>
       <section className="section-7">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9517874941125!2d144.97250049492837!3d-37.81459825383113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c7ccd20203%3A0xde65ca890aaa8f2e!2sSofitel%20Melbourne%20on%20Collins!5e0!3m2!1sen!2sau!4v1683166659543!5m2!1sen!2sau"
+          width="1310"
+          height="660"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="GoogleMapsLocation"
+        ></iframe>
         <div className="section-7a">
           <h1>Location*</h1>
           <p>
@@ -242,17 +253,7 @@ export default function Home() {
           <h3>Guest Services</h3>
           <p>Check in time is 3.00pm | Check out time is 11.00am</p>
         </div>
-        <div className="google-map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9517874941125!2d144.97250049492837!3d-37.81459825383113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c7ccd20203%3A0xde65ca890aaa8f2e!2sSofitel%20Melbourne%20on%20Collins!5e0!3m2!1sen!2sau!4v1683166659543!5m2!1sen!2sau"
-            width="1310"
-            height="480"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="GoogleMapsLocation"
-          ></iframe>
-        </div>
+        <div className="google-map-container"></div>
       </section>
     </div>
   );

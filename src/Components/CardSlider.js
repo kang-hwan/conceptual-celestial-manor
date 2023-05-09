@@ -1,45 +1,101 @@
-import React, { useState } from "react";
+import React from "react";
+
+import cardTestImg from "../Images/card-room-image.png";
+
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 export default function CardSlider() {
-  const cards = [
-    { id: 1, title: "Card 1", description: "Description for Card 1" },
-    { id: 2, title: "Card 2", description: "Description for Card 2" },
-    { id: 3, title: "Card 3", description: "Description for Card 3" },
-    { id: 4, title: "Card 4", description: "Description for Card 4" },
-    { id: 5, title: "Card 5", description: "Description for Card 5" },
-  ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handlePrev = () => {
-    const index = currentIndex === 0 ? cards.length - 1 : currentIndex - 1;
-    setCurrentIndex(index);
-  };
-
-  const handleNext = () => {
-    const index = currentIndex === cards.length - 1 ? 0 : currentIndex + 1;
-    setCurrentIndex(index);
-  };
-
   return (
-    <div className="slider-container">
-      <div
-        className="slider-wrapper"
-        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+    <div>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={50}
+        slidesPerView={5}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
       >
-        {cards.map((card) => (
-          <div key={card.id} className="slider-card">
-            <h2>{card.title}</h2>
-            <p>{card.description}</p>
-          </div>
+        {cardData.map((item) => (
+          <SwiperSlide>
+            <div className="card">
+              <h3 className="card__title">{item.title}</h3>
+              <img src={item.image} className="card__img" />
+              <p className="card__body">{item.body}</p>
+              <a className="card__cta-btn" href="/">
+                TAKE ME THERE
+              </a>
+            </div>
+          </SwiperSlide>
         ))}
-      </div>
-      <button className="slider-button prev" onClick={handlePrev}>
-        Prev
-      </button>
-      <button className="slider-button next" onClick={handleNext}>
-        Next
-      </button>
+        {/* <swiper-slide>
+          <div className="card">
+            <h3 className="card__title">Card 1</h3>
+            <img src={cardTestImg} className="card__img" />
+            <p className="card__body">
+              As the first-ever furniture subscription service of its kind in
+              Thailand. Spruce ma.
+            </p>
+            <a className="card__cta-btn" href="/">
+              TAKE ME THERE
+            </a>
+          </div>
+        </swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide> */}
+      </Swiper>
     </div>
   );
 }
+
+const cardData = [
+  {
+    id: 1,
+    title: "Room 1",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+  {
+    id: 2,
+    title: "Room 2",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+  {
+    id: 3,
+    title: "Room 3",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+  {
+    id: 4,
+    title: "Room 4",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+  {
+    id: 5,
+    title: "Room 5",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+  {
+    id: 6,
+    title: "Room 6",
+    image: cardTestImg,
+    body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
+  },
+];

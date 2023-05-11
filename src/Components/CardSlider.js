@@ -20,6 +20,7 @@ export default function CardSlider() {
         modules={[Navigation, Pagination]}
         spaceBetween={50}
         slidesPerView={5}
+        centeredSlides={true}
         navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}
@@ -38,24 +39,6 @@ export default function CardSlider() {
             </div>
           </SwiperSlide>
         ))}
-        {/* <swiper-slide>
-          <div className="card">
-            <h3 className="card__title">Card 1</h3>
-            <img src={cardTestImg} className="card__img" />
-            <p className="card__body">
-              As the first-ever furniture subscription service of its kind in
-              Thailand. Spruce ma.
-            </p>
-            <a className="card__cta-btn" href="/">
-              TAKE ME THERE
-            </a>
-          </div>
-        </swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-        <swiper-slide>Slide 4</swiper-slide>
-        <swiper-slide>Slide 5</swiper-slide>
-        <swiper-slide>Slide 6</swiper-slide> */}
       </Swiper>
     </div>
   );

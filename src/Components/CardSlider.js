@@ -1,6 +1,12 @@
 import React from "react";
 
 import cardTestImg from "../Images/card-room-image.png";
+import cardImg1 from "../Images/cardSlider-1.png";
+import cardImg2 from "../Images/cardSlider-2.png";
+import cardImg3 from "../Images/cardSlider-3.png";
+import cardImg4 from "../Images/cardSlider-4.png";
+import cardImg5 from "../Images/cardSlider-5.png";
+import cardImg6 from "../Images/cardSlider-6.png";
 
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
@@ -19,7 +25,7 @@ export default function CardSlider() {
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={50}
-        slidesPerView={5}
+        slidesPerView={4}
         centeredSlides={true}
         navigation
         pagination={{ clickable: true }}
@@ -30,12 +36,20 @@ export default function CardSlider() {
         {cardData.map((item) => (
           <SwiperSlide>
             <div className="card">
-              <h3 className="card__title">{item.title}</h3>
-              <img src={item.image} className="card__img" alt={item.id} />
-              <p className="card__body">{item.body}</p>
-              <a className="card__cta-btn" href="/">
-                TAKE ME THERE
-              </a>
+              <div className="cardContent">
+                <h3 className="cardContent__title">{item.title}</h3>
+                <img
+                  src={item.image}
+                  className="cardContent__img"
+                  alt={item.id}
+                />
+                <p className="cardContent__body">{item.body}</p>
+              </div>
+              <div className="cardLink">
+                <a className="cardLink__cta-btn" href="/">
+                  TAKE ME THERE
+                </a>
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -47,38 +61,38 @@ export default function CardSlider() {
 const cardData = [
   {
     id: 1,
-    title: "Room 1",
-    image: cardTestImg,
+    title: "Inspiration",
+    image: cardImg1,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
   {
     id: 2,
-    title: "Room 2",
-    image: cardTestImg,
+    title: "Perfect Date Night",
+    image: cardImg2,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
   {
     id: 3,
-    title: "Room 3",
-    image: cardTestImg,
+    title: "Friends & Family",
+    image: cardImg3,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
   {
     id: 4,
-    title: "Room 4",
-    image: cardTestImg,
+    title: "Friend's Night Out",
+    image: cardImg4,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
   {
     id: 5,
-    title: "Room 5",
-    image: cardTestImg,
+    title: "Sole Holiday",
+    image: cardImg5,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
   {
     id: 6,
-    title: "Room 6",
-    image: cardTestImg,
+    title: "Work & Life",
+    image: cardImg6,
     body: "As the first-ever furniture subscription service of its kind in Thailand, Spruce ma",
   },
 ];

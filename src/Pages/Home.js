@@ -9,6 +9,7 @@ import image5b from "../Images/image-5b.png";
 import image5c from "../Images/image-5c.png";
 import image3a from "../Images/s3a-img1.png";
 import image3b from "../Images/s3a-img2.png";
+import image3c from "../Images/s3a-img3.png";
 import image3d from "../Images/s3a-img4.png";
 import image3e from "../Images/s3a-img5.png";
 
@@ -86,7 +87,7 @@ export default function Home() {
                 <img src={image3b} alt="3b" />
               </div>
               <div>
-                <img src={image3b} alt="3c" />
+                <img src={image3c} alt="3c" />
               </div>
             </div>
             <div className="section-3a-45">
@@ -205,9 +206,12 @@ export default function Home() {
         </div>
       </section>
       <section className="cardSliderSection">
-        <h1 className="cardSliderSection__heading">Featured Properties</h1>
+        <h1 className="cardSliderSection__heading">
+          Let's pick you up the best rooms
+        </h1>
         <p className="cardSliderSection__body">
-          Coco is not your average in Copenhaads blah blah blah
+          Whether staying for business or leisure, discover our most inspiring
+          properties all around the world.
         </p>
         <div className="cardSliderSection__module">
           <CardSlider />

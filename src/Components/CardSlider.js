@@ -1,6 +1,5 @@
 import React from "react";
 
-import cardTestImg from "../Images/card-room-image.png";
 import cardImg1 from "../Images/cardSlider-1.png";
 import cardImg2 from "../Images/cardSlider-2.png";
 import cardImg3 from "../Images/cardSlider-3.png";

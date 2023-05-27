@@ -4,20 +4,21 @@ import React from "react";
 import largeLogo from "../Images/home-celestial-manor.svg";
 import smallLogo from "../Images/main-vertical-logo.svg";
 import homeMap from "../Images/home-map.svg";
-import image5a from "../Images/image-5a.png";
-import image5b from "../Images/image-5b.png";
-import image5c from "../Images/image-5c.png";
 import image3a from "../Images/s3a-img1.png";
 import image3b from "../Images/s3a-img2.png";
 import image3c from "../Images/s3a-img3.png";
 import image3d from "../Images/s3a-img4.png";
 import image3e from "../Images/s3a-img5.png";
+import image5a from "../Images/image-5a.png";
+import image5b from "../Images/image-5b.png";
+import image5c from "../Images/image-5c.png";
 
 // Components & Files
 import "../scss/App.css";
 import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
 import CardSlider from "../Components/CardSlider";
+import Footer from "../Components/Footer";
 
 export default function Home() {
   return (
@@ -72,12 +73,12 @@ export default function Home() {
               Thailand, Spruce makes it simple, accessible and sustainable for
               you to create a space that you love, sans commitment.
             </p>
+            <Accordion />
           </div>
-          <Accordion />
         </div>
       </section>
-      <section className="section-3">
-        <div className="section-3a">
+      <section className="gridImageSection">
+        <div className="gridImageSection__Grid">
           <div className="section-3a-left">
             <img src={image3a} alt="3a" />
           </div>
@@ -100,7 +101,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="section-3b">
+        <div className="gridImageSection__body">
           <h2>Welcome to Celestial Manor*</h2>
           <p>
             Coco is not your average hotel in Copenhagen. Sure, it’s a place to
@@ -217,17 +218,24 @@ export default function Home() {
           <CardSlider />
         </div>
       </section>
-      <section className="section-7">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9517874941125!2d144.97250049492837!3d-37.81459825383113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c7ccd20203%3A0xde65ca890aaa8f2e!2sSofitel%20Melbourne%20on%20Collins!5e0!3m2!1sen!2sau!4v1683166659543!5m2!1sen!2sau"
-          width="1310"
-          height="660"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="GoogleMapsLocation"
-        ></iframe>
-        <div className="section-7a">
+      <section className="howToGetHereSection">
+        <div className="howToGetHereSection__googleMap">
+          <iframe
+            src="https://www.google.com/maps/d/u/0/embed?mid=1mzCbJF0OHNtT4aUb0xyKTDl2iS7SiS0&ehbc=2E312F"
+            width="100%"
+            height="1000px"
+            zoom="3"
+          ></iframe>
+          <div className="howToGetHereSection__mapDetails">
+            <p className="title">Contact Details</p>
+            <p className="body">Sofitel Melbourne on Collins</p>
+            <p>25 Collins Street 3000 Melbourne, Australia</p>
+            <p>
+              Tel: <u>+61 39653 0000</u> | Email: <u>HI902@sofitel.com</u>
+            </p>
+          </div>
+        </div>
+        <div className="howToGetHereSection__body">
           <h1>Location*</h1>
           <p>
             Located in the cœur of the city, Sofitel Melbourne On Collins is
@@ -257,8 +265,8 @@ export default function Home() {
           <h3>Guest Services</h3>
           <p>Check in time is 3.00pm | Check out time is 11.00am</p>
         </div>
-        <div className="google-map-container"></div>
       </section>
+      <Footer />
     </div>
   );
 }

@@ -16,11 +16,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+// import "swiper/css/scrollbar";
 
 export default function CardSlider() {
   return (
-    <div>
+    <div className="cardSliderContainer">
       <Swiper
         modules={[Navigation, Pagination]}
         spaceBetween={50}
@@ -28,7 +28,7 @@ export default function CardSlider() {
         centeredSlides={true}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
+        // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >

@@ -225,6 +225,7 @@ export default function Home() {
             width="100%"
             height="1000px"
             zoom="3"
+            title="celestial-manor-location"
           ></iframe>
           <div className="howToGetHereSection__mapDetails">
             <p className="title">Contact Details</p>

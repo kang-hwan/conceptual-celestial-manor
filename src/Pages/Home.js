@@ -4,6 +4,7 @@ import React from "react";
 import largeLogo from "../Images/home-celestial-manor.svg";
 import smallLogo from "../Images/main-vertical-logo.svg";
 import homeMap from "../Images/home-map.svg";
+import homeMapMarker from "../Images/homeMapMarker-white.svg";
 import image3a from "../Images/s3a-img1.png";
 import image3b from "../Images/s3a-img2.png";
 import image3c from "../Images/s3a-img3.png";
@@ -29,7 +30,14 @@ export default function Home() {
       <section className="section-1">
         <div className="section-1a">
           <div className="section-1a-wrapper">
-            <img src={homeMap} alt="location-map" />
+            <div className="svgMapContainer">
+              <img src={homeMap} alt="location-map" className="location-map" />
+              <img
+                src={homeMapMarker}
+                alt="location-map-marker"
+                className="location-map-marker"
+              />
+            </div>
           </div>
         </div>
         <div className="section-1b">

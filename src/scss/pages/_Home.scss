@@ -736,6 +736,10 @@ $mobile-view: 1060px;
     padding: 24px 40px 24px 24px;
     color: white;
     text-align: left;
+    @media (max-width: $mobile-view) {
+      width: 70%;
+      left: calc(15%);
+    }
     P {
       margin: 6px 0;
       font-weight: 300;

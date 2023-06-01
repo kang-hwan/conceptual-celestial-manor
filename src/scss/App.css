@@ -774,6 +774,12 @@
   color: white;
   text-align: left;
 }
+@media (max-width: 1060px) {
+  .howToGetHereSection__mapDetails {
+    width: 70%;
+    left: 15%;
+  }
+}
 .howToGetHereSection__mapDetails P {
   margin: 6px 0;
   font-weight: 300;

@@ -10,6 +10,9 @@
 .large-logo-wrapper {
   display: flex;
   justify-content: center;
+  position: fixed;
+  top: 58;
+  z-index: 999;
 }
 
 .large-logo {
@@ -22,6 +25,7 @@
   height: 1090px;
   width: 100%;
   display: flex;
+  margin-top: 125px;
   justify-content: center;
 }
 @media (max-width: 1060px) {

@@ -668,7 +668,7 @@
 
 .howToGetHereSection {
   text-align: center;
-  min-height: 800px;
+  height: 800px;
   display: flex;
   align-items: center;
   border-top: 1px solid #211f1a;

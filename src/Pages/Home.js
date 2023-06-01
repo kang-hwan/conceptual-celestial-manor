@@ -52,7 +52,7 @@ export default function Home() {
                 BOOK YOUR STAY
               </a>
             </div>
-            <div>
+            <div className="small-logo-container">
               <img src={smallLogo} alt="Small Logo" />
             </div>
           </div>
@@ -64,8 +64,8 @@ export default function Home() {
             <div className="section-2a-copy">
               <h2>Find your sanctuary at Celestial Manor*</h2>
               <p>
-                Indulge in the peaceful surrounds of our contemporary indoor,
-                open-air, and outdoor
+                Indulge in a world where opulence meets tranquility, where every
+                moment is infused with celestial elegance.
               </p>
               <a href="https://www.linkedin.com/in/roy-kim-5404281a3/">
                 See More About Our Story
@@ -75,11 +75,13 @@ export default function Home() {
         </div>
         <div className="section-2b">
           <div className="section-2b-wrapper">
-            <p>Discover our Signature Discover our collection</p>
             <p>
-              As the first-ever furniture subscription service of its kind in
-              Thailand, Spruce makes it simple, accessible and sustainable for
-              you to create a space that you love, sans commitment.
+              Welcome to Celestial Manor, the epitome of luxurious boutique
+              hospitality.
+            </p>
+            <p>
+              Prepare to embark on a transcendent journey, where comfort and
+              sophistication intertwine seamlessly.
             </p>
             <Accordion />
           </div>
@@ -112,20 +114,22 @@ export default function Home() {
         <div className="gridImageSection__body">
           <h2>Welcome to Celestial Manor*</h2>
           <p>
-            Coco is not your average hotel in Copenhagen. Sure, it’s a place to
-            stay away from home, but it is also a place to unwind, a place to
-            meet with friends, a place to meet new people and a place to be
-            inspired. We offer a bespoke boutique hotel experience at Coco
-            desired by many, yet offered by few.
+            Indulge in a world where opulence meets tranquility, where every
+            moment is infused with celestial elegance. Welcome to Celestial
+            Manor, the epitome of luxurious boutique hospitality. Prepare to
+            embark on a transcendent journey, where comfort and sophistication
+            intertwine seamlessly.
           </p>
           <p>
-            While our hotels are all rooted in that French joie de vivre – that
-            “anything can happen” lifestyle – Sofitel Melbourne On Collins
-            prides itself on embracing local customs and traditions, with our
-            rotating art exhibitions and local produce.
+            At Celestial Manor*, we believe that true luxury lies in the art of
+            personalized service. Our dedicated team of hospitality artisans is
+            poised to cater to your every need, ensuring that your stay exceeds
+            all expectations. From the moment you step foot into our ethereal
+            lobby, you'll be immersed in a world of unrivaled comfort and
+            hospitality.
           </p>
           <p>
-            We look forward to welcoming you to Sofitel Melbourne On Collins.
+            We look forward to welcoming you to Celestial Manor* On Collins.
           </p>
           <a href="/" className="cta-btn">
             YOUR WAY TO CELESTIAL MANOR*
@@ -136,33 +140,37 @@ export default function Home() {
         <div className="section-4a">
           <div className="section-4a-top">
             <div className="s4a-top-1">
-              <h2>Exclusive & Prestigous</h2>
+              <h2>Crafted by Manor* Co.</h2>
               <p>
-                your average hotel in Copenhagen. Sure, it's a place to stay
-                away from
+                Experience the artistry and attention to detail of Manor Co.,
+                renowned creators of luxurious hotels.
               </p>
             </div>
             <div className="s4a-top-2">
               <h2>Exclusive & Prestigous</h2>
               <p>
-                your average hotel in Copenhagen. Sure, it's a place to stay
-                away from
+                Indulge in the exclusivity and prestige that Celestial Manor
+                offers. Immerse yourself in a world of refined elegance and
+                personalized service tailored to your desires.
               </p>
             </div>
           </div>
           <div className="section-4a-bottom">
             <div className="s4a-bottom-1">
-              <h2>Exclusive & Prestigous</h2>
+              <h2>Top-notch Experience</h2>
               <p>
-                your average hotel in Copenhagen. Sure, it's a place to stay
-                away from
+                Expect nothing less than a top-notch experience at Celestial
+                Manor. From the moment you arrive, our dedicated team will go
+                above and beyond to ensure your stay is exceptional.
               </p>
             </div>
             <div className="s4a-bottom-2">
-              <h2>Exclusive & Prestigous</h2>
+              <h2>Coffee Central</h2>
               <p>
-                your average hotel in Copenhagen. Sure, it's a place to stay
-                away from
+                Discover the true essence of Melbourne's coffee culture at
+                Celestial Manor, your ultimate Coffee Central. Savor the finest
+                blends, expertly brewed by our skilled baristas, in a chic and
+                inviting atmosphere.
               </p>
             </div>
           </div>
@@ -172,12 +180,16 @@ export default function Home() {
       <section className="section-5">
         <div className="section-5-wrapper">
           <div className="section-5a">
-            <h3>A Piece of Design History</h3>
+            <h3>Celestial Collection - Classic</h3>
             <p>
-              psum dolor sit amet consectetur. Odio at iaculis nec justo mus
-              aliquam at. Nec.ipsum dolor sit amet consectetur. Odio at iaculis
-              nemet consectetur. Odio at iaculis nec justo mus aliquam at. Nec.
-              ipsum dolor sit amet consectetur.
+              The Celestial Classic rooms offer timeless elegance and comfort,
+              providing a serene retreat for discerning travelers. Immerse
+              yourself in a harmonious blend of luxurious furnishings, soothing
+              color palettes, and thoughtfully curated amenities.
+            </p>
+            <p>
+              Experience the perfect balance of refined aesthetics and modern
+              conveniences in these well-appointed rooms.
             </p>
             <img src={image5a} alt="room-1" />
             <a href="https://www.linkedin.com/in/roy-kim-5404281a3/">
@@ -185,14 +197,19 @@ export default function Home() {
             </a>
           </div>
           <div className="section-5b">
-            <h3>Luxe Collection of Collection</h3>
+            <h3>Celestial Collection - Deluxe</h3>
             <p>
-              psum dolor sit amet consectetur. Odio at iaculis nec justo mus
-              aliquam at. Nec.ipsum dolor sit amet consectetur. Odio at iaculis
-              nemet consectetur. Odio at iaculis nec justo mus aliquam at. Nec.
-              ipsum dolor sit amet consectetur. nemet consectetur. Odio at
-              iaculis nec justo mus aliquam at. Nec. ipsum dolor sit amet
-              consectetur.
+              The Celestial Deluxe rooms elevate your stay to a new level of
+              luxury, offering spaciousness and enhanced amenities.
+            </p>
+            <p>
+              Immerse yourself in the sophisticated ambiance of these elegantly
+              designed rooms, where every detail has been carefully considered.
+            </p>
+            <p>
+              Indulge in the extra comfort of plush bedding, stylish
+              furnishings, and additional features that enhance your overall
+              experience.
             </p>
             <img src={image5b} alt="room-2" />
             <a href="https://www.linkedin.com/in/roy-kim-5404281a3/">
@@ -201,12 +218,21 @@ export default function Home() {
           </div>
           <div className="section-5c">
             <img src={image5c} alt="room-3" />
-            <h3>A Piece of Design History, A Piece of Design History</h3>
+            <h3>Celestial Collection - Suite</h3>
             <p>
-              psum dolor sit amet consectetur. Odio at iaculis nec justo mus
-              aliquam at. Nec.ipsum dolor sit amet consectetur. Odio at iaculis
-              nemet consectetur. Odio at iaculis nec justo mus aliquam at. Nec.
-              ipsum dolor sit amet consectetur.
+              The Celestial Suites are the epitome of indulgence and
+              exclusivity, offering an expansive sanctuary for the most
+              discerning guests.
+            </p>
+            <p>
+              Unwind in a private haven adorned with opulent decor, separate
+              living areas, and breathtaking views of the cityscape or natural
+              surroundings.
+            </p>
+            <p>
+              Enjoy personalized service, exclusive access to premium
+              facilities, and an array of bespoke amenities that cater to your
+              every need.
             </p>
             <a href="https://www.linkedin.com/in/roy-kim-5404281a3/">
               Browse Our Original Collection

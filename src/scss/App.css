@@ -19,6 +19,11 @@
   max-width: 98%;
   padding: 0 12px;
 }
+@media (max-width: 1060px) {
+  .large-logo {
+    display: none;
+  }
+}
 
 .section-1 {
   border-top: 1px solid #211f1a;
@@ -32,6 +37,8 @@
   .section-1 {
     flex-direction: column;
     height: 100%;
+    border: none;
+    margin-top: 0;
   }
 }
 .section-1 .section-1a {
@@ -44,6 +51,7 @@
   .section-1 .section-1a {
     width: 100%;
     justify-content: center;
+    border: none;
   }
 }
 .section-1 .section-1a .section-1a-wrapper {
@@ -57,6 +65,13 @@
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 1060px) {
+  .section-1 .section-1a .section-1a-wrapper {
+    width: 100%;
+    justify-content: center;
+    border: none;
+  }
+}
 .section-1 .section-1a .section-1a-wrapper .svgMapContainer {
   margin-right: 60px;
   border: 2px black solid;
@@ -67,6 +82,11 @@
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
+}
+@media (max-width: 1060px) {
+  .section-1 .section-1a .section-1a-wrapper .svgMapContainer {
+    margin: 40px 0;
+  }
 }
 .section-1 .section-1a .section-1a-wrapper .svgMapContainer .location-map {
   transform: rotate(45deg);
@@ -104,6 +124,11 @@
   padding-left: 60px;
   max-width: 550px;
 }
+@media (max-width: 1060px) {
+  .section-1 .section-1b .section-1b-wrapper {
+    padding: 40px 0;
+  }
+}
 .section-1 .section-1b .section-1b-wrapper .section-1b-text {
   width: 90%;
   text-align: center;
@@ -116,6 +141,11 @@
 .section-1 .section-1b .section-1b-wrapper .section-1b-text p {
   margin: 32px 0 48px 0;
   font-size: 16px;
+}
+@media (max-width: 1060px) {
+  .section-1 .section-1b .section-1b-wrapper .small-logo-container {
+    display: none;
+  }
 }
 
 .section-2 {
@@ -136,7 +166,7 @@
 @media (max-width: 1060px) {
   .section-2 .section-2a {
     width: 100%;
-    height: 365px;
+    height: 100%;
   }
 }
 .section-2 .section-2a .section-2a-wrapper {
@@ -146,6 +176,13 @@
   padding: 100px 0 0 24px;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 1060px) {
+  .section-2 .section-2a .section-2a-wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 40px 0 40px 24px;
+  }
 }
 .section-2 .section-2a .section-2a-wrapper .section-2a-copy {
   width: 800px;
@@ -173,16 +210,22 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 @media (max-width: 1060px) {
   .section-2 .section-2b {
     width: 100%;
+    padding: 40px 0;
   }
 }
 .section-2 .section-2b .section-2b-wrapper {
   max-width: 540px;
   padding: 24px;
+}
+@media (max-width: 1060px) {
+  .section-2 .section-2b .section-2b-wrapper {
+    max-width: 100%;
+  }
 }
 
 .gridImageSection {
@@ -195,6 +238,11 @@
   height: 576px;
   width: 100%;
   display: flex;
+}
+@media (max-width: 1060px) {
+  .gridImageSection__Grid {
+    display: none;
+  }
 }
 .gridImageSection__Grid .section-3a-left {
   width: 40%;
@@ -405,6 +453,13 @@
   text-align: center;
   width: 70%;
 }
+@media (max-width: 1060px) {
+  .gridImageSection__body {
+    width: 100%;
+    text-align: left;
+    padding: 40px 24px;
+  }
+}
 .gridImageSection__body h2 {
   font-size: 52px;
   font-weight: 400;
@@ -417,6 +472,12 @@
 .gridImageSection__body a {
   margin-top: 74px;
   margin-bottom: 400px;
+}
+@media (max-width: 1060px) {
+  .gridImageSection__body a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .section-4 {
@@ -537,6 +598,11 @@
   padding-top: 280px;
   padding-bottom: 320px;
   color: #fffcfa;
+}
+@media (max-width: 1060px) {
+  .section-5 {
+    padding: 40px 0;
+  }
 }
 .section-5 .section-5-wrapper {
   max-width: 1440px;
@@ -680,6 +746,7 @@
 @media (max-width: 1060px) {
   .howToGetHereSection {
     flex-direction: column;
+    height: 100%;
   }
 }
 .howToGetHereSection__googleMap {
@@ -694,12 +761,13 @@
 @media (max-width: 1060px) {
   .howToGetHereSection__googleMap {
     width: 100%;
+    height: 650px;
   }
 }
 .howToGetHereSection__mapDetails {
   position: absolute;
   bottom: 28px;
-  left: 28px;
+  left: calc(50% - 212px);
   background-color: #211f1a;
   border-radius: 20px;
   padding: 24px 40px 24px 24px;
@@ -728,6 +796,7 @@
     border: none;
     width: 100%;
     text-align: left;
+    padding: 40px 24px;
   }
 }
 .howToGetHereSection__body h1 {
@@ -892,7 +961,7 @@ header {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .section-4-slider-container {
@@ -910,6 +979,11 @@ header {
 .section-4-slider .slider-item {
   padding: 4px 16px;
   border-right: 1px solid #211f1a;
+  display: flex;
+  align-items: center;
+}
+.section-4-slider .slider-item img {
+  padding-right: 8px;
 }
 
 .footer {

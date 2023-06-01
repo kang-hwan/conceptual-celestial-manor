@@ -22,6 +22,9 @@ $mobile-view: 1060px;
 .large-logo {
   max-width: 98%;
   padding: 0 12px;
+  @media (max-width: $mobile-view) {
+    display: none;
+  }
 }
 
 //   ! Section 1
@@ -35,6 +38,8 @@ $mobile-view: 1060px;
   @media (max-width: $mobile-view) {
     flex-direction: column;
     height: 100%;
+    border: none;
+    margin-top: 0;
   }
   .section-1a {
     border-right: 1px solid c.$black-theme;
@@ -44,6 +49,7 @@ $mobile-view: 1060px;
     @media (max-width: $mobile-view) {
       width: 100%;
       justify-content: center;
+      border: none;
     }
     .section-1a-wrapper {
       background-image: url(../Images/home-gradient.svg);
@@ -55,6 +61,11 @@ $mobile-view: 1060px;
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+        justify-content: center;
+        border: none;
+      }
       .svgMapContainer {
         margin-right: 60px;
         border: 2px black solid;
@@ -64,6 +75,9 @@ $mobile-view: 1060px;
         overflow: hidden;
         object-fit: contain;
         position: relative;
+        @media (max-width: $mobile-view) {
+          margin: 40px 0;
+        }
         .location-map {
           transform: rotate(45deg);
           object-fit: contain;
@@ -98,6 +112,9 @@ $mobile-view: 1060px;
       justify-content: space-around;
       padding-left: 60px;
       max-width: 550px;
+      @media (max-width: $mobile-view) {
+        padding: 40px 0;
+      }
       .section-1b-text {
         width: 90%;
         text-align: center;
@@ -109,6 +126,11 @@ $mobile-view: 1060px;
         p {
           margin: 32px 0 48px 0;
           font-size: 16px;
+        }
+      }
+      .small-logo-container {
+        @media (max-width: $mobile-view) {
+          display: none;
         }
       }
     }
@@ -129,7 +151,7 @@ $mobile-view: 1060px;
     border-right: 1px solid c.$black-theme;
     @media (max-width: $mobile-view) {
       width: 100%;
-      height: 365px;
+      height: 100%;
     }
     .section-2a-wrapper {
       background-color: #94a689;
@@ -138,6 +160,11 @@ $mobile-view: 1060px;
       padding: 100px 0 0 24px;
       display: flex;
       justify-content: flex-end;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+        height: 100%;
+        padding: 40px 0 40px 24px;
+      }
       .section-2a-copy {
         width: 800px;
         display: flex;
@@ -166,13 +193,17 @@ $mobile-view: 1060px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 80px;
+    padding-top: 70px;
     @media (max-width: $mobile-view) {
       width: 100%;
+      padding: 40px 0;
     }
     .section-2b-wrapper {
       max-width: 540px;
       padding: 24px;
+      @media (max-width: $mobile-view) {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -187,6 +218,9 @@ $mobile-view: 1060px;
     height: 576px;
     width: 100%;
     display: flex;
+    @media (max-width: $mobile-view) {
+      display: none;
+    }
     .section-3a-left {
       width: 40%;
       position: relative;
@@ -392,6 +426,11 @@ $mobile-view: 1060px;
   &__body {
     text-align: center;
     width: 70%;
+    @media (max-width: $mobile-view) {
+      width: 100%;
+      text-align: left;
+      padding: 40px 24px;
+    }
     h2 {
       font-size: 52px;
       font-weight: 400;
@@ -404,6 +443,10 @@ $mobile-view: 1060px;
     a {
       margin-top: 74px;
       margin-bottom: 400px;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 }
@@ -534,7 +577,9 @@ $mobile-view: 1060px;
   padding-top: 280px;
   padding-bottom: 320px;
   color: #fffcfa;
-
+  @media (max-width: $mobile-view) {
+    padding: 40px 0;
+  }
   .section-5-wrapper {
     max-width: 1440px;
     display: flex;
@@ -667,6 +712,7 @@ $mobile-view: 1060px;
   border-top: 1px solid c.$black-theme;
   @media (max-width: $mobile-view) {
     flex-direction: column;
+    height: 100%;
   }
   &__googleMap {
     height: 100%;
@@ -678,12 +724,13 @@ $mobile-view: 1060px;
     filter: grayscale(100%);
     @media (max-width: $mobile-view) {
       width: 100%;
+      height: 650px;
     }
   }
   &__mapDetails {
     position: absolute;
     bottom: 28px;
-    left: 28px;
+    left: calc(50% - 424px / 2);
     background-color: c.$black-theme;
     border-radius: 20px;
     padding: 24px 40px 24px 24px;
@@ -710,6 +757,7 @@ $mobile-view: 1060px;
       border: none;
       width: 100%;
       text-align: left;
+      padding: 40px 24px;
     }
     h1 {
       font-size: 52px;

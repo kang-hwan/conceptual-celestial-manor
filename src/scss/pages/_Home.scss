@@ -1,5 +1,7 @@
 @use "../abstracts/colors" as c;
 
+$mobile-view: 1060px;
+
 .page-home {
   display: flex;
   flex-direction: column;
@@ -26,11 +28,19 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  @media (max-width: $mobile-view) {
+    flex-direction: column;
+    height: 100%;
+  }
   .section-1a {
     border-right: 1px solid c.$black-theme;
     width: 58%;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: $mobile-view) {
+      width: 100%;
+      justify-content: center;
+    }
     .section-1a-wrapper {
       background-image: url(../Images/home-gradient.svg);
       background-size: cover;
@@ -61,7 +71,7 @@
         .location-map-marker {
           position: absolute;
           top: 50%;
-          left: 50%;
+          left: calc(50% - 20px);
           width: 40px;
           height: 40px;
         }
@@ -72,6 +82,10 @@
     width: 42%;
     display: flex;
     justify-content: flex-start;
+    @media (max-width: $mobile-view) {
+      width: 100%;
+      justify-content: center;
+    }
     .section-1b-wrapper {
       height: 100%;
       display: flex;
@@ -102,9 +116,17 @@
   display: flex;
   width: 100%;
   height: 900px;
+  @media (max-width: $mobile-view) {
+    flex-direction: column;
+    height: 100%;
+  }
   .section-2a {
     width: 58%;
     border-right: 1px solid c.$black-theme;
+    @media (max-width: $mobile-view) {
+      width: 100%;
+      height: 365px;
+    }
     .section-2a-wrapper {
       background-color: #94a689;
       height: 100%;
@@ -141,6 +163,9 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 80px;
+    @media (max-width: $mobile-view) {
+      width: 100%;
+    }
     .section-2b-wrapper {
       max-width: 540px;
       padding: 24px;
@@ -505,14 +530,21 @@
   padding-top: 280px;
   padding-bottom: 320px;
   color: #fffcfa;
+
   .section-5-wrapper {
     max-width: 1440px;
     display: flex;
+    @media (max-width: $mobile-view) {
+      flex-direction: column;
+    }
     .section-5a {
       display: flex;
       flex-direction: column;
       width: 36%;
       padding: 12px;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+      }
       h3 {
         font-weight: 400;
         font-size: 20px;
@@ -540,6 +572,9 @@
       margin-top: 24px;
       width: 34%;
       padding: 12px;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+      }
       h3 {
         font-weight: 400;
         font-size: 20px;
@@ -566,6 +601,9 @@
       flex-direction: column;
       width: 40%;
       padding: 12px;
+      @media (max-width: $mobile-view) {
+        width: 100%;
+      }
       h3 {
         font-weight: 400;
         font-size: 20px;
@@ -619,10 +657,13 @@
 // ! Section 7
 .howToGetHereSection {
   text-align: center;
-  height: 800px;
+  min-height: 800px;
   display: flex;
   align-items: center;
   border-top: 1px solid c.$black-theme;
+  @media (max-width: $mobile-view) {
+    flex-direction: column;
+  }
   &__googleMap {
     height: 100%;
     width: 50%;
@@ -631,6 +672,9 @@
     display: flex;
     align-items: center;
     filter: grayscale(100%);
+    @media (max-width: $mobile-view) {
+      width: 100%;
+    }
   }
   &__mapDetails {
     position: absolute;
@@ -658,6 +702,11 @@
     justify-content: center;
     padding: 0 48px;
     border-left: solid 1px c.$black-theme;
+    @media (max-width: $mobile-view) {
+      border: none;
+      width: 100%;
+      text-align: left;
+    }
     h1 {
       font-size: 52px;
       font-weight: 400;

@@ -20,6 +20,7 @@ import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
 import CardSlider from "../Components/CardSlider";
 import Footer from "../Components/Footer";
+import GridToCarousel from "../Components/GridToCarousel";
 
 export default function Home() {
   return (
@@ -88,7 +89,7 @@ export default function Home() {
         </div>
       </section>
       <section className="gridImageSection">
-        <div className="gridImageSection__Grid">
+        <div className="gridImageSection--desktop">
           <div className="section-3a-left">
             <img src={image3a} alt="3a" />
           </div>
@@ -110,6 +111,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="gridImageSection--mobile">
+          <GridToCarousel />
         </div>
         <div className="gridImageSection__body">
           <h2>Welcome to Celestial Manor*</h2>

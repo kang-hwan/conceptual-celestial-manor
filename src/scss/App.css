@@ -236,30 +236,30 @@
   align-items: center;
   margin-top: 206px;
 }
-.gridImageSection__Grid {
+.gridImageSection--desktop {
   height: 576px;
   width: 100%;
   display: flex;
 }
 @media (max-width: 1060px) {
-  .gridImageSection__Grid {
+  .gridImageSection--desktop {
     display: none;
   }
 }
-.gridImageSection__Grid .section-3a-left {
+.gridImageSection--desktop .section-3a-left {
   width: 40%;
   position: relative;
 }
-.gridImageSection__Grid .section-3a-left img {
+.gridImageSection--desktop .section-3a-left img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
 }
-.gridImageSection__Grid .section-3a-left:hover {
+.gridImageSection--desktop .section-3a-left:hover {
   transition: 2s;
 }
-.gridImageSection__Grid .section-3a-left:hover::before {
+.gridImageSection--desktop .section-3a-left:hover::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -269,7 +269,7 @@
   background: linear-gradient(transparent, black);
   transition-duration: 2s;
 }
-.gridImageSection__Grid .section-3a-left:hover::after {
+.gridImageSection--desktop .section-3a-left:hover::after {
   content: "Celestial Suite - Living";
   position: absolute;
   margin: 0 auto;
@@ -283,6 +283,14 @@
   height: 36px;
   background: black;
   border-radius: 40px;
+}
+.gridImageSection--mobile {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .gridImageSection--mobile {
+    display: block;
+  }
 }
 .gridImageSection .section-3a-right {
   width: 60%;
@@ -1005,6 +1013,29 @@ header {
 }
 .footer__wrapper {
   text-align: center;
+}
+
+.carousel {
+  width: 100vw;
+}
+
+.carouselImageContainer {
+  position: relative;
+}
+.carouselImageContainer .carouselImg {
+  width: 100vw;
+  height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+.carouselImageContainer .carouselImg::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(transparent, black);
 }
 
 *,

@@ -216,13 +216,14 @@ $mobile-view: 1060px;
   flex-direction: column;
   align-items: center;
   margin-top: 206px;
-  &__Grid {
+  &--desktop {
     height: 576px;
     width: 100%;
     display: flex;
     @media (max-width: $mobile-view) {
       display: none;
     }
+
     .section-3a-left {
       width: 40%;
       position: relative;
@@ -259,6 +260,12 @@ $mobile-view: 1060px;
         background: black;
         border-radius: 40px;
       }
+    }
+  }
+  &--mobile {
+    display: none;
+    @media (max-width: $mobile-view) {
+      display: block;
     }
   }
   .section-3a-right {

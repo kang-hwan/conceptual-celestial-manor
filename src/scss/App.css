@@ -909,6 +909,7 @@ header {
   color: #211f1a;
   width: 90%;
   height: auto;
+  margin-top: 12px;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
@@ -1042,6 +1043,7 @@ header {
 *::after,
 *::before {
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {

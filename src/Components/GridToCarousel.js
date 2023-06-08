@@ -25,7 +25,9 @@ export default function GridToCarousel() {
             alt="First slide"
           />
           <Carousel.Caption>
-            <h3>Celestial Suite - Living</h3>
+            <div className="carouselCaptionContainer">
+              <h3 className="carouselCaption">Celestial Suite - Living</h3>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carouselImageContainer">
@@ -34,9 +36,10 @@ export default function GridToCarousel() {
             src={Image2}
             alt="Second slide"
           />
-
           <Carousel.Caption>
-            <h3>Celestial Deluxe - Lounge</h3>
+            <div className="carouselCaptionContainer">
+              <h3 className="carouselCaption">Celestial Deluxe - Lounge</h3>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carouselImageContainer">
@@ -46,7 +49,9 @@ export default function GridToCarousel() {
             alt="Third slide"
           />
           <Carousel.Caption>
-            <h3>Breakfast</h3>
+            <div className="carouselCaptionContainer">
+              <h3 className="carouselCaption">Breakfast</h3>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carouselImageContainer">
@@ -56,7 +61,9 @@ export default function GridToCarousel() {
             alt="Fourth slide"
           />
           <Carousel.Caption>
-            <h3>Celestial Suite - Bath</h3>
+            <div className="carouselCaptionContainer">
+              <h3 className="carouselCaption">Celestial Suite - Bath</h3>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="carouselImageContainer">
@@ -66,7 +73,9 @@ export default function GridToCarousel() {
             alt="Fifth slide"
           />
           <Carousel.Caption>
-            <h3>Celestial Suite - Bedroom</h3>
+            <div className="carouselCaptionContainer">
+              <h3 className="carouselCaption">Celestial Suite - Bedroom</h3>
+            </div>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>

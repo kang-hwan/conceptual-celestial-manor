@@ -23,9 +23,12 @@
 .carouselCaptionContainer {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .carouselCaption {
+  position: absolute;
+  bottom: -8px;
   text-align: center;
   font-size: 12px;
   background-color: black;

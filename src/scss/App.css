@@ -714,6 +714,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+  padding: 16px 0;
 }
 .section-5 .section-5-wrapper .section-5c a {
   color: #fffcfa;
@@ -1042,9 +1043,12 @@ header {
 .carouselCaptionContainer {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .carouselCaption {
+  position: absolute;
+  bottom: -8px;
   text-align: center;
   font-size: 12px;
   background-color: black;

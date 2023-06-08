@@ -17,7 +17,7 @@ export default function GridToCarousel() {
 
   return (
     <div className="carousel">
-      <Carousel activeIndex={index} onSelect={handleSelect}>
+      <Carousel activeIndex={index} onSelect={handleSelect} indicators={false}>
         <Carousel.Item className="carouselImageContainer">
           <img
             className="carouselImg d-block w-100"

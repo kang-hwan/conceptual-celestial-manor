@@ -215,7 +215,7 @@ $mobile-view: 1060px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 206px;
+  margin-top: 104px;
   &--desktop {
     height: 576px;
     width: 100%;
@@ -438,7 +438,7 @@ $mobile-view: 1060px;
     @media (max-width: $mobile-view) {
       width: 100%;
       text-align: left;
-      padding: 40px 24px;
+      padding: 0 24px;
     }
     h2 {
       font-size: 52px;
@@ -450,8 +450,8 @@ $mobile-view: 1060px;
       margin: 32px 0;
     }
     a {
-      margin-top: 74px;
-      margin-bottom: 400px;
+      margin-top: 20px;
+      margin-bottom: 100px;
       @media (max-width: $mobile-view) {
         width: 100%;
         text-align: center;

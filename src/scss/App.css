@@ -234,7 +234,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 206px;
+  margin-top: 104px;
 }
 .gridImageSection--desktop {
   height: 576px;
@@ -467,7 +467,7 @@
   .gridImageSection__body {
     width: 100%;
     text-align: left;
-    padding: 40px 24px;
+    padding: 0 24px;
   }
 }
 .gridImageSection__body h2 {
@@ -480,8 +480,8 @@
   margin: 32px 0;
 }
 .gridImageSection__body a {
-  margin-top: 74px;
-  margin-bottom: 400px;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 @media (max-width: 1060px) {
   .gridImageSection__body a {

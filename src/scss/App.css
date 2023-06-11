@@ -924,13 +924,13 @@ header {
 }
 
 .accordion-item {
-  padding: 24px 0 24px 0;
+  padding: 12px 0 12px 0;
   border-bottom: 1px solid #211f1a;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
 .accordion-item.show {
-  padding: 24px 0 24px 0;
+  padding: 12px 0 12px 0;
   border-bottom: 1px solid #211f1a;
   color: #211f1a;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -953,6 +953,11 @@ header {
   font-size: 30px;
   margin: 0;
 }
+@media (max-width: 1060px) {
+  .accordion-title h2 {
+    font-size: 20px;
+  }
+}
 
 .accordion-content {
   font-size: 16px;
@@ -970,7 +975,6 @@ header {
   color: #211f1a;
   width: 90%;
   height: auto;
-  margin-top: 12px;
   max-height: 9999px;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }

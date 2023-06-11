@@ -3,13 +3,13 @@
 $mobile-view: 1060px;
 
 .accordion-item {
-  padding: 24px 0 24px 0;
+  padding: 12px 0 12px 0;
   border-bottom: 1px solid c.$black-theme;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
 }
 
 .accordion-item.show {
-  padding: 24px 0 24px 0;
+  padding: 12px 0 12px 0;
   border-bottom: 1px solid c.$black-theme;
   color: c.$black-theme;
   transition: all 0.5s cubic-bezier(0, 1, 0, 1);
@@ -28,6 +28,9 @@ $mobile-view: 1060px;
     font-weight: 500;
     font-size: 30px;
     margin: 0;
+    @media (max-width: $mobile-view) {
+      font-size: 20px;
+    }
   }
 }
 
@@ -47,7 +50,6 @@ $mobile-view: 1060px;
   color: c.$black-theme;
   width: 90%;
   height: auto;
-  margin-top: 12px;
   max-height: 9999px;
   // background-color: c.$black-theme;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);

@@ -18,9 +18,8 @@ import image5c from "../Images/image-5c.png";
 import "../scss/App.css";
 import Accordion from "../Components/Accordion";
 import InfiniteSlider from "../Components/InfiniteSlider";
-import CardSlider from "../Components/CardSlider";
 import Footer from "../Components/Footer";
-import GridToCarousel from "../Components/GridToCarousel";
+import MobileCarousel from "../Components/MobileCarousel";
 
 export default function Home() {
   return (
@@ -113,7 +112,7 @@ export default function Home() {
           </div>
         </div>
         <div className="gridImageSection--mobile">
-          <GridToCarousel />
+          <MobileCarousel />
         </div>
         <div className="gridImageSection__body">
           <h2>Welcome to Celestial Manor*</h2>
@@ -244,18 +243,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="cardSliderSection">
-        <h1 className="cardSliderSection__heading">
-          Let's pick you up the best rooms
-        </h1>
-        <p className="cardSliderSection__body">
-          Whether staying for business or leisure, discover our most inspiring
-          properties all around the world.
-        </p>
-        <div className="cardSliderSection__module">
-          <CardSlider />
-        </div>
-      </section>
+
       <section className="howToGetHereSection">
         <div className="howToGetHereSection__googleMap">
           <iframe

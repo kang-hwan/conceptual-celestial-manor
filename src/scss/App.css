@@ -1012,9 +1012,29 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 32px 0;
 }
 .footer__wrapper {
   text-align: center;
+  width: 85%;
+}
+
+.footerLogo--desktop {
+  margin: 32px 0;
+}
+@media (max-width: 1060px) {
+  .footerLogo--desktop {
+    display: none;
+  }
+}
+.footerLogo--mobile {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .footerLogo--mobile {
+    display: inline;
+    margin: 32px 0;
+  }
 }
 
 .carousel {

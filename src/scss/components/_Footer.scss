@@ -1,5 +1,7 @@
 @use "../abstracts/colors" as c;
 
+$mobile-view: 1060px;
+
 .footer {
   background-color: c.$black-theme;
   width: 100%;
@@ -8,7 +10,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 32px 0;
+
   &__wrapper {
     text-align: center;
+    width: 85%;
+  }
+}
+
+.footerLogo {
+  &--desktop {
+    margin: 32px 0;
+    @media (max-width: $mobile-view) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+    @media (max-width: $mobile-view) {
+      display: inline;
+      margin: 32px 0;
+    }
   }
 }

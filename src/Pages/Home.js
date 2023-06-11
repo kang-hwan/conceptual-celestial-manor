@@ -144,36 +144,52 @@ export default function Home() {
           <div className="section-4a-top">
             <div className="s4a-top-1">
               <h2>Crafted by Manor* Co.</h2>
-              <p>
+              <p className="section4Body--desktop">
+                Experience the artistry and attention to detail of Manor Co.,
+                renowned creators of luxurious hotels.
+              </p>
+              <p className="section4Body--mobile">
                 Experience the artistry and attention to detail of Manor Co.,
                 renowned creators of luxurious hotels.
               </p>
             </div>
             <div className="s4a-top-2">
               <h2>Exclusive & Prestigous</h2>
-              <p>
+              <p className="section4Body--desktop">
                 Indulge in the exclusivity and prestige that Celestial Manor
                 offers. Immerse yourself in a world of refined elegance and
                 personalized service tailored to your desires.
+              </p>
+              <p className="section4Body--mobile">
+                Indulge in the exclusivity and prestige that Celestial Manor
+                offers.
               </p>
             </div>
           </div>
           <div className="section-4a-bottom">
             <div className="s4a-bottom-1">
               <h2>Top-notch Experience</h2>
-              <p>
+              <p className="section4Body--desktop">
                 Expect nothing less than a top-notch experience at Celestial
                 Manor. From the moment you arrive, our dedicated team will go
                 above and beyond to ensure your stay is exceptional.
               </p>
+              <p className="section4Body--mobile">
+                Expect nothing less than a top-notch experience at Celestial
+                Manor.
+              </p>
             </div>
             <div className="s4a-bottom-2">
               <h2>Coffee Central</h2>
-              <p>
+              <p className="section4Body--desktop">
                 Discover the true essence of Melbourne's coffee culture at
                 Celestial Manor, your ultimate Coffee Central. Savor the finest
                 blends, expertly brewed by our skilled baristas, in a chic and
                 inviting atmosphere.
+              </p>
+              <p className="section4Body--mobile">
+                Savor the finest blends, expertly brewed by our skilled
+                baristas, in a chic and inviting atmosphere.
               </p>
             </div>
           </div>

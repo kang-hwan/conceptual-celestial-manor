@@ -600,6 +600,20 @@
   transition: 1s;
 }
 
+@media (max-width: 1060px) {
+  .section4Body--desktop {
+    display: none;
+  }
+}
+.section4Body--mobile {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .section4Body--mobile {
+    display: block;
+  }
+}
+
 .section-5 {
   display: flex;
   justify-content: center;

@@ -577,6 +577,20 @@ $mobile-view: 1060px;
   }
 }
 
+.section4Body {
+  &--desktop {
+    @media (max-width: $mobile-view) {
+      display: none;
+    }
+  }
+  &--mobile {
+    display: none;
+    @media (max-width: $mobile-view) {
+      display: block;
+    }
+  }
+}
+
 // ! Section 5
 .section-5 {
   display: flex;

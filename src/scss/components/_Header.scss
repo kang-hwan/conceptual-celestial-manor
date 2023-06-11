@@ -68,8 +68,8 @@ header {
           .hamburger {
             width: 24px;
             height: 24px;
-            background-color: c.$bg-color;
-            color: c.$bg-color;
+            // background-color: c.$bg-color;
+            color: colors.$bg-color;
             border: none;
             .hamburgerBar {
               width: 12px;

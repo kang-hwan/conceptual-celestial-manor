@@ -1,8 +1,6 @@
 @use "../abstracts/colors" as c;
 
-.accordion-wrapper {
-  // width: 612px;
-}
+$mobile-view: 1060px;
 
 .accordion-item {
   padding: 24px 0 24px 0;
@@ -23,6 +21,9 @@
   align-items: center;
   padding-right: 24px;
   cursor: pointer;
+  @media (max-width: $mobile-view) {
+    font-size: 18px;
+  }
   h2 {
     font-weight: 500;
     font-size: 30px;

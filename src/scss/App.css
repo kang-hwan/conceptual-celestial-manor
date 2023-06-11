@@ -913,7 +913,7 @@ header {
   .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger {
     width: 24px;
     height: 24px;
-    background-color: none;
+    color: #fffcfa;
     border: none;
   }
   .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger .hamburgerBar {
@@ -942,6 +942,11 @@ header {
   align-items: center;
   padding-right: 24px;
   cursor: pointer;
+}
+@media (max-width: 1060px) {
+  .accordion-title {
+    font-size: 18px;
+  }
 }
 .accordion-title h2 {
   font-weight: 500;
@@ -1128,7 +1133,7 @@ header {
 
 .carouselCaption {
   position: absolute;
-  bottom: -8px;
+  bottom: -24px;
   text-align: center;
   font-size: 12px;
   background-color: black;

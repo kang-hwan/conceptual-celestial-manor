@@ -36,7 +36,7 @@ export default function Header() {
           <img src={headerLogoMobile} alt="header-logo-mobile" />
         </div>
         <div className="header-wrapper--mobile__navMenu">
-          <a>BOOK NOW</a>
+          <a href="https://github.com/kang-hwan">BOOK NOW</a>
           <div className="hamburgerContainer">
             <button className="hamburger">
               <span className="hamburgerBar"></span>

@@ -37,7 +37,7 @@
   .section-1 {
     flex-direction: column;
     height: 100%;
-    border: none;
+    border-top: none;
     margin-top: 0;
   }
 }
@@ -853,33 +853,74 @@ header {
   z-index: 9999;
 }
 
-.header-wrapper {
+.header-wrapper--desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1440px;
 }
-.header-wrapper ul {
+@media (max-width: 1060px) {
+  .header-wrapper--desktop {
+    display: none;
+  }
+}
+.header-wrapper--desktop ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding-left: 24px;
 }
-.header-wrapper ul li {
+.header-wrapper--desktop ul li {
   padding: 16px 12px;
 }
-.header-wrapper ul li a {
+.header-wrapper--desktop ul li a {
   text-decoration: none;
   color: #211f1a;
   font-size: 16px;
   font-weight: bold;
 }
-.header-wrapper .nav-booking {
+.header-wrapper--desktop .nav-booking {
   text-decoration: none;
   color: #211f1a;
   font-size: 16px;
   font-weight: bold;
   padding: 0 24px;
+}
+.header-wrapper--mobile {
+  display: none;
+}
+@media (max-width: 1060px) {
+  .header-wrapper--mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 24px;
+    height: 64px;
+  }
+  .header-wrapper--mobile__navMenu {
+    display: flex;
+    align-items: center;
+  }
+  .header-wrapper--mobile__navMenu a {
+    font-weight: 700;
+  }
+  .header-wrapper--mobile__navMenu .hamburgerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger {
+    width: 24px;
+    height: 24px;
+    background-color: none;
+    border: none;
+  }
+  .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger .hamburgerBar {
+    width: 12px;
+    background-color: black;
+    height: 8px;
+  }
 }
 
 .accordion-item {
@@ -1027,6 +1068,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 32px 0;
+}
+@media (max-width: 1060px) {
+  .footer {
+    height: 380px;
+  }
 }
 .footer__wrapper {
   text-align: center;

@@ -38,7 +38,7 @@ $mobile-view: 1060px;
   @media (max-width: $mobile-view) {
     flex-direction: column;
     height: 100%;
-    border: none;
+    border-top: none;
     margin-top: 0;
   }
   .section-1a {

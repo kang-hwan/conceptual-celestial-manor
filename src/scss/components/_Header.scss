@@ -1,5 +1,7 @@
 @use "../abstracts/colors";
 
+$mobile-view: 1060px;
+
 header {
   display: flex;
   justify-content: center;
@@ -11,30 +13,72 @@ header {
 }
 
 .header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1440px;
-  ul {
+  &--desktop {
     display: flex;
-    list-style: none;
-    margin: 0;
-    padding-left: 24px;
-    li {
-      padding: 16px 12px;
-      a {
-        text-decoration: none;
-        color: colors.$black-theme;
-        font-size: 16px;
-        font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    @media (max-width: $mobile-view) {
+      display: none;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding-left: 24px;
+      li {
+        padding: 16px 12px;
+        a {
+          text-decoration: none;
+          color: colors.$black-theme;
+          font-size: 16px;
+          font-weight: bold;
+        }
       }
     }
+    .nav-booking {
+      text-decoration: none;
+      color: colors.$black-theme;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 0 24px;
+    }
   }
-  .nav-booking {
-    text-decoration: none;
-    color: colors.$black-theme;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 0 24px;
+
+  &--mobile {
+    display: none;
+    @media (max-width: $mobile-view) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 24px;
+      height: 64px;
+      &__navMenu {
+        display: flex;
+        align-items: center;
+        a {
+          font-weight: 700;
+        }
+        .hamburgerContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .hamburger {
+            width: 24px;
+            height: 24px;
+            background-color: c.$bg-color;
+            color: c.$bg-color;
+            border: none;
+            .hamburgerBar {
+              width: 12px;
+              background-color: black;
+              height: 8px;
+            }
+          }
+        }
+      }
+    }
   }
 }

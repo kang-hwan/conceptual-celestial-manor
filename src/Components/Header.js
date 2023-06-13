@@ -45,13 +45,9 @@ export default function Header() {
         <div className="header-wrapper--mobile__navMenu">
           <a href="https://github.com/kang-hwan">BOOK NOW</a>
           <div className="hamburgerContainer" onClick={isActive}>
-            <div className={toggle ? "hamburger--active" : "hamburger"}>
-              <span
-                className={toggle ? "hamburger__Bar--active" : "hamburger__Bar"}
-              ></span>
-              <span
-                className={toggle ? "hamburger__Bar--active" : "hamburger__Bar"}
-              ></span>
+            <div className="hamburger">
+              <span className="hamburger__Bar"></span>
+              <span className="hamburger__Bar"></span>
             </div>
           </div>
           <div className={toggle ? "mobileMenu--active" : "mobileMenu"}>

@@ -36,7 +36,7 @@
 @media (max-width: 1060px) {
   .section-1 {
     border-top: none;
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100%;
     margin-top: 0;
   }
@@ -71,6 +71,7 @@
     height: 486px;
     justify-content: center;
     border: none;
+    border-radius: 0;
   }
 }
 .section-1 .section-1a .section-1a-wrapper .svgMapContainer {

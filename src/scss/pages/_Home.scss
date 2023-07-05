@@ -177,6 +177,9 @@ $mobile-view: 1060px;
           font-size: 52px;
           font-weight: 400;
           width: 70%;
+          @media (max-width: $mobile-view) {
+            font-size: 32px;
+          }
         }
         p {
           margin: 32px 0;
@@ -620,8 +623,8 @@ $mobile-view: 1060px;
       h3 {
         font-weight: 400;
         font-size: 20px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
         border-bottom: 2px solid #fffcfa;
       }
       p {
@@ -636,6 +639,7 @@ $mobile-view: 1060px;
         color: #fffcfa;
         font-size: 12px;
         margin-top: 20px;
+        margin-bottom: 40px;
       }
     }
     .section-5b {
@@ -666,6 +670,7 @@ $mobile-view: 1060px;
         color: #fffcfa;
         font-size: 12px;
         margin-top: 20px;
+        margin-bottom: 40px;
       }
     }
     .section-5c {
@@ -696,6 +701,7 @@ $mobile-view: 1060px;
         color: #fffcfa;
         font-size: 12px;
         margin-top: 20px;
+        margin-bottom: 40px;
       }
     }
   }

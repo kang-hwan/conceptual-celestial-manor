@@ -198,6 +198,11 @@
   font-weight: 400;
   width: 70%;
 }
+@media (max-width: 1060px) {
+  .section-2 .section-2a .section-2a-wrapper .section-2a-copy h2 {
+    font-size: 32px;
+  }
+}
 .section-2 .section-2a .section-2a-wrapper .section-2a-copy p {
   margin: 32px 0;
   font-size: 24px;
@@ -651,8 +656,8 @@
 .section-5 .section-5-wrapper .section-5a h3 {
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 16px;
-  padding-bottom: 16px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #fffcfa;
 }
 .section-5 .section-5-wrapper .section-5a p {
@@ -668,6 +673,7 @@
   color: #fffcfa;
   font-size: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .section-5 .section-5-wrapper .section-5b {
   display: flex;
@@ -701,6 +707,7 @@
   color: #fffcfa;
   font-size: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .section-5 .section-5-wrapper .section-5c {
   display: flex;
@@ -734,6 +741,7 @@
   color: #fffcfa;
   font-size: 12px;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .cardSliderSection {
@@ -929,22 +937,6 @@ header {
   .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger__Bar--active {
     background-color: white;
   }
-  .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger--active .hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    padding: 4px 0;
-    color: #fffcfa;
-    border: none;
-  }
-  .header-wrapper--mobile__navMenu .hamburgerContainer .hamburger--active .hamburger__Bar {
-    height: 3px;
-    width: 100%;
-    background-color: black;
-  }
 }
 
 .mobileMenu {
@@ -953,9 +945,10 @@ header {
 @media (max-width: 1060px) {
   .mobileMenu {
     position: absolute;
-    height: 0;
+    overflow: hidden;
+    max-height: 0;
     width: 100vw;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: all 500ms cubic-bezier(0, 1, 0, 1);
   }
   .mobileMenu--active {
     z-index: 1;
@@ -966,12 +959,12 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 65px;
+    top: 64px;
     width: 100vw;
     height: 100vh;
     background-color: #211f1a;
     color: white;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    transition: all 500ms cubic-bezier(0, 1, 0, 1);
   }
   .mobileMenu--active ul {
     width: 60%;
@@ -1031,6 +1024,7 @@ header {
 .accordion-content {
   font-size: 16px;
   line-height: 28px;
+  padding-top: 8px;
   width: 90%;
   max-height: 0;
   color: #211f1a;
@@ -1042,6 +1036,7 @@ header {
   font-size: 16px;
   line-height: 28px;
   color: #211f1a;
+  padding-top: 8px;
   width: 90%;
   height: auto;
   max-height: 9999px;

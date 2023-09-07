@@ -1,6 +1,9 @@
-// Pages & Components Style Sheets
+// Pages
 @use "./pages/Home";
 @use "./pages/Accommodation";
+@use "./pages/EatAndDrink";
+
+// Components
 @use "./components/Header";
 @use "./components/Accordion";
 @use "./components/CardSlider";
@@ -8,6 +11,7 @@
 @use "./components/Footer";
 @use "./components/GridToCarousel";
 @use "./components/AccomInfoCard";
+@use "./components/ChefInfoCard";
 
 // Abstracts
 @use "./abstracts/colors";

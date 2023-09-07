@@ -43,10 +43,10 @@ export default function Home() {
         <div className="section-1b">
           <div className="section-1b-wrapper">
             <div className="section-1b-text">
-              <h2>
+              <h1 className="typo-h4">
                 Live the high life in the breathtaking world of Melbourne. This
                 is where you can touch feel, and imagine.
-              </h2>
+              </h1>
               <p>Discover our collection of your stay.</p>
               <a
                 href="https://celestialmanor-booking.netlify.app/"

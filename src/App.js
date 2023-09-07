@@ -3,6 +3,9 @@ import Header from "./Components/Header";
 import Home from "./Pages/Home";
 import "./scss/App.css";
 import Accommodation from "./Pages/Accommodation";
+import EatAndDrink from "./Pages/EatAndDrink";
+
+// TODO: Fix large logo size
 
 function App() {
   return (
@@ -11,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/accommodation" element={<Accommodation />} />
+        <Route path="/eatAndDrink" element={<EatAndDrink />} />
       </Routes>
     </div>
   );

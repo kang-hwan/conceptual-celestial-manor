@@ -1,0 +1,21 @@
+@use "../abstracts/colors";
+
+.ChefInfoCardContainer {
+  max-width: 1440px;
+  display: flex;
+  text-align: left;
+}
+
+.ChefInfoCard {
+  width: 33%;
+  padding: 16px;
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+  h4 {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid colors.$black-theme;
+  }
+}

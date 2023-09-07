@@ -17,7 +17,9 @@ const AccomInfoCard = () => {
           Experience the perfect balance of refined aesthetics and modern
           conveniences in these well-appointed rooms.
         </p>
-        <a className="typo-link">Browse Our Celestial Deluxe Collection</a>
+        <a className="typo-link" href="https://celestial-manor.netlify.app/">
+          Browse Our Celestial Deluxe Collection
+        </a>
       </div>
       <div className="AccomInfoCard">
         <img src={dummyImg} />
@@ -34,7 +36,9 @@ const AccomInfoCard = () => {
           Indulge in the extra comfort of plush bedding, stylish furnishings,
           and additional features that enhance your overall experience.
         </p>
-        <a className="typo-link">Browse Our Celestial Deluxe Collection</a>
+        <a className="typo-link" href="https://celestial-manor.netlify.app/">
+          Browse Our Celestial Deluxe Collection
+        </a>
       </div>
       <div className="AccomInfoCard">
         <img src={dummyImg} />
@@ -49,7 +53,9 @@ const AccomInfoCard = () => {
           Experience the perfect balance of refined aesthetics and modern
           conveniences in these well-appointed rooms.
         </p>
-        <a className="typo-link">Browse Our Celestial Deluxe Collection</a>
+        <a className="typo-link" href="https://celestial-manor.netlify.app/">
+          Browse Our Celestial Deluxe Collection
+        </a>
       </div>
     </div>
   );

@@ -49,7 +49,7 @@ const Accommodation = () => {
           <p className="typo-b1">
             Join us, and find your place in the cosmos at Celestial Manor.
           </p>
-          <a href="#" className="typo-link">
+          <a href="https://celestial-manor.netlify.app/" className="typo-link">
             Learn More
           </a>
         </div>
@@ -90,7 +90,12 @@ const Accommodation = () => {
               offers. Immerse yourself in a world of refined elegance and
               personalized service tailored to your desires.
             </p>
-            <a className="typo-link">Browse Our Celestial Deluxe Collection</a>
+            <a
+              href="https://celestial-manor.netlify.app/"
+              className="typo-link"
+            >
+              Browse Our Celestial Deluxe Collection
+            </a>
           </div>
           <div></div>
         </div>

@@ -5,7 +5,7 @@ const AccomInfoCard = () => {
   return (
     <div className="AccomInfoCardContainer">
       <div className="AccomInfoCard">
-        <img src={dummyImg} />
+        <img src={dummyImg} alt="Classic Range" />
         <h4 className="typo-h4 ">CLASSIC COLLECTION</h4>
         <p>
           The Celestial Classic rooms offer timeless elegance and comfort,
@@ -22,7 +22,7 @@ const AccomInfoCard = () => {
         </a>
       </div>
       <div className="AccomInfoCard">
-        <img src={dummyImg} />
+        <img src={dummyImg} alt="Deluxe Range" />
         <h4 className="typo-h4 ">DELUXE COLLECTION</h4>
         <p>
           The Celestial Deluxe rooms elevate your stay to a new level of luxury,
@@ -41,7 +41,7 @@ const AccomInfoCard = () => {
         </a>
       </div>
       <div className="AccomInfoCard">
-        <img src={dummyImg} />
+        <img src={dummyImg} alt="Suite Range" />
         <h4 className="typo-h4 ">SUITE COLLECTION</h4>
         <p>
           The Celestial Classic rooms offer timeless elegance and comfort,

@@ -1,14 +1,18 @@
 // Pages & Components Style Sheets
 @use "./pages/Home";
+@use "./pages/Accommodation";
 @use "./components/Header";
 @use "./components/Accordion";
 @use "./components/CardSlider";
 @use "./components/InfiniteSlider";
 @use "./components/Footer";
 @use "./components/GridToCarousel";
+@use "./components/AccomInfoCard";
 
 // Abstracts
 @use "./abstracts/colors";
+@use "./abstracts/button";
+@use "./abstracts/typography";
 
 *,
 *::after,
@@ -21,21 +25,4 @@ body {
   margin: 0;
   background-color: colors.$bg-color;
   font-family: "Poppins", sans-serif;
-}
-
-.cta-btn {
-  display: inline-block;
-  text-decoration: none;
-  color: colors.$black-theme;
-  font-size: 16px;
-  font-weight: bold;
-  border: 2px solid colors.$black-theme;
-  padding: 16px 32px;
-  border-radius: 8px;
-  transition: 0.5s;
-  &:hover {
-    background-color: olive;
-    color: white;
-    transition: 0.5s;
-  }
 }

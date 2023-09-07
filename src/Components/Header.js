@@ -19,19 +19,16 @@ export default function Header() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">Accomodation</Link>
-          </li>
-          <li>
-            <Link to="/">About Us</Link>
-          </li>
-          <li>
-            <Link to="/">Our Story</Link>
+            <Link to="/accommodation">Accommodation</Link>
           </li>
           <li>
             <Link to="/">Eat & drink</Link>
           </li>
           <li>
             <Link to="/">See & Do</Link>
+          </li>
+          <li>
+            <Link to="/">Our Story</Link>
           </li>
         </ul>
         <a href="/" className="nav-booking">
@@ -56,19 +53,16 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/">Accomodation</Link>
-              </li>
-              <li>
-                <Link to="/">About Us</Link>
-              </li>
-              <li>
-                <Link to="/">Our Story</Link>
+                <Link to="/">Accommodation</Link>
               </li>
               <li>
                 <Link to="/">Eat & drink</Link>
               </li>
               <li>
                 <Link to="/">See & Do</Link>
+              </li>
+              <li>
+                <Link to="/">Our Story</Link>
               </li>
             </ul>
           </div>

@@ -1,0 +1,45 @@
+@use "../abstracts/colors";
+
+.typo-h1 {
+  font-size: 52px;
+  line-height: 128%;
+  font-weight: 400;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.typo-h2 {
+  font-size: 36px;
+  line-height: 128%;
+}
+
+.typo-h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 128%;
+}
+
+.typo-h4 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 128%;
+}
+
+.typo-b1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.typo-b2 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.typo-link {
+  font-size: 12px;
+  text-decoration: underline;
+  color: colors.$black-theme;
+  cursor: pointer;
+}

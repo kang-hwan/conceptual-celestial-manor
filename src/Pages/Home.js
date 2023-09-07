@@ -48,7 +48,10 @@ export default function Home() {
                 is where you can touch feel, and imagine.
               </h2>
               <p>Discover our collection of your stay.</p>
-              <a href="/" className="cta-btn">
+              <a
+                href="https://celestialmanor-booking.netlify.app/"
+                className="btn-primary"
+              >
                 BOOK YOUR STAY
               </a>
             </div>
@@ -134,7 +137,7 @@ export default function Home() {
           <p>
             We look forward to welcoming you to Celestial Manor* On Collins.
           </p>
-          <a href="/" className="cta-btn">
+          <a href="/" className="btn-primary">
             YOUR WAY TO CELESTIAL MANOR*
           </a>
         </div>

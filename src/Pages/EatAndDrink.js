@@ -1,7 +1,7 @@
 import React from "react";
 import celestialStar from "../Images/celestialStar.svg";
 import Footer from "../Components/Footer";
-import largeLogo from "../Images/home-celestial-manor.svg";
+// import largeLogo from "../Images/home-celestial-manor.svg";
 import ChefInfoCard from "../Components/ChefInfoCard";
 import dummyImg from "../Images/dummyImg.png";
 
@@ -34,7 +34,12 @@ const EatAndDrink = () => {
             <br />
             service tailored to your desires.
           </p>
-          <a className="typo-link">Browse Our Celestial Deluxe Collection</a>
+          <a
+            className="typo-link"
+            href="https://main--celestial-manor.netlify.app/accommodation"
+          >
+            Browse Our Celestial Deluxe Collection
+          </a>
           <div className="eatAndDrink-featuredSection__carousel">Carousel</div>
         </div>
         <div className="eatAndDrink-chefSection">
@@ -43,7 +48,7 @@ const EatAndDrink = () => {
         </div>
         <div className="eatAndDrink-casinoSection">
           <div className="eatAndDrink-casinoSection__img">
-            <img src={dummyImg} />
+            <img src={dummyImg} alt="dummy" />
           </div>
           <div className="eatAndDrink-casinoSection__body">
             <h1 className="typo-h1">Bars & Casino</h1>
@@ -81,7 +86,7 @@ const EatAndDrink = () => {
             </p>
           </div>
           <div className="eatAndDrink-diningSection__img">
-            <img src={dummyImg} />
+            <img src={dummyImg} alt="dummy" />
           </div>
         </div>
       </div>

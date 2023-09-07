@@ -1,7 +1,7 @@
 import React from "react";
 import AccomInfoCard from "../Components/AccomInfoCard";
 import Footer from "../Components/Footer";
-import largeLogo from "../Images/home-celestial-manor.svg";
+// import largeLogo from "../Images/home-celestial-manor.svg";
 import celestialStar from "../Images/celestialStar.svg";
 
 const Accommodation = () => {

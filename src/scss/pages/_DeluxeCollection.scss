@@ -1,0 +1,39 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/layout" as l;
+
+.deluxe-collection-page {
+  width: 100%;
+  background-color: c.$bg-color;
+  .deluxe-collection-container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.deluxe-introA-section {
+  margin-top: l.$section-margin;
+  button {
+    margin-top: 40px;
+  }
+}
+
+.deluxe-range-section {
+  margin-top: l.$section-margin;
+}
+
+.deluxe-carouselA-section {
+  margin-top: l.$section-margin;
+}
+
+.deluxe-carouselB-section {
+  margin-top: l.$section-margin;
+}
+
+.deluxe-highlightA {
+  margin: l.$section-margin 0;
+}

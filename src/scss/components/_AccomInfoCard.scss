@@ -1,21 +1,24 @@
 @use "../abstracts/colors";
 
-.AccomInfoCardContainer {
-  max-width: 1440px;
+.info-card-container {
+  width: 100%;
   display: flex;
-  text-align: left;
+  justify-content: center;
 }
 
-.AccomInfoCard {
+.info-card {
+  margin: 0 12px;
   width: 33%;
-  padding: 16px;
+  height: fit-content;
+  text-align: left;
   img {
     object-fit: contain;
     width: 100%;
   }
   h4 {
-    padding: 20px 0;
+    margin-top: 24px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid colors.$black-theme;
   }
 }

@@ -1,0 +1,36 @@
+@use "../abstracts/colors" as c;
+
+.highlight-typeA {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &-body {
+    text-align: left;
+    max-width: 420px;
+    margin-right: 52px;
+    &__featureTag {
+      display: inline-block;
+      border-radius: 40px;
+      padding: 8px 20px;
+      background-color: #7feb38;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    h4 {
+      margin: 20px 0;
+      padding-bottom: 20px;
+      border-bottom: 1px solid c.$black-theme;
+    }
+  }
+  &-img {
+    width: 100%;
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+  }
+}

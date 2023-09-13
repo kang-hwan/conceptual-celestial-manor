@@ -36,10 +36,36 @@
   font-size: 16px;
   line-height: 36px;
 }
+.typo-b3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 .typo-link {
-  font-size: 12px;
+  font-size: 16px;
   text-decoration: underline;
   color: colors.$black-theme;
+  position: relative;
+  background-color: transparent;
   cursor: pointer;
+  z-index: 3;
+  &::after {
+    width: 0;
+    height: 100%;
+    background-color: #7feb38;
+    filter: opacity(0.2);
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    z-index: 2;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      transition: 300ms;
+      z-index: 2;
+    }
+  }
 }

@@ -3,7 +3,6 @@ import "../scss/App.css";
 import { Link } from "react-router-dom";
 import headerLogoMobile from "../Images/header-logo-mobile.svg";
 import headerLogoDesktop from "../Images/celestialManorLogo.svg";
-import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);

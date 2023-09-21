@@ -1,4 +1,3 @@
-import dummyImg from "../Images/dummyImg.png";
 import deluxeHighlightA from "../Images/deluxeRange/deluxeHighlight.png";
 import suiteRoom01 from "../Images/suiteRange/suiteRoom01.png";
 import suiteRoom02 from "../Images/suiteRange/suiteRoom02.png";

@@ -1,7 +1,6 @@
 import React from "react";
 
 // Images
-import largeLogo from "../Images/home-celestial-manor.svg";
 import smallLogo from "../Images/main-vertical-logo.svg";
 import homeMap from "../Images/home-map.svg";
 import homeMapMarker from "../Images/homeMapMarker-white.svg";

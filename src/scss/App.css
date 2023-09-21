@@ -1697,7 +1697,7 @@ header {
 .carouselB {
   width: 100%;
   padding: 24px;
-  background-image: url(../Images/home-gradient.svg);
+  background-image: url(../Images/highlightGradient.png);
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: contain;

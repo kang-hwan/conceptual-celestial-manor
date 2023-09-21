@@ -877,20 +877,20 @@
 }
 
 .accommodation-introA-section {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .accommodation-introA-section .introA-imgContainer {
-  margin-bottom: 52px;
+  margin: 52px 0;
 }
 .accommodation-introA-section button {
   margin-top: 40px;
 }
 
 .accommodation-introB-section {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -898,16 +898,24 @@
 .accommodation-introB-section .introB-imgContainer {
   margin-bottom: 52px;
   width: 100%;
-  height: 520px;
-  background-color: #d9d9d9;
+  max-height: 520px;
+}
+.accommodation-introB-section .introB-imgContainer img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .rooms-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .carouselA-section {
-  margin: 80px 0;
+  margin: 120px 0;
+}
+
+.carouselB-section {
+  margin: 120px 0;
 }
 
 .flightPackage-section {
@@ -948,7 +956,7 @@
 }
 
 .hotelExp-section {
-  margin: 80px 0;
+  margin: 120px 0;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -978,7 +986,7 @@
 }
 
 .eatAndDrink-introA-section {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -988,19 +996,19 @@
 }
 
 .eatAndDrink-carousel-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .chefs-info-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .eatAndDrink-highlightA-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .eatAndDrink-highlightB-section {
-  margin: 80px 0;
+  margin: 120px 0;
   display: flex;
   text-align: left;
 }
@@ -1028,23 +1036,44 @@
 }
 
 .classic-introA-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .classic-introA-section button {
   margin-top: 40px;
 }
 
 .classic-range-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
-.classic-carousel-section {
-  margin-top: 80px;
+.classic-news-section {
+  background-image: url(../Images/highlightGradient.png);
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 80px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.classic-news-section__img {
+  width: 50%;
+}
+.classic-news-section__img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.classic-news-section__body {
+  text-align: left;
+  margin-left: 40px;
+  max-width: 480px;
+  width: 50%;
 }
 
 .classic-highlightA {
   width: 100%;
-  margin-top: 80px;
+  margin-top: 120px;
   margin-bottom: 128px;
 }
 
@@ -1063,26 +1092,27 @@
 }
 
 .deluxe-introA-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .deluxe-introA-section button {
   margin-top: 40px;
 }
 
 .deluxe-range-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .deluxe-carouselA-section {
-  margin-top: 80px;
+  margin-top: 120px;
+  width: 100%;
 }
 
 .deluxe-carouselB-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .deluxe-highlightA {
-  margin: 80px 0;
+  margin: 120px 0;
 }
 
 .suite-collection-page {
@@ -1100,18 +1130,18 @@
 }
 
 .suite-introA-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .suite-introA-section button {
   margin-top: 40px;
 }
 
 .suite-range-section {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .suite-introB-section {
-  margin-top: 80px;
+  margin-top: 120px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1128,11 +1158,12 @@
 }
 
 .suite-carousel-section {
-  margin-top: 80px;
+  margin-top: 120px;
+  width: 100%;
 }
 
 .suite-highlightA {
-  margin: 80px 0;
+  margin: 120px 0;
 }
 
 header {
@@ -1147,36 +1178,62 @@ header {
 
 .header-wrapper--desktop {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 1440px;
+  width: 100%;
 }
 @media (max-width: 1060px) {
   .header-wrapper--desktop {
     display: none;
   }
 }
-.header-wrapper--desktop ul {
+.header-wrapper--desktop .header-logo {
+  width: 100%;
+  height: 60px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.header-wrapper--desktop .header-logo img {
+  width: 230px;
+}
+.header-wrapper--desktop .header-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Images/highlightGradient.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 0;
+}
+.header-wrapper--desktop .header-menu.show {
+  height: 60px;
+}
+.header-wrapper--desktop .header-menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding-left: 24px;
 }
-.header-wrapper--desktop ul li {
+.header-wrapper--desktop .header-menu ul li {
   padding: 16px 12px;
 }
-.header-wrapper--desktop ul li a {
-  text-decoration: none;
+.header-wrapper--desktop .header-menu ul li a {
   color: #211f1a;
+  font-family: Poppins;
   font-size: 16px;
-  font-weight: bold;
-}
-.header-wrapper--desktop .nav-booking {
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #211f1a;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 0 24px;
 }
 .header-wrapper--mobile {
   display: none;
@@ -1497,6 +1554,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 24px;
 }
 
 .info-card {
@@ -1555,6 +1613,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0 24px;
 }
 .highlight-typeA-body {
   text-align: left;
@@ -1587,8 +1646,139 @@ header {
      object-fit: cover;
 }
 
-.carousel-typeA {
+.carouselA {
   width: 100%;
+  padding-bottom: 42%;
+  position: relative;
+}
+.carouselA__img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 600ms;
+  filter: opacity(0);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.carouselA__img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+.carouselA__img.current {
+  z-index: 1;
+  transition: 600ms;
+  filter: opacity(1);
+}
+.carouselA__pagination {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  z-index: 2;
+}
+.carouselA__pagination span {
+  cursor: pointer;
+  margin: 0 8px;
+}
+.carouselA h1 {
+  z-index: 2;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  color: white;
+}
+
+.carouselB {
+  width: 100%;
+  padding: 24px;
+  background-image: url(../Images/home-gradient.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-align: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.carouselB-contentContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.carouselB-contentContainer .carouselB-content {
+  width: 100%;
+  display: flex;
+}
+.carouselB-contentContainer .carouselB-content-title {
+  max-width: 400px;
+  padding-right: 24px;
+}
+.carouselB-contentContainer .carouselB-content-body {
+  max-width: 400px;
+  padding-left: 24px;
+  border-left: 1px solid black;
+}
+.carouselB-contentContainer .carouselB-content-controlContainer {
+  display: flex;
+  align-items: flex-end;
+}
+.carouselB-contentContainer .carouselB-content-controlContainer .carouselB-content-control {
+  display: flex;
+  align-items: center;
+}
+.carouselB-contentContainer .carouselB-content-controlContainer .carouselB-content-control-icon {
+  margin: 0 8px;
+}
+.carouselB-img {
+  margin: 36px 0;
+  width: 100%;
+}
+.carouselB-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 12px;
+}
+.carouselB-paginationContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carouselB-paginationContainer .carouselB-pagination {
+  display: flex;
+}
+.carouselB-paginationContainer .carouselB-pagination span {
+  margin: 0 8px;
+}
+
+.carouselC {
+  display: flex;
+  padding: 60px 80px;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-image: url(../Images/highlightGradient.png);
+}
+.carouselC-img img {
+  border-radius: 12px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.carouselC-content {
+  text-align: left;
+  padding: 0 24px 24px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .btn-primary {
@@ -1700,6 +1890,7 @@ header {
 .typo-h2 {
   font-size: 36px;
   line-height: 128%;
+  font-weight: 400;
 }
 
 .typo-h3 {
@@ -1756,6 +1947,15 @@ header {
   width: 100%;
   transition: 300ms;
   z-index: 2;
+}
+
+.typo-subheading {
+  color: rgba(41, 76, 18, 0.5);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 25.6px */
 }
 
 *,

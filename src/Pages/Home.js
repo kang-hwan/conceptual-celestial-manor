@@ -24,9 +24,9 @@ import MobileCarousel from "../Components/MobileCarousel";
 export default function Home() {
   return (
     <div className="page-home">
-      <div className="large-logo-wrapper">
+      {/* <div className="large-logo-wrapper">
         <img src={largeLogo} alt="Celestial Manor" className="large-logo" />
-      </div>
+      </div> */}
       <section className="section-1">
         <div className="section-1a">
           <div className="section-1a-wrapper">

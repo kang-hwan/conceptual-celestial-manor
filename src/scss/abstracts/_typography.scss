@@ -11,6 +11,7 @@
 .typo-h2 {
   font-size: 36px;
   line-height: 128%;
+  font-weight: 400;
 }
 
 .typo-h3 {
@@ -68,4 +69,13 @@
       z-index: 2;
     }
   }
+}
+
+.typo-subheading {
+  color: rgba(41, 76, 18, 0.5);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 25.6px */
 }

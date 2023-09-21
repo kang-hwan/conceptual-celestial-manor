@@ -1,10 +1,15 @@
-import dummyImg from "../Images/dummyImg.png";
-import flightPackageImg from "../Images/flightPackage.png";
+import deluxeRoom01 from "../Images/deluxeRange/deluxeRoom01.png";
+import deluxeRoom02 from "../Images/deluxeRange/deluxeRoom02.png";
+import deluxeRoom03 from "../Images/deluxeRange/deluxeRoom03.png";
+import deluxeHighlightA from "../Images/deluxeRange/deluxeHighlight.png";
+import deluxeCarouselImg01 from "../Images/deluxeRange/deluxeCarouselB01.png";
+import deluxeCarouselImg02 from "../Images/deluxeRange/deluxeCarouselB02.png";
+import deluxeCarouselImg03 from "../Images/deluxeRange/deluxeCarouselB03.png";
 
 export const deluxeData = [
   {
     key: 1,
-    image: dummyImg,
+    image: deluxeRoom01,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -15,7 +20,7 @@ export const deluxeData = [
   },
   {
     key: 2,
-    image: dummyImg,
+    image: deluxeRoom02,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -26,7 +31,7 @@ export const deluxeData = [
   },
   {
     key: 3,
-    image: dummyImg,
+    image: deluxeRoom03,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -38,7 +43,7 @@ export const deluxeData = [
 ];
 
 export const deluxeHighlight = {
-  image: flightPackageImg,
+  image: deluxeHighlightA,
   tag: "CM Certified",
   title1: "The Pinnacle of Sophisticated Living",
   body1:
@@ -48,3 +53,21 @@ export const deluxeHighlight = {
   link: "Learn more about Sophisticated Living",
   path: "",
 };
+
+export const deluxeCarousel = [
+  {
+    img: deluxeCarouselImg01,
+    title: "Bottomless Booze Season",
+    body: "This race weekend, make a pit stop at Renku to refuel with 2 hours of free-flow beer, wine and bubbly.",
+  },
+  {
+    img: deluxeCarouselImg02,
+    title: "Salute to the Racing Red",
+    body: "As the race heats up, cool down with a refreshing Smoked Watermelon Margarita Slushie. Flaunting a bright Ferrari red, this cocktail is made using fresh watermelon, tequila, mezcal, lime, sugar and smoked salt.",
+  },
+  {
+    img: deluxeCarouselImg03,
+    title: "Mahaler 9",
+    body: "This November, experience the capstone Mahler event of the year when internationally renowned conductor Alexander Briger returns home to lead the acclaimed Australian World Orchestra, performing one of the 20th century’s most celebrated masterpieces, Mahler 9.",
+  },
+];

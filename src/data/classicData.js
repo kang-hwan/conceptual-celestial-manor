@@ -1,10 +1,14 @@
-import dummyImg from "../Images/dummyImg.png";
-import flightPackageImg from "../Images/flightPackage.png";
+import classicRoom01 from "../Images/classicRange/classicRoom01.png";
+import classicRoom02 from "../Images/classicRange/classicRoom02.png";
+import classicRoom03 from "../Images/classicRange/classicRoom03.png";
+import classicRoom04 from "../Images/classicRange/classicRoom04.png";
+import classicRoom05 from "../Images/classicRange/classicRoom05.png";
+import classicHighlightA from "../Images/classicRange/classicHighlight.png";
 
 export const classicData = [
   {
     key: 1,
-    image: dummyImg,
+    image: classicRoom01,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -15,7 +19,7 @@ export const classicData = [
   },
   {
     key: 2,
-    image: dummyImg,
+    image: classicRoom02,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -26,7 +30,29 @@ export const classicData = [
   },
   {
     key: 3,
-    image: dummyImg,
+    image: classicRoom03,
+    title: "Celestial Classic",
+    description1:
+      "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
+    description2:
+      "Experience the perfect balance of refined aesthetics and modern conveniences in these well-appointed rooms.",
+    link: "Browse Our Celestial Classic Collection",
+    path: "/accommodation/suite-collection",
+  },
+  {
+    key: 4,
+    image: classicRoom04,
+    title: "Celestial Classic",
+    description1:
+      "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
+    description2:
+      "Experience the perfect balance of refined aesthetics and modern conveniences in these well-appointed rooms.",
+    link: "Browse Our Celestial Classic Collection",
+    path: "/accommodation/suite-collection",
+  },
+  {
+    key: 5,
+    image: classicRoom05,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -38,7 +64,7 @@ export const classicData = [
 ];
 
 export const classicHighlight = {
-  image: flightPackageImg,
+  image: classicHighlightA,
   tag: "CM Certified",
   title1: "The New Standards",
   body1:

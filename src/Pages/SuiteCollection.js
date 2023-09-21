@@ -1,16 +1,25 @@
 import React from "react";
+// ! component
 import HeroSection from "../Components/HeroSection";
-import celestialStar from "../Images/celestialStar.svg";
-import { suiteData, suiteHighlight } from "../data/suiteData";
 import AccomInfoCard from "../Components/AccomInfoCard";
-import Footer from "../Components/Footer";
 import HighlightA from "../Components/HighlightA";
+import Footer from "../Components/Footer";
+
+// ! data
+import { suiteData, suiteHighlight } from "../data/suiteData";
+import { AccomCarouselAImgs } from "../data/roomsData";
+
+// ! images
+import celestialStar from "../Images/celestialStar.svg";
+import suiteHero from "../Images/suiteRange/suiteHero.png";
+import suiteBanner from "../Images/suiteRange/suiteBanner.png";
+import CarouselA from "../Components/CarouselA";
 
 const SuiteCollection = () => {
   return (
     <div className="suite-collection-page">
       <div className="suite-collection-container">
-        <HeroSection />
+        <HeroSection asset={suiteHero} />
         <div className="suite-introA-section">
           <img
             src={celestialStar}
@@ -40,7 +49,9 @@ const SuiteCollection = () => {
           <AccomInfoCard data={suiteData} />
         </div>
         <div className="suite-introB-section">
-          <div className="suite-introB-section-image"></div>
+          <div className="suite-introB-section-image">
+            <img src={suiteBanner} alt="suite-banner" />
+          </div>
           <div className="suite-introB-section-body">
             <h1 className="typo-h1">Retreat into your Private Santuary</h1>
             <p className="typo-b1 paragraph">
@@ -55,7 +66,12 @@ const SuiteCollection = () => {
             </p>
           </div>
         </div>
-        <div className="suite-carousel-section">Carousel Section</div>
+        <div className="suite-carousel-section">
+          <CarouselA
+            title={"Epitome of Indulgence"}
+            data={AccomCarouselAImgs}
+          />
+        </div>
         <div className="suite-highlightA">
           <HighlightA data={suiteHighlight} />
         </div>

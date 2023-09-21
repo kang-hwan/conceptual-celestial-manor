@@ -1,39 +1,58 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../scss/App.css";
 import { Link } from "react-router-dom";
 import headerLogoMobile from "../Images/header-logo-mobile.svg";
+import headerLogoDesktop from "../Images/celestialManorLogo.svg";
+import { toBeRequired } from "@testing-library/jest-dom/dist/matchers";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
 
   function isActive() {
     setToggle(!toggle);
-    console.log(toggle);
   }
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.onscroll) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header>
       <div className="header-wrapper--desktop">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/accommodation">Accommodation</Link>
-          </li>
-          <li>
-            <Link to="/eatAndDrink">Eat & drink</Link>
-          </li>
-          <li>
-            <Link to="/">See & Do</Link>
-          </li>
-          <li>
-            <Link to="/">Our Story</Link>
-          </li>
-        </ul>
-        <a href="/" className="nav-booking">
-          BOOK NOW
-        </a>
+        <div className="header-logo">
+          <img src={headerLogoDesktop} alt="main-logo" />
+        </div>
+        <div className={isScrolled ? "header-menu" : "header-menu show"}>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/accommodation">Accommodation</Link>
+            </li>
+            <li>
+              <Link to="/eatAndDrink">Eat & drink</Link>
+            </li>
+            <li>
+              <Link to="/">See & Do</Link>
+            </li>
+            <li>
+              <Link to="/">Our Story</Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="header-wrapper--mobile">
         <div className="header-wrapper__">

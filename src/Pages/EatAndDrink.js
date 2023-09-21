@@ -48,8 +48,8 @@ const EatAndDrink = () => {
             <img src={eatDrinkHighlightImg02} alt="eatAndDrink-highlightB" />
           </div>
           <div className="eatAndDrink-highlightB-section__body">
-            <h4>Private Dining & Events</h4>
-            <p className="typo-b2">
+            <h4 className="typo-h4">Private Dining & Events</h4>
+            <p className="typo-b3">
               Whether you are hosting a networking event, a business meeting or
               a birthday bash, a memorable experience awaits. Our restaurants
               are versatile to suit your needs, and you can be assured of

@@ -9,6 +9,9 @@ import DeluxeCollection from "./Pages/DeluxeCollection";
 import SuiteCollection from "./Pages/SuiteCollection";
 
 // TODO: Fix large logo size
+// ToDo: link underline animation
+// TODO: navBar
+// TODO: highlight A image resize
 
 function App() {
   return (

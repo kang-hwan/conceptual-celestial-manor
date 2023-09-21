@@ -1,0 +1,61 @@
+.carouselB {
+  width: 100%;
+  padding: 24px;
+  background-image: url(../Images/home-gradient.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  text-align: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  &-contentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .carouselB-content {
+      width: 100%;
+      display: flex;
+      &-title {
+        max-width: 400px;
+        padding-right: 24px;
+      }
+      &-body {
+        max-width: 400px;
+        padding-left: 24px;
+        border-left: 1px solid black;
+      }
+      &-controlContainer {
+        display: flex;
+        align-items: flex-end;
+        .carouselB-content-control {
+          display: flex;
+          align-items: center;
+          &-icon {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+  &-img {
+    margin: 36px 0;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 12px;
+    }
+  }
+  &-paginationContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .carouselB-pagination {
+      display: flex;
+      span {
+        margin: 0 8px;
+      }
+    }
+  }
+}

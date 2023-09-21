@@ -5,12 +5,14 @@ import AccomInfoCard from "../Components/AccomInfoCard";
 import { classicData, classicHighlight } from "../data/classicData";
 import Footer from "../Components/Footer";
 import HighlightA from "../Components/HighlightA";
+import classicHero from "../Images/classicRange/classicHero.png";
+import classicNews from "../Images/classicRange/classicHighlightB.png";
 
 const ClassicCollection = () => {
   return (
     <div className="classic-collection-page">
       <div className="classic-collection-container">
-        <HeroSection />
+        <HeroSection asset={classicHero} />
         <div className="classic-introA-section">
           <img
             src={celestialStar}
@@ -39,7 +41,30 @@ const ClassicCollection = () => {
           <h1 className="typo-h1">The Classic Series</h1>
           <AccomInfoCard data={classicData} />
         </div>
-        <div className="classic-carousel-section">Carousel Section</div>
+        <div className="classic-news-section">
+          <div className="classic-news-section__img">
+            <img src={classicNews} alt="classic-news" />
+          </div>
+          <div className="classic-news-section__body">
+            <h1 className="typo-h1">In the News</h1>
+            <p className="typo-subheading">Modern Times Australia</p>
+            <p className="typo-b3">
+              "Modern touches can be found in the thoughtfully curated amenities
+              throughout the suite, whether it is the luxurious Frette bedding,
+              exquisite Legle porcelain tableware, Bang & Olufsen sound system,
+              or even the tailor made Maison 21G scent that permeates the air.
+            </p>
+            <p className="typo-b3">
+              Celestial Manor* takes the premise of "home away from home" very
+              seriously, and the same attention to detail carries through to the
+              bathroom space, where you can retreat for some pampering and self
+              care."
+            </p>
+            <a className="typo-link" href="/">
+              View Article
+            </a>
+          </div>
+        </div>
         <div className="classic-highlightA">
           <HighlightA data={classicHighlight} />
         </div>

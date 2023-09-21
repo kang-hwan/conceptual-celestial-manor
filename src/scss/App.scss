@@ -2,6 +2,7 @@
 @use "./pages/Home";
 @use "./pages/Accommodation";
 @use "./pages/EatAndDrink";
+@use "./pages/SeeAndDo";
 @use "./pages/ClassicCollection";
 @use "./pages/DeluxeCollection";
 @use "./pages/SuiteCollection";
@@ -18,6 +19,8 @@
 @use "./components/HeroSection";
 @use "./components/HighlightA";
 @use "./components/CarouselA";
+@use "./components/CarouselB";
+@use "./components/CarouselC";
 
 // Abstracts
 @use "./abstracts/colors";

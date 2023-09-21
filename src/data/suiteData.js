@@ -1,10 +1,13 @@
 import dummyImg from "../Images/dummyImg.png";
-import flightPackageImg from "../Images/flightPackage.png";
+import deluxeHighlightA from "../Images/deluxeRange/deluxeHighlight.png";
+import suiteRoom01 from "../Images/suiteRange/suiteRoom01.png";
+import suiteRoom02 from "../Images/suiteRange/suiteRoom02.png";
+import suiteRoom03 from "../Images/suiteRange/suiteRoom03.png";
 
 export const suiteData = [
   {
     key: 1,
-    image: dummyImg,
+    image: suiteRoom01,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -15,7 +18,7 @@ export const suiteData = [
   },
   {
     key: 2,
-    image: dummyImg,
+    image: suiteRoom02,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -26,7 +29,7 @@ export const suiteData = [
   },
   {
     key: 3,
-    image: dummyImg,
+    image: suiteRoom03,
     title: "Celestial Classic",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
@@ -38,7 +41,7 @@ export const suiteData = [
 ];
 
 export const suiteHighlight = {
-  image: flightPackageImg,
+  image: deluxeHighlightA,
   tag: "CM Certified",
   title1: "The Pinnacle of Sophisticated Living",
   body1:

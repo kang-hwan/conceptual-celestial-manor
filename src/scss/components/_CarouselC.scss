@@ -1,0 +1,23 @@
+.carouselC {
+  display: flex;
+  padding: 60px 80px;
+  width: 100%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-image: url(../Images/highlightGradient.png);
+  &-img {
+    img {
+      border-radius: 12px;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &-content {
+    text-align: left;
+    padding: 0 24px 24px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

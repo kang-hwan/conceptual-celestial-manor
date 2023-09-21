@@ -1,3 +1,48 @@
-.carousel-typeA {
+.carouselA {
   width: 100%;
+  padding-bottom: 42%;
+  position: relative;
+  &__img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 600ms;
+    filter: opacity(0);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+    }
+    &.current {
+      z-index: 1;
+      transition: 600ms;
+      filter: opacity(1);
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+
+    z-index: 2;
+    span {
+      cursor: pointer;
+      margin: 0 8px;
+    }
+  }
+  h1 {
+    z-index: 2;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    color: white;
+  }
 }

@@ -1,23 +1,36 @@
 import React from "react";
+// ! Component
 import HeroSection from "../Components/HeroSection";
-import celestialStar from "../Images/celestialStar.svg";
-import { deluxeData, deluxeHighlight } from "../data/deluxeData";
 import AccomInfoCard from "../Components/AccomInfoCard";
-import Footer from "../Components/Footer";
 import HighlightA from "../Components/HighlightA";
+import Footer from "../Components/Footer";
+import CarouselA from "../Components/CarouselA";
+
+// ! Data
+import {
+  deluxeCarousel,
+  deluxeData,
+  deluxeHighlight,
+} from "../data/deluxeData";
+import { AccomCarouselAImgs } from "../data/roomsData";
+
+// ! Images
+import celestialStar from "../Images/celestialStar.svg";
+import deluxeHero from "../Images/deluxeRange/deluxeHero.png";
+import CarouselC from "../Components/CarouselC";
 
 const DeluxeCollection = () => {
   return (
     <div className="deluxe-collection-page">
       <div className="deluxe-collection-container">
-        <HeroSection />
+        <HeroSection asset={deluxeHero} />
         <div className="deluxe-introA-section">
           <img
             src={celestialStar}
             alt="celestialStar"
             className="celestial-star"
           />
-          <h1 className="typo-h1">Celestial's Classic Collection*</h1>
+          <h1 className="typo-h1">Celestial's Deluxe Collection*</h1>
           <p className="typo-b1 paragraph">
             At Celestial Manor, our promise extends beyond exceptional service.
             We're dedicated to creating lasting memories, forging genuine bonds,
@@ -39,8 +52,15 @@ const DeluxeCollection = () => {
           <h1 className="typo-h1">The Deluxe Series</h1>
           <AccomInfoCard data={deluxeData} />
         </div>
-        <div className="deluxe-carouselA-section">Carousel Type A Section</div>
-        <div className="deluxe-carouselB-section">Carousel Type B Section</div>
+        <div className="deluxe-carouselA-section">
+          <CarouselA
+            data={AccomCarouselAImgs}
+            title={"A New Level of Luxury"}
+          />
+        </div>
+        <div className="deluxe-carouselB-section">
+          <CarouselC title={"See & Do"} data={deluxeCarousel} />
+        </div>
         <div className="deluxe-highlightA">
           <HighlightA data={deluxeHighlight} />
         </div>

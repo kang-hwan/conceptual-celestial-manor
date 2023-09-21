@@ -3,17 +3,26 @@ import AccomInfoCard from "../Components/AccomInfoCard";
 import Footer from "../Components/Footer";
 // import largeLogo from "../Images/home-celestial-manor.svg";
 import celestialStar from "../Images/celestialStar.svg";
-import { roomsData, AccomPageHighlight } from "../data/roomsData";
+import {
+  roomsData,
+  AccomPageHighlight,
+  AccomCarouselAImgs,
+  AccomCarouselBData,
+} from "../data/roomsData";
 import { hotelExpData } from "../data/hotelExpData";
 import CarouselA from "../Components/CarouselA";
 import HeroSection from "../Components/HeroSection";
 import HighlightA from "../Components/HighlightA";
+import accomHero from "../Images/accommodationPage/accomHero.png";
+import accomBanner01 from "../Images/accommodationPage/accomBanner.png";
+import accomBanner02 from "../Images/accommodationPage/accomBanner02.png";
+import CarouselB from "../Components/CarouselB";
 
 const Accommodation = () => {
   return (
     <div className="accommodation-page">
       <div className="accommodation-page-container">
-        <HeroSection />
+        <HeroSection asset={accomHero} />
         <div className="accommodation-introA-section">
           <img
             src={celestialStar}
@@ -40,9 +49,7 @@ const Accommodation = () => {
             planet with equal reverence.
           </p>
           <div className="introA-imgContainer">
-            <div></div>
-            <div></div>
-            <div></div>
+            <img src={accomBanner01} alt="accom-banner-01" />
           </div>
           <h1 className="typo-h1">Explore. Dream. Discover.</h1>
           <p className="typo-b1 paragraph">
@@ -57,7 +64,9 @@ const Accommodation = () => {
           <button className="btn-primary">LEARN MORE</button>
         </div>
         <div className="accommodation-introB-section">
-          <div className="introB-imgContainer"></div>
+          <div className="introB-imgContainer">
+            <img src={accomBanner02} alt="accom-banner-02" />
+          </div>
           <h1 className="typo-h1">Retreat into your Private Sanctuary</h1>
           <p className="typo-b1 paragraph">
             Here, every moment of your stay is a thoughtfully curated
@@ -75,7 +84,13 @@ const Accommodation = () => {
           <AccomInfoCard data={roomsData} />
         </div>
         <div className="carouselA-section">
-          <CarouselA />
+          <CarouselA
+            data={AccomCarouselAImgs}
+            title={"Introducing the Celestial Collection*"}
+          />
+        </div>
+        <div className="carouselB-section">
+          <CarouselB title={"Stay Packages"} data={AccomCarouselBData} />
         </div>
         <div className="flightPackage-section">
           <HighlightA data={AccomPageHighlight} />

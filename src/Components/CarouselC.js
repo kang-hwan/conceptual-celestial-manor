@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import paginationActive from "../Images/pagination-active.png";
-import paginationDeactivate from "../Images/pagination-deactive.png";
+
 import controlLeft from "../Images/carouselB-control-left.png";
 import controlRight from "../Images/carouselB-control-right.png";
 import controlIcon from "../Images/carouselB-control-icon.png";

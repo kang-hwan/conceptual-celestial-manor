@@ -22,7 +22,7 @@ const CarouselA = ({ data, title }) => {
             currentSlide === i ? "carouselA__img current" : "carouselA__img"
           }
         >
-          <img src={item.img} />
+          <img src={item.img} alt="carousel-item" />
         </div>
       ))}
       <h1 className="typo-h1">{title}</h1>

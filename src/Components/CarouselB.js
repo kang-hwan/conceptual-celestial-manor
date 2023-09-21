@@ -32,7 +32,9 @@ const CarouselB = ({ title, data }) => {
           </div>
           <div className="carouselB-content-body">
             <p className="typo-b3">{data[currentSlide].body}</p>
-            <a className="typo-link">Discover More</a>
+            <a className="typo-link" href="/">
+              Discover More
+            </a>
           </div>
         </div>
         <div className="carouselB-content-controlContainer">
@@ -50,7 +52,7 @@ const CarouselB = ({ title, data }) => {
         </div>
       </div>
       <div className="carouselB-img">
-        <img src={data[currentSlide].img} />
+        <img src={data[currentSlide].img} alt="carousel-item" />
       </div>
       <div className="carouselB-paginationContainer">
         <div className="carouselB-pagination">

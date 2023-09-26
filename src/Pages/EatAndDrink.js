@@ -7,6 +7,7 @@ import HighlightA from "../Components/HighlightA";
 import Footer from "../Components/Footer";
 import eatDrinkHeroImg from "../Images/eatDrinkPage/eatDrink-hero.png";
 import eatDrinkHighlightImg02 from "../Images/eatDrinkPage/eatDrink-highlight02.png";
+import { Link } from "react-router-dom";
 
 const EatAndDrink = () => {
   return (
@@ -33,7 +34,9 @@ const EatAndDrink = () => {
             including a bespoke Armoire, that reflect our love for refined
             craftsmanship.
           </p>
-          <button className="btn-primary">find your restaurants</button>
+          <Link className="btn-primary" to="/eatAndDrink/restaurants">
+            find your restaurants
+          </Link>
         </div>
         <div className="eatAndDrink-carousel-section">Carousel Section</div>
         <div className="chefs-info-section">

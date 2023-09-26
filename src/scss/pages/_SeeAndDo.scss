@@ -1,0 +1,99 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/layout" as l;
+
+.seeAndDo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: c.$bg-color;
+  &-container {
+    max-width: 1440px;
+    text-align: center;
+    .hero-section {
+      position: relative;
+      .hero-text {
+        position: absolute;
+        width: 600px;
+        top: calc(50% - 96px / 2);
+        left: calc(50% - 600px / 2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+          color: #7feb38;
+        }
+        .hero-tag {
+          width: fit-content;
+          display: flex;
+          align-items: center;
+          background-color: #7feb38;
+          border-radius: 40px;
+          padding: 8px 16px;
+          img {
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.seeAndDo-introA-section {
+  margin-top: l.$section-margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seeAndDo-carouselB-section {
+  margin-top: l.$section-margin;
+  .carouselB {
+    background-image: none;
+    border: none;
+  }
+}
+
+.seeAndDo-cardSliderA-section {
+  margin-top: l.$section-margin;
+}
+
+.seeAndDo-highlight-section {
+  margin-top: l.$section-margin;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  &__img {
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &__body {
+    text-align: left;
+    padding: 24px;
+    max-width: 480px;
+    .tag {
+      display: flex;
+      align-items: center;
+      background-color: #7feb38;
+      border-radius: 40px;
+      width: fit-content;
+      padding: 8px 16px;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+    }
+    h4 {
+      padding: 20px 0;
+      border-bottom: 1px solid black;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+}

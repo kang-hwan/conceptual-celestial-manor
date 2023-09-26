@@ -991,7 +991,7 @@
   flex-direction: column;
   align-items: center;
 }
-.eatAndDrink-introA-section button {
+.eatAndDrink-introA-section a {
   margin-top: 40px;
 }
 
@@ -1019,6 +1019,104 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #211f1a;
   margin-bottom: 20px;
+}
+
+.seeAndDo-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #fffcfa;
+}
+.seeAndDo-page-container {
+  max-width: 1440px;
+  text-align: center;
+}
+.seeAndDo-page-container .hero-section {
+  position: relative;
+}
+.seeAndDo-page-container .hero-section .hero-text {
+  position: absolute;
+  width: 600px;
+  top: calc(50% - 48px);
+  left: calc(50% - 300px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seeAndDo-page-container .hero-section .hero-text h1 {
+  color: #7feb38;
+}
+.seeAndDo-page-container .hero-section .hero-text .hero-tag {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: #7feb38;
+  border-radius: 40px;
+  padding: 8px 16px;
+}
+.seeAndDo-page-container .hero-section .hero-text .hero-tag img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.seeAndDo-introA-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seeAndDo-carouselB-section {
+  margin-top: 120px;
+}
+.seeAndDo-carouselB-section .carouselB {
+  background-image: none;
+  border: none;
+}
+
+.seeAndDo-cardSliderA-section {
+  margin-top: 120px;
+}
+
+.seeAndDo-highlight-section {
+  margin-top: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.seeAndDo-highlight-section__img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.seeAndDo-highlight-section__body {
+  text-align: left;
+  padding: 24px;
+  max-width: 480px;
+}
+.seeAndDo-highlight-section__body .tag {
+  display: flex;
+  align-items: center;
+  background-color: #7feb38;
+  border-radius: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 16px;
+}
+.seeAndDo-highlight-section__body .tag img {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+}
+.seeAndDo-highlight-section__body h4 {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+}
+.seeAndDo-highlight-section__body p {
+  margin: 20px 0;
 }
 
 .classic-collection-page {
@@ -1166,6 +1264,29 @@
   margin: 120px 0;
 }
 
+.restaurants-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: #fffcfa;
+}
+.restaurants-page-container {
+  max-width: 1440px;
+  text-align: center;
+}
+
+.restaurant-introA-section {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-section {
+  margin: 120px 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -1190,7 +1311,7 @@ header {
 }
 .header-wrapper--desktop .header-logo {
   width: 100%;
-  height: 60px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1211,7 +1332,7 @@ header {
   height: 0;
 }
 .header-wrapper--desktop .header-menu.show {
-  height: 60px;
+  height: 48px;
 }
 .header-wrapper--desktop .header-menu ul {
   width: 100%;
@@ -1384,63 +1505,30 @@ header {
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 
-.card {
-  color: black;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 380px;
-  height: 620px;
-  border-radius: 12px;
-  padding: 16px 0 38px 0;
-  margin: 0 12px;
+.cardSlider h1 {
+  margin-bottom: 40px;
 }
 
-.cardContent {
+.cardSlider-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 380px;
-  height: 620px;
-  border-radius: 12px;
+  gap: 24px;
 }
-.cardContent__title {
-  margin: 8px 0 20px 0;
-  font-size: 32px;
-  font-weight: 500;
+.cardSlider-container .card-item {
+  background-color: #fffcfa;
+  width: 400px;
+  text-align: left;
 }
-.cardContent__body {
-  width: 80%;
+.cardSlider-container .card-item img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.cardContent__img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 95%;
-  border-top: 1px solid black;
-  position: relative;
+.cardSlider-container .card-item h4 {
+  padding: 24px 0;
+  border-bottom: 1px solid black;
 }
-.cardContent__img::after {
-  width: 12px;
-  height: 12px;
-  background: red;
-  position: absolute;
-  display: inline-block;
-  top: 0;
-  left: 50%;
-  content: "";
-  inset: 0;
-}
-
-.cardLink__cta-btn {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-  border: 2px solid black;
-  border-radius: 8px;
-  padding: 16px 32px;
-  display: inline-block;
+.cardSlider-container .card-item p {
+  margin-top: 20px;
 }
 
 @keyframes slide {
@@ -1732,6 +1820,9 @@ header {
   display: flex;
   align-items: center;
 }
+.carouselB-contentContainer .carouselB-content-controlContainer .carouselB-content-control span {
+  cursor: pointer;
+}
 .carouselB-contentContainer .carouselB-content-controlContainer .carouselB-content-control-icon {
   margin: 0 8px;
 }
@@ -1747,6 +1838,7 @@ header {
   border-radius: 12px;
 }
 .carouselB-paginationContainer {
+  margin-bottom: 12px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1779,6 +1871,52 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.restaurant-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.restaurant-card {
+  width: 330px;
+  text-align: left;
+}
+.restaurant-card img:nth-of-type(1) {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.restaurant-card img:nth-of-type(2) {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+.restaurant-card h4 {
+  margin: 20px 0;
+  height: 72px;
+}
+.restaurant-card .tag-container {
+  margin: 20px 0;
+  height: 48px;
+}
+.restaurant-card .tag-container .restaurant-tag {
+  margin-right: 4px;
+  text-transform: uppercase;
+}
+.restaurant-card .location-tag {
+  margin: 20px 0;
+}
+.restaurant-card .location-tag img {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+.restaurant-card p {
+  border-bottom: 1px solid black;
+  height: 200px;
 }
 
 .btn-primary {
@@ -1925,6 +2063,7 @@ header {
 
 .typo-link {
   font-size: 16px;
+  line-height: 40px;
   text-decoration: underline;
   color: #211f1a;
   position: relative;
@@ -1956,6 +2095,15 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 128%; /* 25.6px */
+}
+
+.typo-subheading2 {
+  color: #294c12;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }
 
 *,

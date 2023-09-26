@@ -1,17 +1,25 @@
 import { Route, Routes } from "react-router-dom";
-import Header from "./Components/Header";
+
+// ! Page
 import Home from "./Pages/Home";
-import "./scss/App.css";
 import Accommodation from "./Pages/Accommodation";
 import EatAndDrink from "./Pages/EatAndDrink";
 import ClassicCollection from "./Pages/ClassicCollection";
 import DeluxeCollection from "./Pages/DeluxeCollection";
 import SuiteCollection from "./Pages/SuiteCollection";
+import Restaurants from "./Pages/Restaurants";
+import SeeAndDo from "./Pages/SeeAndDo";
 
-// TODO: Fix large logo size
+// ! Component
+import Header from "./Components/Header";
+
+// ! Style Sheet
+import "./scss/App.css";
+
 // ToDo: link underline animation
-// TODO: navBar
+// TODO: navBar animation
 // TODO: highlight A image resize
+// TODO: InfoCard flex wrap
 
 function App() {
   return (
@@ -33,6 +41,8 @@ function App() {
           element={<SuiteCollection />}
         />
         <Route path="/eatAndDrink" element={<EatAndDrink />} />
+        <Route path="/eatAndDrink/restaurants" element={<Restaurants />} />
+        <Route path="/seeAndDo" element={<SeeAndDo />} />
       </Routes>
     </div>
   );

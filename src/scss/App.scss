@@ -6,6 +6,7 @@
 @use "./pages/ClassicCollection";
 @use "./pages/DeluxeCollection";
 @use "./pages/SuiteCollection";
+@use "./pages/Restaurants";
 
 // Components
 @use "./components/Header";
@@ -21,6 +22,7 @@
 @use "./components/CarouselA";
 @use "./components/CarouselB";
 @use "./components/CarouselC";
+@use "./components/RestaurantCard";
 
 // Abstracts
 @use "./abstracts/colors";

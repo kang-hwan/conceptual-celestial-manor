@@ -9,32 +9,29 @@ export const eatDrinkData = [
     image: chefImg01,
     title: "Gordon Ramsay",
     description1:
-      "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    description2:
-      "Experience the perfect balance of refined aesthetics and modern conveniences in these well-appointed rooms.",
-    link: "Browse Our Celestial Classic Collection",
+      "Renowend for his apperances on TV shows like MasterChef US, Chef Gordon also opened numerous successful restaurants like 3 Michelin-starred Restaurant Gordeon Ramsey.",
+
+    link: "Discover More",
     path: "/",
   },
   {
     key: 2,
     image: chefImg02,
-    title: "Celestial Classic",
+    title: "Daniel Boulud",
     description1:
-      "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    description2:
-      "Experience the perfect balance of refined aesthetics and modern conveniences in these well-appointed rooms.",
-    link: "Browse Our Celestial Classic Collection",
+      "Regarded as one of Australia's culinarey authorities, Chef Daniel is the winner of serveral James Beard awards and chef-owneder of 3 Michelin-starred restaurant, DANIEL.",
+
+    link: "Discover More",
     path: "/",
   },
   {
     key: 3,
     image: chefImg03,
-    title: "Celestial Classic",
+    title: "Tetsuya Wakuda",
     description1:
-      "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    description2:
-      "Experience the perfect balance of refined aesthetics and modern conveniences in these well-appointed rooms.",
-    link: "Browse Our Celestial Classic Collection",
+      "Considered one of the Australia's finest chefs, Chef Tetsuya is known for his skill in combining fresh produce with French culinary arts and Japanese-style presentation.",
+
+    link: "Discover More",
     path: "/",
   },
 ];

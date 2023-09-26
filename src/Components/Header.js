@@ -45,7 +45,7 @@ export default function Header() {
               <Link to="/eatAndDrink">Eat & drink</Link>
             </li>
             <li>
-              <Link to="/">See & Do</Link>
+              <Link to="/seeAndDo">See & Do</Link>
             </li>
             <li>
               <Link to="/">Our Story</Link>

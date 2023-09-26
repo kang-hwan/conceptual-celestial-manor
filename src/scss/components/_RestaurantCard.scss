@@ -1,0 +1,46 @@
+.restaurant-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.restaurant-card {
+  width: 330px;
+  text-align: left;
+  img:nth-of-type(1) {
+    // restaurant image
+    width: 100%;
+    object-fit: contain;
+  }
+  img:nth-of-type(2) {
+    // celestial star for location
+    width: 12px;
+    height: 12px;
+    margin-right: 8px;
+  }
+  h4 {
+    margin: 20px 0;
+    height: 72px;
+  }
+  .tag-container {
+    margin: 20px 0;
+    height: 48px;
+    .restaurant-tag {
+      margin-right: 4px;
+      text-transform: uppercase;
+    }
+  }
+  .location-tag {
+    margin: 20px 0;
+    img {
+      width: 12px;
+      height: 12px;
+      margin-right: 8px;
+    }
+  }
+  p {
+    border-bottom: 1px solid black;
+    height: 200px;
+  }
+}

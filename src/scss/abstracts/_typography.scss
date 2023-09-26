@@ -45,6 +45,7 @@
 
 .typo-link {
   font-size: 16px;
+  line-height: 40px;
   text-decoration: underline;
   color: colors.$black-theme;
   position: relative;
@@ -78,4 +79,13 @@
   font-style: normal;
   font-weight: 500;
   line-height: 128%; /* 25.6px */
+}
+
+.typo-subheading2 {
+  color: #294c12;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
 }

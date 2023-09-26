@@ -1,8 +1,20 @@
 import React from "react";
+
+// ! Component
 import AccomInfoCard from "../Components/AccomInfoCard";
 import Footer from "../Components/Footer";
-// import largeLogo from "../Images/home-celestial-manor.svg";
+import CarouselA from "../Components/CarouselA";
+import HeroSection from "../Components/HeroSection";
+import HighlightA from "../Components/HighlightA";
+import CarouselB from "../Components/CarouselB";
+
+// ! Images
 import celestialStar from "../Images/celestialStar.svg";
+import accomHero from "../Images/accommodationPage/accomHero.png";
+import accomBanner01 from "../Images/accommodationPage/accomBanner.png";
+import accomBanner02 from "../Images/accommodationPage/accomBanner02.png";
+
+// ! Data
 import {
   roomsData,
   AccomPageHighlight,
@@ -10,13 +22,6 @@ import {
   AccomCarouselBData,
 } from "../data/roomsData";
 import { hotelExpData } from "../data/hotelExpData";
-import CarouselA from "../Components/CarouselA";
-import HeroSection from "../Components/HeroSection";
-import HighlightA from "../Components/HighlightA";
-import accomHero from "../Images/accommodationPage/accomHero.png";
-import accomBanner01 from "../Images/accommodationPage/accomBanner.png";
-import accomBanner02 from "../Images/accommodationPage/accomBanner02.png";
-import CarouselB from "../Components/CarouselB";
 
 const Accommodation = () => {
   return (

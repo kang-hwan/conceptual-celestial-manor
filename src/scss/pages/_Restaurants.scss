@@ -1,0 +1,25 @@
+@use "../abstracts/colors" as c;
+@use "../abstracts/layout" as l;
+
+.restaurants-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: c.$bg-color;
+  &-container {
+    max-width: 1440px;
+    text-align: center;
+  }
+}
+
+.restaurant-introA-section {
+  margin-top: l.$section-margin;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-section {
+  margin: l.$section-margin 0;
+}

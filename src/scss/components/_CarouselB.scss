@@ -30,6 +30,9 @@
         .carouselB-content-control {
           display: flex;
           align-items: center;
+          span {
+            cursor: pointer;
+          }
           &-icon {
             margin: 0 8px;
           }
@@ -48,6 +51,7 @@
     }
   }
   &-paginationContainer {
+    margin-bottom: 12px;
     width: 100%;
     display: flex;
     justify-content: center;

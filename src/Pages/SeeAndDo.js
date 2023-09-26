@@ -1,9 +1,9 @@
 import React from "react";
 import seeAndDoHeroImg from "../Images/seeAndDo/seeAndDo-hero.png";
 import celestialStar from "../Images/celestialStar.svg";
-import { seeAndDoCarouselB, seeAndDoCardSliderA } from "../data/seeAndDoData";
+import { seeAndDoCarouselB } from "../data/seeAndDoData";
 import CarouselB from "../Components/CarouselB";
-import CardSlider from "../Components/CardSlider";
+// import CardSlider from "../Components/CardSlider";
 import HighlightAImg from "../Images/seeAndDo/seeAndDo-highlight.png";
 
 const SeeAndDo = () => {
@@ -52,7 +52,7 @@ const SeeAndDo = () => {
           </div>
           <div className="seeAndDo-highlight-section__body">
             <div className="tag">
-              <img src={celestialStar} />
+              <img src={celestialStar} alt="See & Do Highlight" />
               <span>CM Certified</span>
             </div>
             <h4 className="typo-h4">Shows & Events</h4>

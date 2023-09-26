@@ -7,10 +7,12 @@ const CardSlider = ({ title, data }) => {
       <div className="cardSlider-container">
         {data.map((item) => (
           <div className="card-item">
-            <img src={item.img} />
+            <img src={item.img} alt="event & shows" />
             <h4 className="typo-h4">{item.title}</h4>
             <p className="typo-b3">{item.description}</p>
-            <a className="typo-link">Discover More</a>
+            <a className="typo-link" href="/">
+              Discover More
+            </a>
           </div>
         ))}
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import seeAndDoHeroImg from "../Images/seeAndDo/seeAndDo-hero.png";
 import celestialStar from "../Images/celestialStar.svg";
-import { seeAndDoCarouselB } from "../data/seeAndDoData";
+import { seeAndDoCarouselB, seeAndDoCardSliderA } from "../data/seeAndDoData";
 import CarouselB from "../Components/CarouselB";
-// import CardSlider from "../Components/CardSlider";
+import CardSlider from "../Components/CardSlider";
 import HighlightAImg from "../Images/seeAndDo/seeAndDo-highlight.png";
 
 const SeeAndDo = () => {
@@ -41,10 +41,10 @@ const SeeAndDo = () => {
           <CarouselB title={"Featured"} data={seeAndDoCarouselB} />
         </div>
         <div className="seeAndDo-cardSliderA-section">
-          {/* <CardSlider
+          <CardSlider
             title={"Immersive Experience"}
             data={seeAndDoCardSliderA}
-          /> */}
+          />
         </div>
         <div className="seeAndDo-highlight-section">
           <div className="seeAndDo-highlight-section__img">

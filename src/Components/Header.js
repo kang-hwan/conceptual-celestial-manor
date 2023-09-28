@@ -64,6 +64,7 @@ export default function Header() {
               className="menu-reserve"
               href="https://celestialmanor-booking.netlify.app/"
               target="_blank"
+              rel="noreferrer"
             >
               RESERVE NOW
             </a>

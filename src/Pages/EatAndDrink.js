@@ -1,13 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
+// ! Component
 import HeroSection from "../Components/HeroSection";
-import celestialStar from "../Images/celestialStar.svg";
-import { eatDrinkData, eatDrinkHighlight } from "../data/eatDrinkData";
 import AccomInfoCard from "../Components/AccomInfoCard";
 import HighlightA from "../Components/HighlightA";
 import Footer from "../Components/Footer";
+import CarouselB from "../Components/CarouselB";
+
+// ! Images
+import celestialStar from "../Images/celestialStar.svg";
 import eatDrinkHeroImg from "../Images/eatDrinkPage/eatDrink-hero.png";
 import eatDrinkHighlightImg02 from "../Images/eatDrinkPage/eatDrink-highlight02.png";
-import { Link } from "react-router-dom";
+
+// ! Data
+import { eatDrinkData, eatDrinkHighlight } from "../data/eatDrinkData";
+import { seeAndDoCarouselB } from "../data/seeAndDoData";
 
 const EatAndDrink = () => {
   return (
@@ -38,7 +45,9 @@ const EatAndDrink = () => {
             find your restaurants
           </Link>
         </div>
-        <div className="eatAndDrink-carousel-section">Carousel Section</div>
+        <div className="eatAndDrink-carousel-section">
+          <CarouselB title={"Featured"} data={seeAndDoCarouselB} />
+        </div>
         <div className="chefs-info-section">
           <h1 className="typo-h1">Meet Our Celebrity Chefs</h1>
           <AccomInfoCard data={eatDrinkData} />

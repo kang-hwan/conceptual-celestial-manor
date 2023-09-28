@@ -7,6 +7,8 @@
   align-items: center;
   width: 100%;
   background: c.$bg-color;
+  margin-top: l.$header-margin;
+
   &-container {
     max-width: 1440px;
     text-align: center;
@@ -37,6 +39,10 @@
 
 .eatAndDrink-carousel-section {
   margin-top: l.$section-margin;
+  .carouselB {
+    background-image: none;
+    border: none;
+  }
 }
 
 .chefs-info-section {

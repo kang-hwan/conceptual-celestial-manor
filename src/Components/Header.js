@@ -11,21 +11,29 @@ export default function Header() {
     setToggle(!toggle);
   }
 
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [isCollapsed, setIsCollapsed] = useState(false);
 
+  // desktop--Navbar animation
   useEffect(() => {
     const handleScroll = () => {
-      if (window.onscroll) {
-        setIsScrolled(true);
+      const currentScrollTop =
+        window.scrollY || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop) {
+        setIsCollapsed(true);
       } else {
-        setIsScrolled(false);
+        setIsCollapsed(false);
       }
+      setLastScrollTop(currentScrollTop);
     };
+
     window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [lastScrollTop]);
 
   return (
     <header>
@@ -33,24 +41,33 @@ export default function Header() {
         <div className="header-logo">
           <img src={headerLogoDesktop} alt="main-logo" />
         </div>
-        <div className={isScrolled ? "header-menu" : "header-menu show"}>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/accommodation">Accommodation</Link>
-            </li>
-            <li>
-              <Link to="/eatAndDrink">Eat & drink</Link>
-            </li>
-            <li>
-              <Link to="/seeAndDo">See & Do</Link>
-            </li>
-            <li>
-              <Link to="/">Our Story</Link>
-            </li>
-          </ul>
+        <div className={isCollapsed ? "header-menu" : "header-menu show"}>
+          <div className="menu-container">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/accommodation">Accommodation</Link>
+              </li>
+              <li>
+                <Link to="/eatAndDrink">Eat & drink</Link>
+              </li>
+              <li>
+                <Link to="/seeAndDo">See & Do</Link>
+              </li>
+              <li>
+                <Link to="/">Our Story</Link>
+              </li>
+            </ul>
+            <a
+              className="menu-reserve"
+              href="https://celestialmanor-booking.netlify.app/"
+              target="_blank"
+            >
+              RESERVE NOW
+            </a>
+          </div>
         </div>
       </div>
       <div className="header-wrapper--mobile">

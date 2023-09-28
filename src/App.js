@@ -17,7 +17,6 @@ import Header from "./Components/Header";
 import "./scss/App.css";
 
 // ToDo: link underline animation
-// TODO: navBar animation
 // TODO: highlight A image resize
 // TODO: InfoCard flex wrap
 

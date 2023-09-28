@@ -5,6 +5,7 @@ import { seeAndDoCarouselB, seeAndDoCardSliderA } from "../data/seeAndDoData";
 import CarouselB from "../Components/CarouselB";
 import CardSlider from "../Components/CardSlider";
 import HighlightAImg from "../Images/seeAndDo/seeAndDo-highlight.png";
+import Footer from "../Components/Footer";
 
 const SeeAndDo = () => {
   return (
@@ -66,6 +67,7 @@ const SeeAndDo = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

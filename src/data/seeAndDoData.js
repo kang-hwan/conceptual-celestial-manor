@@ -6,6 +6,11 @@ import CardSliderA02 from "../Images/seeAndDo/seeAndDo-sliderA02.png";
 import CardSliderA03 from "../Images/seeAndDo/seeAndDo-sliderA03.png";
 import CardSliderA04 from "../Images/seeAndDo/seeAndDo-sliderA04.png";
 
+import CardSliderB01 from "../Images/seeAndDo/seeAndDo-sliderB01.png";
+import CardSliderB02 from "../Images/seeAndDo/seeAndDo-sliderB02.png";
+import CardSliderB03 from "../Images/seeAndDo/seeAndDo-sliderB03.png";
+import CardSliderB04 from "../Images/seeAndDo/seeAndDo-sliderB04.png";
+
 import HighlightAImg from "../Images/seeAndDo/seeAndDo-highlight.png";
 
 export const seeAndDoCarouselB = [
@@ -24,6 +29,33 @@ export const seeAndDoCarouselB = [
 ];
 
 export const seeAndDoCardSliderA = [
+  {
+    img: CardSliderB01,
+    title: "Bottomless Booze Season",
+    description:
+      "This race weekend, make a pit stop at Renku to refuel with 2 hours of free-flow beer, wine and bubbly.",
+  },
+  {
+    img: CardSliderB02,
+    title: "Tippys Around the Manor",
+    description:
+      "Rev up your engines with our race-themed cocktails, such as Sheares Circuit and Pit Lane.",
+  },
+  {
+    img: CardSliderB03,
+    title: "Salute to the Racing Red",
+    description:
+      "As the race heats up, cool down with a refreshing Smoked Watermelon Margarita Slushie. Flaunting a bright Ferrari red, this cocktail is made using fresh watermelon, tequila, mezcal, lime, sugar and smoked salt.",
+  },
+  {
+    img: CardSliderB04,
+    title: "Meet the Sushi Master",
+    description:
+      "A rare chance to meet Celebrity Chef Wolfgang Puck in person as he hosts an exclusively curated 4-course dinner, featuring Stone Axe Wagyu and Binchotan Grilled Jade Abalone, Razor Clams and Uni.",
+  },
+];
+
+export const seeAndDoCardSliderB = [
   {
     img: CardSliderA01,
     title: "Mahaler 9",

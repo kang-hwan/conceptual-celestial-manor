@@ -861,6 +861,7 @@
   align-items: center;
   width: 100%;
   background: #fffcfa;
+  margin-top: 96px;
 }
 .accommodation-page-container {
   max-width: 1440px;
@@ -967,6 +968,7 @@
   align-items: center;
   width: 100%;
   background: #fffcfa;
+  margin-top: 96px;
 }
 .eatAndDrink-page-container {
   max-width: 1440px;
@@ -998,6 +1000,10 @@
 .eatAndDrink-carousel-section {
   margin-top: 120px;
 }
+.eatAndDrink-carousel-section .carouselB {
+  background-image: none;
+  border: none;
+}
 
 .chefs-info-section {
   margin-top: 120px;
@@ -1027,6 +1033,7 @@
   align-items: center;
   width: 100%;
   background: #fffcfa;
+  margin-top: 96px;
 }
 .seeAndDo-page-container {
   max-width: 1440px;
@@ -1122,6 +1129,7 @@
 
 .classic-collection-page {
   width: 100%;
+  margin-top: 96px;
   background-color: #fffcfa;
 }
 .classic-collection-page .classic-collection-container {
@@ -1179,6 +1187,7 @@
 .deluxe-collection-page {
   width: 100%;
   background-color: #fffcfa;
+  margin-top: 96px;
 }
 .deluxe-collection-page .deluxe-collection-container {
   margin: 0 auto;
@@ -1217,6 +1226,7 @@
 .suite-collection-page {
   width: 100%;
   background-color: #fffcfa;
+  margin-top: 96px;
 }
 .suite-collection-page .suite-collection-container {
   margin: 0 auto;
@@ -1271,6 +1281,7 @@
   align-items: center;
   width: 100%;
   background: #fffcfa;
+  margin-top: 96px;
 }
 .restaurants-page-container {
   max-width: 1440px;
@@ -1293,7 +1304,8 @@ header {
   justify-content: center;
   border-bottom: 1px solid #211f1a;
   background-color: #fffcfa;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 9999;
 }
@@ -1331,11 +1343,21 @@ header {
   background-size: cover;
   overflow: hidden;
   height: 0;
+  transition: 300ms;
+  filter: opacity(0);
 }
 .header-wrapper--desktop .header-menu.show {
   height: 48px;
+  filter: opacity(1);
+  transition: 300ms;
 }
-.header-wrapper--desktop .header-menu ul {
+.header-wrapper--desktop .header-menu .menu-container {
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper--desktop .header-menu .menu-container ul {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1343,10 +1365,10 @@ header {
   margin: 0;
   padding-left: 24px;
 }
-.header-wrapper--desktop .header-menu ul li {
+.header-wrapper--desktop .header-menu .menu-container ul li {
   padding: 16px 12px;
 }
-.header-wrapper--desktop .header-menu ul li a {
+.header-wrapper--desktop .header-menu .menu-container ul li a {
   color: #211f1a;
   font-family: Poppins;
   font-size: 16px;
@@ -1355,6 +1377,17 @@ header {
   line-height: normal;
   letter-spacing: 3.2px;
   text-transform: uppercase;
+  text-decoration: none;
+}
+.header-wrapper--desktop .header-menu .menu-container .menu-reserve {
+  height: 48px;
+  width: 250px;
+  background-color: black;
+  color: #fffcfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   text-decoration: none;
 }
 .header-wrapper--mobile {

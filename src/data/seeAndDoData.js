@@ -28,7 +28,7 @@ export const seeAndDoCarouselB = [
   },
 ];
 
-export const seeAndDoCardSliderA = [
+export const seeAndDoCardSliderB = [
   {
     img: CardSliderB01,
     title: "Bottomless Booze Season",
@@ -53,9 +53,15 @@ export const seeAndDoCardSliderA = [
     description:
       "A rare chance to meet Celebrity Chef Wolfgang Puck in person as he hosts an exclusively curated 4-course dinner, featuring Stone Axe Wagyu and Binchotan Grilled Jade Abalone, Razor Clams and Uni.",
   },
+  {
+    img: CardSliderB04,
+    title: "Meet the Sushi Master",
+    description:
+      "A rare chance to meet Celebrity Chef Wolfgang Puck in person as he hosts an exclusively curated 4-course dinner, featuring Stone Axe Wagyu and Binchotan Grilled Jade Abalone, Razor Clams and Uni.",
+  },
 ];
 
-export const seeAndDoCardSliderB = [
+export const seeAndDoCardSliderA = [
   {
     img: CardSliderA01,
     title: "Mahaler 9",
@@ -73,6 +79,12 @@ export const seeAndDoCardSliderB = [
     title: "Digital Light Canvas",
     description:
       "Explore an interactive and engaging ecoststem of lora and fauna, presented in collaboraiton with renowend art collective teamLab.",
+  },
+  {
+    img: CardSliderA04,
+    title: "Spectra",
+    description:
+      "An outdoor light and water extravaganza inspired by Melborne's journey to becoming the cosmoplitan city of today.",
   },
   {
     img: CardSliderA04,

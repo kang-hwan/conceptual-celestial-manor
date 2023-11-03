@@ -6,808 +6,237 @@ $mobile-view: 1060px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  div .large-logo {
-    margin: 20px 0;
-  }
+  // background-color: c.$bg-color;
 }
 
-.large-logo-wrapper {
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 58;
-  z-index: 999;
-}
-
-.large-logo {
-  max-width: 98%;
-  padding: 0 12px;
-  @media (max-width: $mobile-view) {
-    display: none;
-  }
-}
-
-//   ! Section 1
-.section-1 {
-  border-top: 1px solid c.$black-theme;
-  height: 1090px;
+.homeIntroSection {
   width: 100%;
-  display: flex;
-  margin-top: 150px;
-  justify-content: center;
-  @media (max-width: $mobile-view) {
-    border-top: none;
-    flex-direction: column-reverse;
-    height: 100%;
-    margin-top: 0;
-  }
-  .section-1a {
-    border-right: 1px solid c.$black-theme;
-    width: 58%;
-    display: flex;
-    justify-content: flex-end;
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      justify-content: center;
-      border: none;
-    }
-    .section-1a-wrapper {
-      background-image: url(../Images/home-gradient.svg);
-      background-size: cover;
-      background-position: top right;
-      border-radius: 0 64px 0 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-        height: 486px;
-        justify-content: center;
-        border: none;
-        border-radius: 0;
-      }
-      .svgMapContainer {
-        margin-right: 60px;
-        border: 2px black solid;
-        border-radius: 346px;
-        height: 1016px;
-        width: 692px;
-        overflow: hidden;
-        object-fit: contain;
-        position: relative;
-        @media (max-width: $mobile-view) {
-          margin: 60px 20px;
-          height: 486px;
-        }
-        .location-map {
-          transform: rotate(45deg);
-          object-fit: contain;
-          width: 1900px;
-          position: absolute;
-          left: -630px;
-          top: 10px;
-        }
-        .location-map-marker {
-          position: absolute;
-          top: 50%;
-          left: calc(50% - 20px);
-          width: 40px;
-          height: 40px;
-        }
-      }
-    }
-  }
-  .section-1b {
-    width: 42%;
-    display: flex;
-    justify-content: flex-start;
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      justify-content: center;
-    }
-    .section-1b-wrapper {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: space-around;
-      padding-left: 60px;
-      max-width: 550px;
-      @media (max-width: $mobile-view) {
-        padding: 40px 0;
-      }
-      .section-1b-text {
-        width: 90%;
-        text-align: center;
-        h2 {
-          margin: 0;
-          font-weight: 400;
-          font-size: 28px;
-        }
-        p {
-          margin: 32px 0 48px 0;
-          font-size: 16px;
-        }
-      }
-      .small-logo-container {
-        @media (max-width: $mobile-view) {
-          display: none;
-        }
-      }
-    }
-  }
+  position: relative;
+  padding-top: 48px;
 }
 
-// ! Section 2
-.section-2 {
-  display: flex;
-  width: 100%;
-  height: 900px;
-  @media (max-width: $mobile-view) {
-    flex-direction: column;
-    height: 100%;
-  }
-  .section-2a {
-    width: 58%;
-    border-right: 1px solid c.$black-theme;
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      height: 100%;
-    }
-    .section-2a-wrapper {
-      background-color: #94a689;
-      height: 100%;
-      width: 100%;
-      padding: 100px 0 0 24px;
-      display: flex;
-      justify-content: flex-end;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-        height: 100%;
-        padding: 40px 0 40px 24px;
-      }
-      .section-2a-copy {
-        width: 800px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        h2 {
-          margin: 0;
-          font-size: 52px;
-          font-weight: 400;
-          width: 70%;
-          @media (max-width: $mobile-view) {
-            font-size: 32px;
-          }
-        }
-        p {
-          margin: 32px 0;
-          font-size: 24px;
-          width: 70%;
-        }
-        a {
-          color: c.$black-theme;
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  .section-2b {
-    width: 42%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 70px;
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      padding: 40px 0;
-    }
-    .section-2b-wrapper {
-      max-width: 540px;
-      padding: 24px;
-      @media (max-width: $mobile-view) {
-        max-width: 100%;
-      }
-    }
-  }
-}
-
-// ! Section 3
-.gridImageSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 104px;
-  &--desktop {
-    height: 576px;
-    width: 100%;
-    display: flex;
-    @media (max-width: $mobile-view) {
-      display: none;
-    }
-
-    .section-3a-left {
-      width: 40%;
-      position: relative;
-      img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-      }
-      &:hover {
-        transition: 2s;
-      }
-      &:hover::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 40px;
-        background: linear-gradient(transparent, black);
-        transition-duration: 2s;
-      }
-      &:hover::after {
-        content: "Celestial Suite - Living";
-        position: absolute;
-        margin: 0 auto;
-        bottom: 40px;
-        left: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        padding: 4px 24px;
-        height: 36px;
-        background: black;
-        border-radius: 40px;
-      }
-    }
-  }
-  &--mobile {
-    display: none;
-    @media (max-width: $mobile-view) {
-      display: block;
-    }
-  }
-  .section-3a-right {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    .section-3a-34 {
-      display: flex;
-      width: 100%;
-      height: 50%;
-      div:nth-child(1) {
-        width: 70%;
-        position: relative;
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-        }
-        &:hover {
-          transition: 2s;
-        }
-        &:hover::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 40px;
-          background: linear-gradient(transparent, black);
-          transition-duration: 2s;
-        }
-        &:hover::after {
-          content: "Celestial Deluxe - Lounge";
-          position: absolute;
-          margin: 0 auto;
-          bottom: 40px;
-          left: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          padding: 4px 24px;
-          height: 36px;
-          background: black;
-          border-radius: 40px;
-        }
-      }
-      div:nth-child(2) {
-        width: 30%;
-        position: relative;
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-        }
-        &:hover {
-          transition: 2s;
-        }
-        &:hover::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 40px;
-          background: linear-gradient(transparent, black);
-          transition-duration: 2s;
-        }
-        &:hover::after {
-          content: "Breakfast";
-          position: absolute;
-          margin: 0 auto;
-          bottom: 40px;
-          left: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          padding: 4px 24px;
-          height: 36px;
-          background: black;
-          border-radius: 40px;
-        }
-      }
-    }
-    .section-3a-45 {
-      display: flex;
-      width: 100%;
-      height: 50%;
-      position: relative;
-      div:nth-child(1) {
-        width: 50%;
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-        }
-        &:hover {
-          transition: 2s;
-        }
-        &:hover::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 40px;
-          background: linear-gradient(transparent, black);
-          transition-duration: 2s;
-        }
-        &:hover::after {
-          content: "Celestial Suite - Bath";
-          position: absolute;
-          margin: 0 auto;
-          bottom: 40px;
-          left: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          padding: 4px 24px;
-          height: 36px;
-          background: black;
-          border-radius: 40px;
-        }
-      }
-      div:nth-child(2) {
-        width: 50%;
-        position: relative;
-        img {
-          object-fit: cover;
-          height: 100%;
-          width: 100%;
-        }
-        &:hover {
-          transition: 2s;
-        }
-        &:hover::before {
-          content: "";
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 40px;
-          background: linear-gradient(transparent, black);
-          transition-duration: 2s;
-        }
-        &:hover::after {
-          content: "Celestial Suite - Bedroom";
-          position: absolute;
-          margin: 0 auto;
-          bottom: 40px;
-          left: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: white;
-          padding: 4px 24px;
-          height: 36px;
-          background: black;
-          border-radius: 40px;
-        }
-      }
-    }
-  }
-
-  &__body {
-    text-align: center;
-    height: 800px;
-    width: 70%;
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      height: 1000px;
-      text-align: left;
-      padding: 0 24px;
-    }
-    h2 {
-      font-size: 52px;
-      font-weight: 400;
-      margin-top: 62px;
-    }
-    p {
-      font-size: 20px;
-      margin: 32px 0;
-    }
-    a {
-      display: inline-block;
-      margin-top: 54px;
-      margin-bottom: 100px;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-        text-align: center;
-      }
-    }
-  }
-}
-
-// ! Section 4
-
-.section-4 {
-  width: 100%;
-}
-
-.section-4a {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 962px;
-  background-color: c.$black-theme;
-  .section-4a-top {
-    display: flex;
-    height: 50%;
-    div {
-      width: 50%;
-    }
-    .s4a-top-1 {
-      border: 1px c.$black-theme solid;
-      background-color: c.$bg-color;
-      width: 100%;
-      height: 100%;
-      border-radius: 0 0 148px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      color: #e9e6e4;
-      p {
-        width: 60%;
-      }
-    }
-
-    .s4a-top-1:hover {
-      background: #e9f4e2;
-      color: black;
-      transition: 0.5s;
-    }
-
-    .s4a-top-2:hover {
-      background: #788a6d;
-      color: black;
-      transition: 0.5s;
-    }
-
-    .s4a-top-2 {
-      border: 1px c.$black-theme solid;
-      background-color: c.$bg-color;
-      width: 100%;
-      height: 100%;
-      border-radius: 0 0 0 148px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      color: #e9e6e4;
-      p {
-        width: 60%;
-      }
-    }
-  }
-  .section-4a-bottom {
-    display: flex;
-    height: 50%;
-    div {
-      width: 50%;
-    }
-    .s4a-bottom-1 {
-      border: 1px c.$black-theme solid;
-      background-color: c.$bg-color;
-      width: 100%;
-      height: 100%;
-      border-radius: 0 148px 0 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      color: #e9e6e4;
-
-      p {
-        width: 60%;
-      }
-    }
-    .s4a-bottom-2 {
-      border: 1px c.$black-theme solid;
-      background-color: c.$bg-color;
-      width: 100%;
-      height: 100%;
-      border-radius: 148px 0 0 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-      color: #e9e6e4;
-      p {
-        width: 60%;
-      }
-    }
-  }
-  .s4a-bottom-1:hover {
-    background: #788a6d;
-    color: black;
-    transition: 1s;
-  }
-
-  .s4a-bottom-2:hover {
-    background: #e9f4e2;
-    color: black;
-    transition: 1s;
-  }
-}
-
-.section4Body {
-  &--desktop {
-    @media (max-width: $mobile-view) {
-      display: none;
-    }
-  }
-  &--mobile {
-    display: none;
-    @media (max-width: $mobile-view) {
-      display: block;
-    }
-  }
-}
-
-// ! Section 5
-.section-5 {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: c.$black-theme;
-  padding-top: 280px;
-  padding-bottom: 320px;
-  color: #fffcfa;
-  @media (max-width: $mobile-view) {
-    padding: 40px 0;
-  }
-  .section-5-wrapper {
-    max-width: 1440px;
-    display: flex;
-    @media (max-width: $mobile-view) {
-      flex-direction: column;
-    }
-    .section-5a {
-      display: flex;
-      flex-direction: column;
-      width: 36%;
-      padding: 12px;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-      }
-      h3 {
-        font-weight: 400;
-        font-size: 20px;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 2px solid #fffcfa;
-      }
-      p {
-        margin-top: 0;
-        width: 90%;
-      }
-      img {
-        object-fit: contain;
-        width: 100%;
-      }
-      a {
-        color: #fffcfa;
-        font-size: 12px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-    }
-    .section-5b {
-      display: flex;
-      flex-direction: column;
-      margin-top: 24px;
-      width: 34%;
-      padding: 12px;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-      }
-      h3 {
-        font-weight: 400;
-        font-size: 20px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #fffcfa;
-      }
-      p {
-        margin-top: 0;
-        width: 90%;
-      }
-      img {
-        object-fit: contain;
-        width: 100%;
-      }
-      a {
-        color: #fffcfa;
-        font-size: 12px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-    }
-    .section-5c {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-      padding: 12px;
-      @media (max-width: $mobile-view) {
-        width: 100%;
-      }
-      h3 {
-        font-weight: 400;
-        font-size: 20px;
-        margin-bottom: 16px;
-        padding-bottom: 16px;
-        border-bottom: 2px solid #fffcfa;
-      }
-      p {
-        margin-top: 0;
-        width: 90%;
-      }
-      img {
-        object-fit: cover;
-        width: 100%;
-        padding: 16px 0;
-      }
-      a {
-        color: #fffcfa;
-        font-size: 12px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-    }
-  }
-}
-
-// ! Section 6
-.cardSliderSection {
-  border-top: 1px solid c.$black-theme;
-  width: 100%;
-  height: 980px;
-  color: #fffcfa;
-  text-align: center;
-  background-image: url(./../Images/card-slider-section-background.svg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__heading {
-    font-size: 52px;
-    font-weight: 400;
-    margin-bottom: 0;
-  }
-  &__body {
-    font-size: 20px;
-    margin-bottom: 60px;
-  }
-  &__module {
-    width: 100%;
-  }
-}
-
-// ! Section 7
-.howToGetHereSection {
-  text-align: center;
-  height: 800px;
-  display: flex;
-  align-items: center;
-  border-top: 1px solid c.$black-theme;
-  @media (max-width: $mobile-view) {
-    flex-direction: column;
-    height: 100%;
-  }
-  &__googleMap {
-    height: 100%;
-    width: 50%;
-    background-color: #788a6d;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    filter: grayscale(100%);
-    @media (max-width: $mobile-view) {
-      width: 100%;
-      height: 650px;
-    }
-  }
-  &__mapDetails {
+// ! Home Animated Gradient
+.introGradient-container {
+  z-index: -10;
+  background-color: #bfcfd0;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  .up {
+    // z-index: 10;
     position: absolute;
-    bottom: 28px;
-    left: calc(50% - 424px / 2);
-    background-color: c.$black-theme;
-    border-radius: 20px;
-    padding: 24px 40px 24px 24px;
-    color: white;
-    text-align: left;
-    @media (max-width: $mobile-view) {
-      width: 70%;
-      left: calc(15%);
-    }
-    P {
-      margin: 6px 0;
-      font-weight: 300;
-    }
-    .title {
-      font-size: 20px;
-      font-weight: 400;
+    right: 200px;
+    width: 1000px;
+    height: 1000px;
+    background-color: #dee6e7;
+    border-radius: 50%;
+    filter: blur(110px);
+    animation: up 35s infinite;
+  }
+  .orbitA-container {
+    animation: orbit 30s infinite;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 100px;
+    // border: 1px solid green;
+    .orbitA {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-color: #daf3d8;
+      border-radius: 50%;
+      filter: blur(100px) opacity(0.7);
     }
   }
-  &__body {
-    height: 100%;
-    width: 60%;
+  .orbitB-container {
+    animation: orbit-b 40s infinite;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    right: 200px;
+    // border: 1px solid red;
+    .orbitB {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-color: rgb(248, 252, 205);
+      border-radius: 50%;
+      filter: blur(100px) opacity(0.7);
+    }
+  }
+  .orbitB-container {
+    animation: orbit-b 40s infinite;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    right: 200px;
+    // border: 1px solid red;
+    .orbitB {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-color: rgb(248, 252, 205);
+      border-radius: 50%;
+      filter: blur(100px) opacity(0.7);
+    }
+  }
+  .orbitC-container {
+    animation: orbit-c 30s infinite;
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    top: -500px;
+    right: -500px;
+    // border: 1px solid red;
+    .orbitC {
+      position: absolute;
+      width: 1000px;
+      height: 1000px;
+      background-color: rgb(242, 250, 233);
+      border-radius: 50%;
+      filter: blur(100px) opacity(0.7);
+    }
+  }
+}
+
+@keyframes up {
+  0% {
+    bottom: -300px;
+  }
+  50% {
+    bottom: 2000px;
+  }
+  100% {
+    bottom: -300px;
+  }
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes orbit-b {
+  0% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(460deg);
+  }
+}
+@keyframes orbit-c {
+  0% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(-260deg);
+  }
+}
+
+.homeHeroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding: 80px;
+
+  h2 {
+    max-width: 1080px;
+    margin: 80px 0;
+  }
+  p {
+    max-width: 1080px;
+  }
+  button {
+    margin: 80px 0;
+  }
+  img {
+    display: block;
+    width: 40px;
+  }
+}
+
+.homeServiceSection {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 1100px;
+  .homeService-cardSliderContainer {
+    width: 50%;
+    border-right: 1px solid black;
+    // background-color: lightgreen;
+  }
+  .homeService-accordionContainer {
+    width: 50%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 48px;
-    border-left: solid 1px c.$black-theme;
-    @media (max-width: $mobile-view) {
-      border: none;
-      width: 100%;
-      text-align: left;
-      padding: 40px 24px;
-    }
+    align-items: center;
     h1 {
-      font-size: 52px;
-      font-weight: 400;
-      margin-top: 0;
-    }
-    h3 {
-      font-size: 20px;
-      margin: 32px 0 8px;
+      text-align: center;
     }
     p {
-      margin: 0;
+      margin: 40px 0;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
+
+.parallaxSection {
+  background-color: c.$bg-color;
+  width: 100%;
+  padding: 140px 24px;
+  background-color: c.$black-theme;
+}
+
+.welcomeMsg {
+  max-width: 1440px;
+  padding: 80px 44px;
+  margin: 0 auto;
+  border-radius: 38px;
+  background-image: url(../Images/gradient-light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.divider {
+  color: c.$bg-color;
+  width: fit-content;
+  margin: 12px auto;
+  &::after {
+    content: "";
+    background-color: c.$bg-color;
+    height: 2px;
+    width: 100%;
+  }
+}
+
+.location-info-section {
+  width: 100%;
+  background-color: c.$black-theme;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid red;
+  text-align: center;
+  padding: 74px;
+  .location-info-container {
+    max-width: 1020px;
+    padding: 0 24px;
+    .typo-h4 {
+      margin-bottom: 0;
     }
   }
 }

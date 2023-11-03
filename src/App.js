@@ -16,9 +16,16 @@ import Header from "./Components/Header";
 // ! Style Sheet
 import "./scss/App.css";
 
+// TODO : Content Card Slider
 // ToDo: link underline animation
-// TODO: highlight A image resize
 // TODO: InfoCard flex wrap
+// TODO: Replace images with smaller file size
+
+// 밑줄 애니메이션
+// https://www.youtube.com/watch?v=O54PjSD9BUg
+
+// Done : HighlightA Img Resize
+// Done : CarouselB Text Area Resize
 
 function App() {
   return (

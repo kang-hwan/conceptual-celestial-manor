@@ -1,7 +1,11 @@
 import React from "react";
 import seeAndDoHeroImg from "../Images/seeAndDo/seeAndDo-hero.png";
 import celestialStar from "../Images/celestialStar.svg";
-import { seeAndDoCarouselB, seeAndDoCardSliderA } from "../data/seeAndDoData";
+import {
+  seeAndDoCarouselB,
+  seeAndDoCardSliderA,
+  seeAndDoCardSliderB,
+} from "../data/seeAndDoData";
 import CarouselB from "../Components/CarouselB";
 import CardSlider from "../Components/CardSlider";
 import HighlightAImg from "../Images/seeAndDo/seeAndDo-highlight.png";
@@ -65,6 +69,14 @@ const SeeAndDo = () => {
               Discover More
             </a>
           </div>
+        </div>
+      </div>
+      <div className="seeAndDo-cardSliderB-section">
+        <div className="cardSliderB-container">
+          <CardSlider
+            title="The Night is Ever Young"
+            data={seeAndDoCardSliderB}
+          />
         </div>
       </div>
       <Footer />

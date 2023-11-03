@@ -100,3 +100,19 @@
     }
   }
 }
+
+.seeAndDo-cardSliderB-section {
+  margin-top: l.$section-margin;
+  background-color: #131116;
+  padding-bottom: l.$section-margin;
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  .cardSliderB-container {
+    max-width: 1440px;
+    h1 {
+      color: #7feb38;
+    }
+  }
+}

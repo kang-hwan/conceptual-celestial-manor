@@ -19,7 +19,8 @@
   justify-content: space-evenly;
   align-items: center;
   white-space: nowrap;
-  animation: 25s slide infinite linear;
+  animation: 60s slide infinite linear;
+  max-width: 100%;
   .slider-item {
     padding: 4px 16px;
     border-right: 1px solid c.$black-theme;

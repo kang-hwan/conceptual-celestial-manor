@@ -16,11 +16,12 @@
       width: 100%;
       display: flex;
       &-title {
-        max-width: 400px;
+        min-width: 380px;
         padding-right: 24px;
       }
       &-body {
         max-width: 400px;
+        min-height: 180px;
         padding-left: 24px;
         border-left: 1px solid black;
       }

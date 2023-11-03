@@ -1,18 +1,79 @@
 @use "../abstracts/colors" as c;
 
+@keyframes slideRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: -50%;
+  }
+}
+
 .cardSlider {
   h1 {
     margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+.cardSlider-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+  .card-controller-left {
+    position: absolute;
+    background-color: red;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    z-index: 10;
+  }
+  .card-controller-right {
+    position: absolute;
+    background-color: red;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    z-index: 10;
   }
 }
 
 .cardSlider-container {
   display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: hidden;
   gap: 24px;
-
+  position: relative;
+  transition: 100ms;
+  & .center {
+    display: flex;
+  }
+  .card-controller-left {
+    position: absolute;
+    background-color: red;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+  }
+  .card-controller-right {
+    position: absolute;
+    background-color: red;
+    opacity: 0.2;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
   .card-item {
     background-color: c.$bg-color;
-    width: 400px;
+    min-width: 400px;
     text-align: left;
     img {
       width: 100%;

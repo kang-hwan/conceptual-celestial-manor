@@ -35,6 +35,10 @@ export default function Header() {
     };
   }, [lastScrollTop]);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <header>
       <div className="header-wrapper--desktop">
@@ -45,19 +49,29 @@ export default function Header() {
           <div className="menu-container">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={scrollToTop}>
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/accommodation">Accommodation</Link>
+                <Link to="/accommodation" onClick={scrollToTop}>
+                  Accommodation
+                </Link>
               </li>
               <li>
-                <Link to="/eatAndDrink">Eat & drink</Link>
+                <Link to="/eatAndDrink" onClick={scrollToTop}>
+                  Eat & drink
+                </Link>
               </li>
               <li>
-                <Link to="/seeAndDo">See & Do</Link>
+                <Link to="/seeAndDo" onClick={scrollToTop}>
+                  See & Do
+                </Link>
               </li>
               <li>
-                <Link to="/">Our Story</Link>
+                <Link to="/" onClick={scrollToTop}>
+                  Our Story
+                </Link>
               </li>
             </ul>
             <a

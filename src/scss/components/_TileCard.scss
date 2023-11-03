@@ -1,0 +1,46 @@
+@use "../abstracts/colors" as c;
+
+.tileCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  gap: 2px;
+  .tileCard {
+    width: 49%;
+    aspect-ratio: 1.5 / 1;
+    border-radius: 38px;
+    transition: 400ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 24px;
+      padding: 24px 12px;
+      border-bottom: 1px solid black;
+    }
+    &-body {
+      padding: 0 24px;
+      margin-bottom: 40px;
+      &__details {
+        max-height: 0;
+        color: transparent;
+        overflow: hidden;
+        transition: 800ms;
+      }
+    }
+    &:hover {
+      background-color: c.$cm-accent;
+      transition: 400ms;
+      .tileCard-body__details {
+        max-height: 300px;
+        color: c.$black-theme;
+        transition: 1000ms;
+        // margin-bottom: 40px;
+      }
+    }
+  }
+}

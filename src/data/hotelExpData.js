@@ -9,7 +9,7 @@ export const hotelExpData = [
     title: "Fitness Centre",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    link: "Browse Our Celestial Classic Collection",
+    link: "Learn More",
   },
   {
     key: 2,
@@ -17,7 +17,7 @@ export const hotelExpData = [
     title: "Celestial Lounges",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    link: "Browse Our Celestial Classic Collection",
+    link: "Learn More",
   },
   {
     key: 3,
@@ -25,6 +25,6 @@ export const hotelExpData = [
     title: "Massage & Spa",
     description1:
       "The Celestial Classic rooms offer timeless elegance and comfort, providing a serene retreat for discerning travelers. Immerse yourself in a harmonious blend of luxurious furnishings, soothing color palettes, and thoughtfully curated amenities.",
-    link: "Browse Our Celestial Classic Collection",
+    link: "Learn More",
   },
 ];

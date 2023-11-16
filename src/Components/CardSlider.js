@@ -14,7 +14,9 @@ const CardSlider = ({ title, data }) => {
               <img src={item.img} alt="event sample" />
               <h4 className="typo-h4">{item.title}</h4>
               <p className="typo-b3">{item.description}</p>
-              <a className="typo-link">Discover More</a>
+              <a className="typo-link" href="/">
+                Discover More
+              </a>
             </div>
           </swiper-slide>
         ))}

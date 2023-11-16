@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import { register } from "swiper/element/bundle";
 
 register();
@@ -11,7 +11,7 @@ const CardSlider = ({ title, data }) => {
         {data.map((item) => (
           <swiper-slide>
             <div className="card-item">
-              <img src={item.img} />
+              <img src={item.img} alt="event sample" />
               <h4 className="typo-h4">{item.title}</h4>
               <p className="typo-b3">{item.description}</p>
               <a className="typo-link">Discover More</a>

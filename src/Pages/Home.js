@@ -101,7 +101,7 @@ export default function Home() {
           <TileCard title={"Celestial Classic*"} color={"#E2EAE8"} />
         </div>
         <div className="stardust-container">
-          <img src={starDust01} />
+          <img src={starDust01} alt="stardust 01" />
         </div>
       </section>
       <section className="stardustSection"></section>

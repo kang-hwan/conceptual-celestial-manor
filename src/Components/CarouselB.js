@@ -27,8 +27,8 @@ const CarouselB = ({ title, data }) => {
       <div className="carouselB-contentContainer">
         <div className="carouselB-content">
           <div className="carouselB-content-title">
-            <h2>{data[currentSlide].title1}</h2>
-            <h2>{data[currentSlide].title2}</h2>
+            <h2 className="typo-h2">{data[currentSlide].title1}</h2>
+            <h2 className="typo-h2">{data[currentSlide].title2}</h2>
           </div>
           <div className="carouselB-content-body">
             <p className="typo-b3">{data[currentSlide].body}</p>

@@ -1,90 +1,27 @@
 @use "../abstracts/colors" as c;
 
-@keyframes slideRight {
-  from {
-    left: 0;
-  }
-  to {
-    left: -50%;
-  }
-}
-
-.cardSlider {
-  h1 {
-    margin-bottom: 40px;
-    text-align: center;
-  }
-}
-
-.cardSlider-wrapper {
-  display: flex;
-  position: relative;
-  width: 100%;
-  .card-controller-left {
-    position: absolute;
-    background-color: red;
-    opacity: 0.2;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-    z-index: 10;
-  }
-  .card-controller-right {
-    position: absolute;
-    background-color: red;
-    opacity: 0.2;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 40%;
-    z-index: 10;
-  }
-}
-
 .cardSlider-container {
-  display: flex;
-  justify-content: flex-start;
   width: 100%;
-  overflow-x: hidden;
-  gap: 24px;
-  position: relative;
-  transition: 100ms;
-  & .center {
-    display: flex;
+}
+
+swiper-container {
+  cursor: grab;
+}
+
+// swiper-slide {
+//   width: 20%;
+// }
+
+.card-item {
+  text-align: left;
+  max-width: 400px;
+  img {
+    // width: 100%;
+    object-fit: contain;
   }
-  .card-controller-left {
-    position: absolute;
-    background-color: red;
-    opacity: 0.2;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 40%;
-  }
-  .card-controller-right {
-    position: absolute;
-    background-color: red;
-    opacity: 0.2;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 40%;
-  }
-  .card-item {
-    background-color: c.$bg-color;
-    min-width: 400px;
-    text-align: left;
-    img {
-      width: 100%;
-      object-fit: contain;
-    }
-    h4 {
-      padding: 24px 0;
-      border-bottom: 1px solid black;
-    }
-    p {
-      margin-top: 20px;
-    }
+  h4 {
+    margin: 0;
+    padding: 16px 0;
+    border-bottom: 1px solid black;
   }
 }

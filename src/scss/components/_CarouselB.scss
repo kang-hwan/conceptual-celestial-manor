@@ -18,6 +18,9 @@
       &-title {
         min-width: 380px;
         padding-right: 24px;
+        .typo-h2 {
+          margin: 0;
+        }
       }
       &-body {
         max-width: 400px;

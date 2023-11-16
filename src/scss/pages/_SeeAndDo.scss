@@ -60,6 +60,7 @@
 
 .seeAndDo-cardSliderA-section {
   margin-top: l.$section-margin;
+  width: 100%;
 }
 
 .seeAndDo-highlight-section {
@@ -111,8 +112,17 @@
   justify-content: center;
   .cardSliderB-container {
     max-width: 1440px;
-    h1 {
+
+    h1,
+    h4,
+    .typo-link {
       color: #7feb38;
+    }
+    h1 {
+      text-align: center;
+    }
+    .typo-b3 {
+      color: white;
     }
   }
 }

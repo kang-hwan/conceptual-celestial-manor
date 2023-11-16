@@ -1,8 +1,8 @@
 import React from "react";
 
 // Images
-import simpleLogo from "../Images/main-vertical-logo.svg";
-
+import heroStar from "../Images/home-star.png";
+import starDust01 from "../Images/stardust01.svg";
 // Components & Files
 import Accordion from "../Components/Accordion";
 // import InfiniteSlider from "../Components/InfiniteSlider";
@@ -26,24 +26,35 @@ export default function Home() {
           </div>
         </div>
         <div className="homeHeroSection">
-          <h2 className="typo-h2">
-            Live the high life in the breathtaking world of Melbourne. <br />
-            This is where you can touch, feel, and imagine*
-          </h2>
-          <p className="typo-b2">
-            *Here, every moment of your stay is a thoughtfully curated
-            experience. Our three collections each offer a unique selection of
-            rooms and suites, meticulously designed and tailored to your
-            individual needs and desires.
-          </p>
-          <p className="typo-b2">
-            Wake up to spectacular views of your choice ― Gardens by the Bay,
-            the idyllic sea or the city skyline. Enjoy privileged access to our
-            world-famous rooftop infinity pool. Indulge in a world of dining,
-            shopping and entertainment options available right at your doorstep.
-          </p>
-          <button className="btn-primary">book your stay</button>
-          <img src={simpleLogo} alt="shortlogo" />
+          <div className="homeHeroSection-container">
+            <div className="homeHeroSection-body1">
+              <h2 className="typo-h2">
+                This is where you can touch, feel, and imagine*
+              </h2>
+              <p className="typo-b3">
+                *Here, every moment of your stay is a thoughtfully curated
+                experience. Our three collections each offer a unique selection
+                of rooms and suites, meticulously designed and tailored to your
+                individual needs and desires.
+              </p>
+            </div>
+            <div className="homeHeroSection-body2">
+              <h2 className="typo-h2">
+                Live the high life in the breathtaking <br />
+                world of Melbourne.
+              </h2>
+              <p className="typo-b3">
+                Wake up to spectacular views of your choice ― Gardens by the
+                Bay, the idyllic sea or the city skyline. Enjoy privileged
+                access to our world-famous rooftop infinity pool. Indulge in a
+                world of dining, shopping and entertainment options available
+                right at your doorstep.
+              </p>
+            </div>
+            <div className="homeHeroSection-heroStar">
+              <img src={heroStar} alt="hero star" />
+            </div>
+          </div>
         </div>
         <div className="homeServiceSection">
           <div className="homeService-cardSliderContainer"></div>
@@ -89,8 +100,11 @@ export default function Home() {
           <TileCard title={"Celestial Suite*"} color={"#F1F4F3"} />
           <TileCard title={"Celestial Classic*"} color={"#E2EAE8"} />
         </div>
+        <div className="stardust-container">
+          <img src={starDust01} />
+        </div>
       </section>
-      <section></section>
+      <section className="stardustSection"></section>
       <section className="location-info-section">
         <div className="location-info-container">
           <h1 className="typo-h1">Location*</h1>

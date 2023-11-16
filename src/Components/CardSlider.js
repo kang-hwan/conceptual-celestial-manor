@@ -1,53 +1,24 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect } from "react";
+import { register } from "swiper/element/bundle";
+
+register();
 
 const CardSlider = ({ title, data }) => {
-  const [position, setPosition] = useState(0);
-
-  const handleLeft = () => {
-    if (position > 0) {
-      setPosition(position - 1);
-    }
-  };
-
-  const handleRight = () => {
-    if (position < 2) {
-      setPosition(position + 1);
-    }
-  };
-
-  const getClassName = () => {
-    console.log("Current Position:", position);
-    switch (position) {
-      case 0:
-        return "cardSlider-container";
-      case 1:
-        return "cardSlider-container center";
-      case 2:
-        return "cardSlider-container end";
-      default:
-        return "cardSlider-container";
-    }
-  };
-
   return (
-    <div className="cardSlider">
+    <div className="cardSlider-container">
       <h1 className="typo-h1">{title}</h1>
-      <div className="cardSlider-wrapper">
-        <div className="card-controller-left" onClick={handleLeft}></div>
-        <div className={getClassName()}>
-          {data.map((item) => (
+      <swiper-container slides-per-view="3.5" scrollbar-hide="true">
+        {data.map((item) => (
+          <swiper-slide>
             <div className="card-item">
-              <img src={item.img} alt="event & shows" />
+              <img src={item.img} />
               <h4 className="typo-h4">{item.title}</h4>
               <p className="typo-b3">{item.description}</p>
-              <a className="typo-link" href="/">
-                Discover More
-              </a>
+              <a className="typo-link">Discover More</a>
             </div>
-          ))}
-        </div>
-        <div className="card-controller-right" onClick={handleRight}></div>
-      </div>
+          </swiper-slide>
+        ))}
+      </swiper-container>
     </div>
   );
 };

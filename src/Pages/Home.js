@@ -1,15 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 // Images
 import heroStar from "../Images/home-star.png";
-import starDust01 from "../Images/stardust01.svg";
+
 // Components & Files
 import Accordion from "../Components/Accordion";
-// import InfiniteSlider from "../Components/InfiniteSlider";
+import InfiniteSlider from "../Components/InfiniteSlider";
 import Footer from "../Components/Footer";
 import TileCard from "../Components/TileCard";
 
 export default function Home() {
+  // ! Change Background
+  useEffect(() => {
+    let parallaxSection = document.querySelector(".parallaxSection");
+
+    let observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.backgroundColor = "#211f1a";
+            console.log(entry);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    observer.observe(parallaxSection);
+
+    return () => {
+      observer.unobserve(parallaxSection);
+    };
+  }, []);
+
   return (
     <div className="page-home">
       <section className="homeIntroSection">
@@ -71,6 +94,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <InfiniteSlider />
       <section className="parallaxSection">
         <div className="welcomeMsg">
           <h1 className="typo-h1">Welcome to Celestial Manor*</h1>
@@ -99,9 +123,6 @@ export default function Home() {
           <TileCard title={"Celestial Deluxe*"} color={"#E2EAE8"} />
           <TileCard title={"Celestial Suite*"} color={"#F1F4F3"} />
           <TileCard title={"Celestial Classic*"} color={"#E2EAE8"} />
-        </div>
-        <div className="stardust-container">
-          <img src={starDust01} alt="stardust 01" />
         </div>
       </section>
       <section className="stardustSection"></section>

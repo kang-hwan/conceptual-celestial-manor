@@ -155,12 +155,14 @@ $mobile-view: 1060px;
       max-width: 470px;
       align-self: flex-end;
       h2 {
+        position: relative;
         opacity: 0;
         margin-bottom: 12px;
         animation: fade-in 2000ms forwards;
         animation-delay: 500ms;
       }
       p {
+        position: relative;
         opacity: 0;
         animation: fade-in 2000ms forwards;
         animation-delay: 2000ms;
@@ -169,12 +171,14 @@ $mobile-view: 1060px;
     .homeHeroSection-body2 {
       max-width: 790px;
       h2 {
+        position: relative;
         opacity: 0;
         margin-bottom: 12px;
         animation: fade-in 2000ms forwards;
         animation-delay: 500ms;
       }
       p {
+        position: relative;
         opacity: 0;
         animation: fade-in 2000ms forwards;
         animation-delay: 2000ms;
@@ -198,9 +202,11 @@ $mobile-view: 1060px;
 @keyframes fade-in {
   0% {
     opacity: 0;
+    top: 30px;
   }
   100% {
     opacity: 1;
+    top: 0;
   }
 }
 
@@ -237,27 +243,10 @@ $mobile-view: 1060px;
   background-color: c.$bg-color;
   width: 100%;
   padding: 140px 24px;
-  background-color: c.$black-theme;
-  background-image: url(../Images/parralexSection-background.svg);
+  // background-color: c.$black-theme;
   object-fit: cover;
   background-position: bottom;
-  .stardust-container {
-    width: 300px;
-    img {
-      width: 100%;
-      object-fit: contain;
-      animation: lighten 100ms infinite;
-    }
-  }
-}
-
-@keyframes lighten {
-  0% {
-    filter: opacity(0.6);
-  }
-  100% {
-    filter: opacity(1);
-  }
+  transition: 1500ms;
 }
 
 .welcomeMsg {

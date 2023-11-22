@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .homeIntroSection {
@@ -208,6 +209,7 @@
 .homeServiceSection .homeService-cardSliderContainer {
   width: 50%;
   border-right: 1px solid black;
+  padding: 12px;
 }
 .homeServiceSection .homeService-accordionContainer {
   width: 50%;
@@ -1446,6 +1448,64 @@ swiper-container {
   max-height: 300px;
   color: #211f1a;
   transition: 1000ms;
+}
+
+.rotatingStarContainer {
+  align-self: center;
+  overflow: hidden;
+}
+.rotatingStarContainer .rotatingStar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  animation: fade-in2 2000ms forwards;
+}
+.rotatingStarContainer .rotatingStar img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 380px;
+  max-height: 380px;
+}
+
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.themeSliderContainer {
+  background-color: #211f1a;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.themeSliderContainer-body {
+  margin: 24px;
+  max-width: 470px;
+}
+.themeSliderContainer-slider {
+  flex-basis: auto;
+}
+
+.sliderItemWrapper {
+  background-color: bisque;
+  max-width: 380px;
+  height: 100%;
+}
+.sliderItemWrapper .sliderHeader {
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn-primary {

@@ -5,9 +5,11 @@ import heroStar from "../Images/home-star.png";
 
 // Components & Files
 import Accordion from "../Components/Accordion";
-import InfiniteSlider from "../Components/InfiniteSlider";
+// import InfiniteSlider from "../Components/InfiniteSlider";
 import Footer from "../Components/Footer";
 import TileCard from "../Components/TileCard";
+import RotateLogo from "../Components/RotateLogo";
+import ThemeSlider from "../Components/ThemeSlider";
 
 export default function Home() {
   // ! Change Background
@@ -19,7 +21,6 @@ export default function Home() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.style.backgroundColor = "#211f1a";
-            console.log(entry);
           }
         });
       },
@@ -61,6 +62,7 @@ export default function Home() {
                 individual needs and desires.
               </p>
             </div>
+            <RotateLogo />
             <div className="homeHeroSection-body2">
               <h2 className="typo-h2">
                 Live the high life in the breathtaking <br />
@@ -74,13 +76,12 @@ export default function Home() {
                 right at your doorstep.
               </p>
             </div>
-            <div className="homeHeroSection-heroStar">
-              <img src={heroStar} alt="hero star" />
-            </div>
           </div>
         </div>
         <div className="homeServiceSection">
-          <div className="homeService-cardSliderContainer"></div>
+          <div className="homeService-cardSliderContainer">
+            <ThemeSlider />
+          </div>
           <div className="homeService-accordionContainer">
             <h1 className="typo-h1">
               Find your sanctuary <br />
@@ -94,7 +95,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <InfiniteSlider />
+      {/* <InfiniteSlider /> */}
       <section className="parallaxSection">
         <div className="welcomeMsg">
           <h1 className="typo-h1">Welcome to Celestial Manor*</h1>

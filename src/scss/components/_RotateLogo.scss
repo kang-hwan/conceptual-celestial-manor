@@ -1,0 +1,34 @@
+.rotatingStarContainer {
+  //   position: absolute;
+  align-self: center;
+  overflow: hidden;
+  .rotatingStar {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    animation: fade-in2 2000ms forwards;
+    // width: 380px;
+    // height: 380px;
+    // background-color: salmon;
+    img {
+      object-fit: contain;
+      max-width: 380px;
+      max-height: 380px;
+    }
+  }
+}
+
+@keyframes fade-in2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

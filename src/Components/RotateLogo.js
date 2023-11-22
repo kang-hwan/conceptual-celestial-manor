@@ -29,7 +29,7 @@ const RotateLogo = () => {
           transform: `rotate(${angle}deg)`,
         }}
       >
-        <img src={heroStar} />
+        <img src={heroStar} alt="hero star" />
       </div>
     </div>
   );

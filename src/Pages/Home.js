@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 
 // Images
-import heroStar from "../Images/home-star.png";
 
 // Components & Files
 import Accordion from "../Components/Accordion";

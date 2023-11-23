@@ -31,13 +31,14 @@ const ThemeSlider = () => {
             <swiper-slide>
               <div className="sliderItemWrapper">
                 <div className="sliderHeader">
-                  <div></div>
+                  <div>CM</div>
                   <div>{item.header}</div>
-                  <div></div>
+                  <div>*</div>
                 </div>
                 <div className="sliderBody">
-                  <div>{item.title}</div>
-                  <div>{item.body}</div>
+                  <div className="sliderBody__title">{item.title}</div>
+                  <div className="sliderBody__body">{item.body}</div>
+                  <a>RESERVE NOW</a>
                 </div>
               </div>
             </swiper-slide>

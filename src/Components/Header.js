@@ -70,7 +70,7 @@ export default function Header() {
               </li>
               <li>
                 <Link to="/" onClick={scrollToTop}>
-                  Our Story
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -103,16 +103,16 @@ export default function Header() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/">Accommodation</Link>
+                <Link to="/accommodation">Accommodation</Link>
               </li>
               <li>
-                <Link to="/">Eat & drink</Link>
+                <Link to="/eatAndDrink">Eat & drink</Link>
               </li>
               <li>
-                <Link to="/">See & Do</Link>
+                <Link to="seeAndDo">See & Do</Link>
               </li>
               <li>
-                <Link to="/">Our Story</Link>
+                <Link to="/">Contact Us</Link>
               </li>
             </ul>
           </div>

@@ -50,7 +50,7 @@ const ThemeSlider = () => {
                   </a>
                 </div>
                 <div className="sliderImage">
-                  <img src={item.image} />
+                  <img src={item.image} alt="" />
                 </div>
               </div>
             </swiper-slide>

@@ -21,11 +21,13 @@ const ThemeSlider = () => {
       <div className="themeSliderContainer-slider">
         <swiper-container
           class="mySwiper"
+          navigation="true"
           pagination="true"
           pagination-clickable="true"
           slides-per-view="2"
           centered-slides="true"
           space-between="30"
+          type="fraction"
         >
           {themeData.map((item) => (
             <swiper-slide>
@@ -38,7 +40,17 @@ const ThemeSlider = () => {
                 <div className="sliderBody">
                   <div className="sliderBody__title">{item.title}</div>
                   <div className="sliderBody__body">{item.body}</div>
-                  <a>RESERVE NOW</a>
+                  <a
+                    href="https://celestialmanor-booking.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="typo-link"
+                  >
+                    RESERVE NOW
+                  </a>
+                </div>
+                <div className="sliderImage">
+                  <img src={item.image} />
                 </div>
               </div>
             </swiper-slide>

@@ -1,7 +1,6 @@
 import React from "react";
 import { register } from "swiper/element/bundle";
 import { themeData } from "../data/themeData";
-import Swiper from "swiper";
 
 register();
 
@@ -43,12 +42,6 @@ const ThemeSlider = () => {
           pagination-clickable="true"
           slides-per-view="2"
           centered-slides="true"
-          // breakpoints={{
-          //   900: {
-          //     slidesPerView: 1.5,
-          //     spaceBetween: 20,
-          //   },
-          // }}
         >
           {themeData.map((item) => (
             <swiper-slide>

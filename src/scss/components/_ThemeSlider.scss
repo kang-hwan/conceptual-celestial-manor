@@ -98,11 +98,26 @@
   }
 }
 
+@media (min-width: 901px) {
+  .themeSliderContainer-slider--mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
+  .themeSliderContainer-slider--mobile {
+    display: block;
+  }
+
+  .themeSliderContainer-slider--desktop {
+    display: none;
+  }
+
   .sliderHeader {
     font-size: 14px;
   }
+
   .sliderBody__body {
-    display: none;
+    // display: none;
   }
 }

@@ -34,13 +34,48 @@ const ThemeSlider = () => {
           curated rooms for your needs.
         </p>
       </div>
-      <div className="themeSliderContainer-slider">
+      <div className="themeSliderContainer-slider--desktop">
         <swiper-container
           class="themeSliderSwiper"
           navigation="true"
           pagination="true"
           pagination-clickable="true"
           slides-per-view="2"
+          centered-slides="true"
+        >
+          {themeData.map((item) => (
+            <swiper-slide>
+              <div className="sliderItemWrapper">
+                <div className="sliderHeader">
+                  <div>{item.header}</div>
+                </div>
+                <div className="sliderBody">
+                  <div className="sliderBody__title">{item.title}</div>
+                  <div className="sliderBody__body">{item.body}</div>
+                  <a
+                    href="https://celestialmanor-booking.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="typo-link"
+                  >
+                    RESERVE NOW
+                  </a>
+                </div>
+                <div className="sliderImage">
+                  <img src={item.image} alt="" />
+                </div>
+              </div>
+            </swiper-slide>
+          ))}
+        </swiper-container>
+      </div>
+      <div className="themeSliderContainer-slider--mobile">
+        <swiper-container
+          class="themeSliderSwiper"
+          navigation="true"
+          pagination="true"
+          pagination-clickable="true"
+          slides-per-view="1.2"
           centered-slides="true"
         >
           {themeData.map((item) => (

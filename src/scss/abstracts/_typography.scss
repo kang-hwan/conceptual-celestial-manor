@@ -53,32 +53,23 @@
   line-height: 42.289px; /* 151.031% */
 }
 
+@property --offset {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
+
 .typo-link {
   font-size: 16px;
   line-height: 40px;
-  text-decoration: underline;
-  color: colors.$black-theme;
-  position: relative;
-  background-color: transparent;
+  color: inherit;
+  text-underline-offset: var(--offset, 0.2em);
+  text-decoration: underline 0.05em;
+  transition: --offset 400ms;
   cursor: pointer;
   z-index: 3;
-  &::after {
-    width: 0;
-    height: 100%;
-    background-color: #7feb38;
-    filter: opacity(0.2);
-    content: "";
-    position: absolute;
-    left: -1px;
-    top: 0;
-    z-index: 2;
-  }
   &:hover {
-    &::after {
-      width: 100%;
-      transition: 300ms;
-      z-index: 2;
-    }
+    --offset: 0.4em;
   }
 }
 

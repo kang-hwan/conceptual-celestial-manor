@@ -278,6 +278,21 @@
   margin-bottom: 0;
 }
 
+@media (max-width: 900px) {
+  .homeHeroSection-body1 {
+    align-self: flex-start;
+  }
+  .homeServiceSection {
+    flex-direction: column;
+  }
+  .homeServiceSection .homeService-cardSliderContainer {
+    width: 100%;
+    border-right: none;
+  }
+  .homeServiceSection .homeService-accordionContainer {
+    width: 100%;
+  }
+}
 .accommodation-page {
   display: flex;
   flex-direction: column;
@@ -1450,6 +1465,14 @@ swiper-container {
   transition: 1000ms;
 }
 
+@media (max-width: 900px) {
+  .tileCardContainer {
+    flex-direction: column;
+  }
+  .tileCardContainer .tileCard {
+    width: 100%;
+  }
+}
 .rotatingStarContainer {
   align-self: center;
   overflow: hidden;
@@ -1496,6 +1519,15 @@ swiper-container {
 }
 .themeSliderContainer-slider {
   flex-basis: auto;
+}
+
+.themeSliderSwiper {
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #7feb38;
+  --swiper-pagination-color: #7feb38;
+  --swiper-pagination-bullet-inactive-color: #fffcfa;
 }
 
 .sliderItemWrapper {
@@ -1718,31 +1750,24 @@ swiper-container {
   line-height: 42.289px; /* 151.031% */
 }
 
+@property --offset {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0;
+}
 .typo-link {
   font-size: 16px;
   line-height: 40px;
-  text-decoration: underline;
-  color: #211f1a;
-  position: relative;
-  background-color: transparent;
+  color: inherit;
+  text-underline-offset: var(--offset, 0.2em);
+  -webkit-text-decoration: underline 0.05em;
+          text-decoration: underline 0.05em;
+  transition: --offset 400ms;
   cursor: pointer;
   z-index: 3;
 }
-.typo-link::after {
-  width: 0;
-  height: 100%;
-  background-color: #7feb38;
-  filter: opacity(0.2);
-  content: "";
-  position: absolute;
-  left: -1px;
-  top: 0;
-  z-index: 2;
-}
-.typo-link:hover::after {
-  width: 100%;
-  transition: 300ms;
-  z-index: 2;
+.typo-link:hover {
+  --offset: 0.4em;
 }
 
 .typo-subheading {

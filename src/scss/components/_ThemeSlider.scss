@@ -17,6 +17,15 @@
   }
 }
 
+.themeSliderSwiper {
+  --swiper-navigation-size: 44px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #7feb38;
+  --swiper-pagination-color: #7feb38;
+  --swiper-pagination-bullet-inactive-color: #fffcfa;
+}
+
 .sliderItemWrapper {
   border: 1px solid white;
   border-radius: 10px;

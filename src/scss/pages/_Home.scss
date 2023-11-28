@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as c;
+@use "../abstracts/layout" as l;
 
 $mobile-view: 1060px;
 
@@ -287,6 +288,23 @@ $mobile-view: 1060px;
     padding: 0 24px;
     .typo-h4 {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .homeHeroSection-body1 {
+    align-self: flex-start;
+  }
+
+  .homeServiceSection {
+    flex-direction: column;
+    .homeService-cardSliderContainer {
+      width: 100%;
+      border-right: none;
+    }
+    .homeService-accordionContainer {
+      width: 100%;
     }
   }
 }

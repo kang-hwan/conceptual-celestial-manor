@@ -44,3 +44,12 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .tileCardContainer {
+    flex-direction: column;
+    .tileCard {
+      width: 100%;
+    }
+  }
+}

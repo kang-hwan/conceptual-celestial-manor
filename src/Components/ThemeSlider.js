@@ -20,7 +20,7 @@ const ThemeSlider = () => {
       </div>
       <div className="themeSliderContainer-slider">
         <swiper-container
-          class="mySwiper"
+          class="themeSliderSwiper"
           navigation="true"
           pagination="true"
           pagination-clickable="true"

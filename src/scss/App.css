@@ -989,7 +989,6 @@ header {
 .accordion-content {
   font-size: 16px;
   line-height: 28px;
-  padding-top: 8px;
   width: 90%;
   max-height: 0;
   color: #211f1a;
@@ -1001,7 +1000,6 @@ header {
   font-size: 16px;
   line-height: 28px;
   color: #211f1a;
-  padding-top: 8px;
   width: 90%;
   height: auto;
   max-height: 9999px;

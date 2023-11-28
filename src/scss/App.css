@@ -1811,7 +1811,8 @@ swiper-container {
 
 @media (max-width: 900px) {
   .typo-h1 {
-    font-size: 26px;
+    font-size: 32px;
+    font-weight: 500;
     margin-bottom: 0;
   }
   .typo-b4 {

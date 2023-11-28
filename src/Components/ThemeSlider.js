@@ -1,8 +1,25 @@
 import React from "react";
 import { register } from "swiper/element/bundle";
 import { themeData } from "../data/themeData";
+import Swiper from "swiper";
 
 register();
+
+// const swiperEl = document.querySelector(".themeSliderSwiper");
+// Object.assign(swiperEl, {
+//   slidesPerView: 2,
+//   spaceBetween: 10,
+//   pagination: {
+//     clickable: true,
+//   },
+//   breakpoints: {
+//     900: {
+//       slidesPerView: 1.2,
+//       spaceBetween: 20,
+//     },
+//   },
+// });
+// swiperEl.initialize();
 
 const ThemeSlider = () => {
   return (
@@ -26,16 +43,18 @@ const ThemeSlider = () => {
           pagination-clickable="true"
           slides-per-view="2"
           centered-slides="true"
-          space-between="30"
-          type="fraction"
+          // breakpoints={{
+          //   900: {
+          //     slidesPerView: 1.5,
+          //     spaceBetween: 20,
+          //   },
+          // }}
         >
           {themeData.map((item) => (
             <swiper-slide>
               <div className="sliderItemWrapper">
                 <div className="sliderHeader">
-                  <div>CM</div>
                   <div>{item.header}</div>
-                  <div>*</div>
                 </div>
                 <div className="sliderBody">
                   <div className="sliderBody__title">{item.title}</div>

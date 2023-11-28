@@ -52,4 +52,12 @@
       width: 100%;
     }
   }
+  .tileCard-body__details {
+    p:nth-of-type(2) {
+      display: none;
+    }
+  }
+  .tileCard-header {
+    padding: 0;
+  }
 }

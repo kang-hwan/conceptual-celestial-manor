@@ -122,7 +122,7 @@ export default function Home() {
           <TileCard title={"Celestial Classic*"} color={"#e5e9e0"} />
           <TileCard title={"Celestial Deluxe*"} color={"#E2EAE8"} />
           <TileCard title={"Celestial Suite*"} color={"#F1F4F3"} />
-          <TileCard title={"Celestial Classic*"} color={"#E2EAE8"} />
+          <TileCard title={"Enquire Now"} color={"#D9E2E2"} />
         </div>
       </section>
       <section className="stardustSection"></section>

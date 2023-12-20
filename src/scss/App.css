@@ -228,7 +228,8 @@
 }
 
 .parallaxSection {
-  background-color: #fffcfa;
+  background-color: #211f1a;
+  background-color: #211f1a;
   width: 100%;
   padding: 140px 24px;
   -o-object-fit: cover;
@@ -1475,6 +1476,7 @@ swiper-container {
   }
   .tileCard-header {
     padding: 0;
+    display: none;
   }
 }
 .rotatingStarContainer {
@@ -1544,6 +1546,7 @@ swiper-container {
   position: relative;
   overflow: hidden;
   margin: 0 10px 60px;
+  background: linear-gradient(358deg, rgba(0, 0, 0, 0.4) 21.78%, rgba(0, 0, 0, 0) 97.04%);
 }
 .sliderItemWrapper:hover .sliderImage img {
   filter: grayscale(0);
@@ -1572,6 +1575,7 @@ swiper-container {
   line-height: 128%;
 }
 .sliderItemWrapper .sliderBody__body {
+  box-shadow: 2px 2px 250px 20px rgba(255, 255, 255, 0.09);
   color: white;
   font-family: Poppins;
   font-size: 12px;
@@ -1618,6 +1622,80 @@ swiper-container {
     font-size: 14px;
   }
 }
+.keynoteSection {
+  color: white;
+  max-width: 1440px;
+  align-self: center;
+  margin: 240px auto 0;
+}
+
+.keynote {
+  display: flex;
+}
+
+.keynoteFade {
+  opacity: 0;
+  transition: 4000ms;
+}
+
+.keynote-svg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keynote-svg .keynote-svgIcon {
+  margin: 24px 0;
+}
+.keynote-svg .keynote-svgIcon img {
+  width: 48px;
+  height: 40px;
+}
+
+.keynote-body__mainContent {
+  margin-left: 24px;
+  max-width: 1000px;
+}
+.keynote-body__subContent {
+  display: flex;
+  align-items: center;
+  margin-top: 200px;
+}
+.keynote-body__subContent div:nth-of-type(1) {
+  max-width: 550px;
+  margin: 0 28px;
+}
+.keynote-body__subscribe {
+  margin-left: 24px;
+  max-width: 1100px;
+}
+.keynote-body .typo-link {
+  color: #fffcfa;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.subscribeInput {
+  padding: 12px 24px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 2px;
+  border-radius: 12px 0px 0px 12px;
+  background: var(--CM-Cream, #fffcfa);
+}
+
+.subscribeButton {
+  padding: 12px 24px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0px 12px 12px 0px;
+  background: var(--CM-Accent, #7feb38);
+}
+
 .btn-primary {
   padding: 16px 32px;
   border: 2px solid #211f1a;
@@ -1807,6 +1885,56 @@ swiper-container {
   line-height: 24px; /* 150% */
 }
 
+.typo-keynote-openingHeader {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px; /* 125% */
+  margin: 0;
+}
+
+.typo-keynote-heading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px; /* 100% */
+  margin: 28px 0;
+}
+
+.typo-keynote-subheading {
+  color: #fff;
+  /* Heading 3 */
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 40.96px */
+}
+
+.typo-keynote-featureHeading {
+  color: var(--CM-Accent, #7feb38);
+  font-family: Poppins;
+  font-size: 24px;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.typo-keynote-body {
+  color: var(--cmcream-60, rgba(255, 252, 250, 0.6));
+  /* Body 1_Desktop */
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
 @media (max-width: 900px) {
   .typo-h1 {
     font-size: 32px;
@@ -1815,6 +1943,20 @@ swiper-container {
   }
   .typo-b4 {
     font-size: 20px;
+  }
+  .typo-keynote-heading,
+  .typo-keynote-openingHeader {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .typo-keynote-featureHeading {
+    font-size: 16px;
+  }
+  .typo-keynote-body {
+    font-size: 16px;
+  }
+  .typo-link {
+    font-size: 16px;
   }
 }
 *,

@@ -37,6 +37,11 @@
   position: relative;
   overflow: hidden;
   margin: 0 10px 60px;
+  background: linear-gradient(
+    358deg,
+    rgba(0, 0, 0, 0.4) 21.78%,
+    rgba(0, 0, 0, 0) 97.04%
+  );
   &:hover {
     .sliderImage {
       img {
@@ -58,6 +63,7 @@
   }
   .sliderBody {
     padding: 24px;
+
     &__title {
       color: var(--CM-Cream, #fffcfa);
       font-family: Poppins;
@@ -67,6 +73,7 @@
       line-height: 128%;
     }
     &__body {
+      box-shadow: 2px 2px 250px 20px rgba(255, 255, 255, 0.09);
       color: white;
       font-family: Poppins;
       font-size: 12px;
@@ -87,6 +94,7 @@
     left: 0;
     right: 0;
     z-index: -1;
+
     img {
       object-fit: cover;
       width: 100%;

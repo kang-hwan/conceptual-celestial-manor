@@ -91,6 +91,58 @@
   line-height: 24px; /* 150% */
 }
 
+.typo-keynote-openingHeader {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 90px; /* 125% */
+  margin: 0;
+}
+
+.typo-keynote-heading {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 52px; /* 100% */
+  margin: 28px 0;
+}
+
+.typo-keynote-subheading {
+  color: #fff;
+
+  /* Heading 3 */
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 128%; /* 40.96px */
+}
+
+.typo-keynote-featureHeading {
+  color: var(--CM-Accent, #7feb38);
+  font-family: Poppins;
+  font-size: 24px;
+  margin-top: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
+}
+
+.typo-keynote-body {
+  color: var(--cmcream-60, rgba(255, 252, 250, 0.6));
+
+  /* Body 1_Desktop */
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 160% */
+}
+
 @media (max-width: 900px) {
   .typo-h1 {
     font-size: 32px;
@@ -100,5 +152,23 @@
 
   .typo-b4 {
     font-size: 20px;
+  }
+
+  .typo-keynote-heading,
+  .typo-keynote-openingHeader {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .typo-keynote-featureHeading {
+    font-size: 16px;
+  }
+
+  .typo-keynote-body {
+    font-size: 16px;
+  }
+
+  .typo-link {
+    font-size: 16px;
   }
 }

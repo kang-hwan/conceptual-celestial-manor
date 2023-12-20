@@ -9,6 +9,7 @@ import Footer from "../Components/Footer";
 import TileCard from "../Components/TileCard";
 import RotateLogo from "../Components/RotateLogo";
 import ThemeSlider from "../Components/ThemeSlider";
+import KeynoteSection from "../Components/KeynoteSection";
 
 export default function Home() {
   // ! Change Background
@@ -124,8 +125,8 @@ export default function Home() {
           <TileCard title={"Celestial Suite*"} color={"#F1F4F3"} />
           <TileCard title={"Enquire Now"} color={"#D9E2E2"} />
         </div>
+        <KeynoteSection />
       </section>
-      <section className="stardustSection"></section>
       <section className="location-info-section">
         <div className="location-info-container">
           <h1 className="typo-h1">Location*</h1>

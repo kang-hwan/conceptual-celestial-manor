@@ -1,0 +1,76 @@
+.keynoteSection {
+  color: white;
+  max-width: 1440px;
+  align-self: center;
+  // border: 1px solid white;
+  margin: 240px auto 0;
+}
+
+.keynote {
+  display: flex;
+}
+
+.keynoteFade {
+  opacity: 0;
+  transition: 4000ms;
+}
+
+.keynote-svg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .keynote-svgIcon {
+    margin: 24px 0;
+    img {
+      width: 48px;
+      height: 40px;
+    }
+  }
+}
+
+.keynote-body {
+  &__mainContent {
+    margin-left: 24px;
+    max-width: 1000px;
+  }
+  &__subContent {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    div:nth-of-type(1) {
+      max-width: 550px;
+      margin: 0 28px;
+    }
+  }
+  &__subscribe {
+    margin-left: 24px;
+    max-width: 1100px;
+  }
+  .typo-link {
+    color: #fffcfa;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+.subscribeInput {
+  padding: 12px 24px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 2px;
+  border-radius: 12px 0px 0px 12px;
+  background: var(--CM-Cream, #fffcfa);
+}
+
+.subscribeButton {
+  padding: 12px 24px;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0px 12px 12px 0px;
+  background: var(--CM-Accent, #7feb38);
+}

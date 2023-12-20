@@ -387,8 +387,7 @@ const KeynoteSection = () => {
               Celestial Lifestyle
             </h2>
             <h1 className="typo-keynote-heading keynoteFade">
-              Make the most of your visit ― join the most rewards programme in
-              Melbourne
+              Make the most of your visit
             </h1>
             <p className="typo-keynote-body keynoteFade">
               Earn unlimited rewards instantly as you shop, dine, play and stay

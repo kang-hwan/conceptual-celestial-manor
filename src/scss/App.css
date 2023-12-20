@@ -231,7 +231,7 @@
   background-color: #211f1a;
   background-color: #211f1a;
   width: 100%;
-  padding: 140px 24px;
+  padding: 140px 12px;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: bottom;
@@ -1706,6 +1706,33 @@ swiper-container {
   .keynote-svgIcon img {
     width: 28px;
     height: 20px;
+  }
+  .subscribeInput {
+    display: block;
+    padding: 12px 24px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 2px;
+    border-radius: 12px;
+    background: var(--CM-Cream, #fffcfa);
+  }
+  .subscribeButton {
+    display: block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 12px;
+    background: var(--CM-Accent, #7feb38);
+  }
+  .keynote-body__mainContent {
+    margin-left: 12px;
+  }
+  .keynote-body__subContent div:nth-of-type(1) {
+    max-width: 550px;
+    margin: 0 0 0 12px;
   }
 }
 .btn-primary {

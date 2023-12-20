@@ -5,6 +5,7 @@ import icon03 from "../Images/keynote/keynote-icon-03.svg";
 import icon04 from "../Images/keynote/keynote-icon-04.svg";
 import icon05 from "../Images/keynote/keynote-icon-05.svg";
 import subPath from "../Images/keynote/keynote-subpath.svg";
+import { Link } from "react-router-dom";
 
 const KeynoteSection = () => {
   useEffect(() => {
@@ -132,9 +133,9 @@ const KeynoteSection = () => {
               where opulence meets tranquility, where every moment is infused
               with celestial elegance.
             </p>
-            <a className="typo-link keynoteFade">
+            <Link to="/" className="typo-link keynoteFade">
               Learn more about Celestial Manor* Co
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -187,12 +188,12 @@ const KeynoteSection = () => {
               blends, expertly brewed by our skilled baristas, in a chic and
               inviting atmosphere.
             </p>
-            <a className="typo-link keynoteFade">
+            <Link to="/" className="typo-link keynoteFade">
               Learn more about Celestial Manor* Co
-            </a>
+            </Link>
           </div>
           <div className="keynote-body__subContent">
-            <img src={subPath} alt="" className=" keynoteFade" />
+            <img src={subPath} alt="" className="subpath keynoteFade" />
             <div className="">
               <h2 className="typo-keynote-subheading keynoteFade">
                 Bespoke Coffee and breakfast at your door or our VIP hub.
@@ -255,10 +256,12 @@ const KeynoteSection = () => {
               offers. Immerse yourself in a world of refined elegance and
               personalized service tailored to your desires.
             </p>
-            <a className="typo-link">Learn more about Celestial Manor* Co</a>
+            <Link to="/" className="typo-link">
+              Learn more about Celestial Manor* Co
+            </Link>
           </div>
           <div className="keynote-body__subContent">
-            <img src={subPath} alt="" className=" keynoteFade" />
+            <img src={subPath} alt="" className="subpath keynoteFade" />
             <div className="">
               <h2 className="typo-keynote-subheading keynoteFade">
                 Your journey to <br /> Melbourne with CM*
@@ -267,7 +270,9 @@ const KeynoteSection = () => {
                 Indulge in the exclusivity and prestige that <br />
                 Celestial Manor offers.
               </p>
-              <a className="typo-link keynoteFade">Learn more</a>
+              <Link to="" className="typo-link keynoteFade">
+                Learn more
+              </Link>
             </div>
             <div></div>
           </div>
@@ -324,7 +329,7 @@ const KeynoteSection = () => {
             </p>
           </div>
           <div className="keynote-body__subContent">
-            <img src={subPath} alt="" className=" keynoteFade" />
+            <img src={subPath} alt="" className="subpath keynoteFade" />
             <div className="">
               <h2 className="typo-keynote-subheading keynoteFade">
                 Your journey to <br /> Melbourne with CM*
@@ -333,7 +338,9 @@ const KeynoteSection = () => {
                 Indulge in the exclusivity and prestige that <br />
                 Celestial Manor offers.
               </p>
-              <a className="typo-link keynoteFade">Learn more</a>
+              <Link to="/" className="typo-link keynoteFade">
+                Learn more
+              </Link>
             </div>
             <div></div>
           </div>

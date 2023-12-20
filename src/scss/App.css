@@ -1635,7 +1635,7 @@ swiper-container {
 
 .keynoteFade {
   opacity: 0;
-  transition: 4000ms;
+  transition: 3000ms;
 }
 
 .keynote-svg {
@@ -1696,6 +1696,11 @@ swiper-container {
   background: var(--CM-Accent, #7feb38);
 }
 
+@media (max-width: 900px) {
+  .subpath {
+    display: none;
+  }
+}
 .btn-primary {
   padding: 16px 32px;
   border: 2px solid #211f1a;

@@ -19,7 +19,7 @@ const KeynoteSection = () => {
           }
         });
       },
-      { threshold: 0.5, rootMargin: "-100px" }
+      { threshold: 0.5, rootMargin: "-100px 0px" }
     );
 
     fadeElements.forEach((element) => {
